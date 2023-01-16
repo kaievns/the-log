@@ -1,0 +1,25 @@
+<!-- <BaseHead title={title} description={description} image={image} /> -->
+<div class="sm:grid sm:grid-cols-[3fr_1fr] sm:items-start sm:gap-x-10">
+    <article>
+        <!-- <BlogHero content={post} /> -->
+        <div
+            class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+        >
+            <slot />
+        </div>
+    </article>
+    <aside class="hidden text-right sm:sticky sm:top-20 sm:block">
+        <h2 class="font-semibold">Table of Contents</h2>
+        <ul class="mt-4 space-y-2 text-xs">
+            <!-- {
+                headings.map(({ slug, text }) => (
+                    <li class="line-clamp-2 hover:text-accent">
+                        <a href={`#${slug}`} aria-label={`Scroll to section: ${text}`}>
+                            <span>&#35;</span> {text}
+                        </a>
+                    </li>
+                ))
+            } -->
+        </ul>
+    </aside>
+</div>

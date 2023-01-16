@@ -1,15 +1,21 @@
 <script lang="ts">
-    import Header from "./Header.svelte";
+    import SkipLink from "src/components/SkipLink.svelte";
+    import DarkMode from "src/components/DarkMode.svelte";
+    import Header from "src/components/Header.svelte";
+    import Footer from "src/components/Footer.svelte";
 </script>
 
+<DarkMode />
+
 <div class="prose">
+    <SkipLink />
     <Header />
 
-    <main>
+    <main class="flex-1">
         <slot />
     </main>
 
-    <footer>Hello, I'm the footer.</footer>
+    <Footer />
 
     <style global>
         @tailwind utilities;
