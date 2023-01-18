@@ -6,6 +6,12 @@ const config: UserConfig = {
   resolve: {
     alias: {
       "src/": "/src/",
+      "posts/": "/posts/",
+    },
+  },
+  server: {
+    fs: {
+      allow: ["posts/"],
     },
   },
   test: {

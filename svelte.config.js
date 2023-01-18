@@ -12,6 +12,9 @@ const config = {
   // for more information about preprocessors
   preprocess: [
     sveltePreprocess({
+      defaults: {
+        style: "postcss",
+      },
       postcss: {
         plugins: [autoprefixer],
       },
@@ -26,7 +29,7 @@ const config = {
     }),
   ],
 
-  extensions: [".svelte", ".md"],
+  extensions: [".svelte", ".md", ".mdx"],
 
   kit: {
     adapter: adapter(),
