@@ -1,4 +1,13 @@
-export const fetchAllPosts = async () => {
+export type Post = {
+  slug: string;
+  date: Date;
+  title: string;
+  content: string;
+  description?: string;
+  tags?: string[];
+};
+
+export const fetchAllPosts = async (): Promise<Post[]> => {
   const allMdFiles = import.meta.glob("/posts/**/*.md");
   const allMdxFiles = import.meta.glob("/posts/**/*.mdx");
 
@@ -6,15 +15,27 @@ export const fetchAllPosts = async () => {
     Object.entries(allMdxFiles),
   );
 
-  return Promise.all(
+  const entries = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {
-      const { metadata } = await resolver() as any;
-      const postPath = path.slice(11, -3);
-
-      return {
-        meta: metadata,
-        path: postPath,
-      };
+      return moduleToPost(await resolver(), path);
     }),
   );
+
+  return entries.sort((a, b) => b.date.getTime() - a.date.getTime());
+};
+
+export const moduleToPost = (module: any, path: string): Post => {
+  const { metadata } = module;
+  const date = new Date(Date.parse(metadata.date));
+  const slug = path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
+
+  return {
+    ...metadata,
+    slug,
+    date,
+    path,
+    get content() {
+      return module.default.render().html;
+    },
+  };
 };

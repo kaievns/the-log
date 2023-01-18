@@ -21,7 +21,7 @@ const config = {
     }),
     vitePreprocess(),
     mdsvex({
-      extensions: [".md"],
+      extensions: [".md", ".mdx"],
       rehypePlugins: [
         rehypeSlug,
         rehypeAutolinkHeadings,
