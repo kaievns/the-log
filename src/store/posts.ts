@@ -1,5 +1,6 @@
 export type Post = {
   slug: string;
+  path: string;
   date: Date;
   title: string;
   content: string;
@@ -35,7 +36,8 @@ export const moduleToPost = (module: any, path: string): Post => {
     date,
     path,
     get content() {
-      return module.default.render().html;
+      const render = module.default.render;
+      return render && render().html;
     },
   };
 };

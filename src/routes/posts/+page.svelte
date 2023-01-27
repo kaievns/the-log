@@ -1,9 +1,9 @@
 <script lang="ts">
-    import type { Post } from "src/store/posts";
+    import type { PageData } from "./$types";
 
-    export let data;
+    export let data: PageData;
 
-    $: posts = data.posts as Post[];
+    $: posts = data.posts;
 </script>
 
 <h1>Recent posts</h1>

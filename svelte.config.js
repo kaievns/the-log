@@ -26,6 +26,7 @@ const config = {
         rehypeSlug,
         rehypeAutolinkHeadings,
       ],
+      smartypants: true,
     }),
   ],
 
