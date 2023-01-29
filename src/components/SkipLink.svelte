@@ -1,5 +1,0 @@
-<a
-    href="#main"
-    class="sr-only focus:not-sr-only focus:fixed focus:top-1.5 focus:left-1"
-    >skip to content
-</a>
