@@ -1,34 +1,55 @@
 <script lang="ts">
-    // const root = document.documentElement;
-    // const colorThemeMetaTag = document.querySelector(
-    //     "meta[name='theme-color']"
-    // ) as Element;
-    // const theme =
-    //     typeof localStorage !== "undefined"
-    //         ? localStorage.getItem("theme")
-    //         : null;
-    // if (
-    //     theme === "dark" ||
-    //     (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    // ) {
-    //     root.classList.add("dark");
-    //     colorThemeMetaTag.setAttribute("content", "dark");
-    // } else {
-    //     root.classList.remove("dark");
-    //     colorThemeMetaTag.setAttribute("content", "light");
-    // }
+    import { onMount } from "svelte";
+
+    let button: HTMLButtonElement;
+
+    const setTheme = (mode: "dark" | "light") => {
+        const html = window.document.documentElement;
+
+        if (mode == "dark") {
+            html.classList.add("dark");
+        } else {
+            html.classList.remove("dark");
+        }
+
+        button.setAttribute("aria-pressed", String(mode === "dark"));
+    };
+
+    const toggleTheme = () => {
+        const dark = document.documentElement.classList.contains("dark");
+        setTheme(dark ? "light" : "dark");
+    };
+
+    const restoreTheme = () => {
+        const storedTheme =
+            typeof localStorage !== "undefined"
+                ? localStorage.getItem("theme")
+                : null;
+
+        const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+        ).matches;
+
+        const theme =
+            storedTheme === "dark" || (!storedTheme && prefersDark)
+                ? "dark"
+                : "light";
+        setTheme(theme);
+    };
+
+    onMount(restoreTheme);
 </script>
 
 <button
     type="button"
-    id="toggle-theme"
     class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700"
     aria-label="Toggle Dark Mode"
-    data-theme=""
+    on:click={toggleTheme}
+    bind:this={button}
 >
     <svg
         id="sun-svg"
-        class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-data-[theme=dark]:scale-100 group-data-[theme=dark]:opacity-100"
+        class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100"
         aria-hidden="true"
         focusable="false"
         stroke-width="1.5"
@@ -93,7 +114,7 @@
     </svg>
     <svg
         id="moon-svg"
-        class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-data-[theme=light]:scale-100 group-data-[theme=light]:opacity-100"
+        class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100"
         aria-hidden="true"
         focusable="false"
         stroke-width="1.5"

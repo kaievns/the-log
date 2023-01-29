@@ -6,7 +6,7 @@
     const url = { pathname: "/" }; // document.location;
 </script>
 
-<header class="group relative flex items-center sm:pl-[4.5rem]">
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]">
     <div class="flex sm:flex-col">
         <a
             href="/"
@@ -26,18 +26,24 @@
             aria-label="Main menu"
         >
             <a
-                href="/posts"
+                href="/"
                 class="py-4 px-4 sm:py-0 sm:hover:underline"
-                aria-current={url.pathname.startsWith("/posts")
-                    ? "page"
-                    : false}
-                rel="prefetch">Log</a
+                aria-current={url.pathname === "/" ? "page" : false}
+                rel="prefetch">Home</a
             >
             <a
                 href="/about"
                 class="py-4 px-4 sm:py-0 sm:hover:underline"
                 aria-current={url.pathname === "/about" ? "page" : false}
                 rel="prefetch">About</a
+            >
+            <a
+                href="/posts"
+                class="py-4 px-4 sm:py-0 sm:hover:underline"
+                aria-current={url.pathname.startsWith("/posts")
+                    ? "page"
+                    : false}
+                rel="prefetch">Log</a
             >
         </nav>
     </div>

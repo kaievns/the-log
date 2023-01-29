@@ -17,9 +17,9 @@
         --theme-bg: #1d1f21;
         --theme-link: #d480aa;
         --theme-text: #c9cacc;
-        --theme-accent: #2bbc89;
+        --theme-accent: rgb(186, 74, 38);
         --theme-accent-2: #eee;
-        --theme-quote: #ccffb6;
+        --theme-quote: rgb(186, 74, 38);
         --theme-menu-bg: rgb(29 31 33 / 0.85);
     }
 

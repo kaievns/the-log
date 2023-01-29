@@ -35,19 +35,19 @@ module.exports = {
         height: "height",
       },
       typography: (theme) => ({
-        // cactus: {
-        //   css: {
-        //     "--tw-prose-body": "var(--theme-text)",
-        //     "--tw-prose-headings": "var(--theme-accent-2)",
-        //     "--tw-prose-links": "var(--theme-text)",
-        //     "--tw-prose-bold": "var(--theme-text)",
-        //     "--tw-prose-bullets": "var(--theme-text)",
-        //     "--tw-prose-quotes": "var(--theme-quote)",
-        //     "--tw-prose-code": "var(--theme-text)",
-        //     "--tw-prose-hr": "0.5px dashed #666",
-        //     "--tw-prose-th-borders": "#666",
-        //   },
-        // },
+        cactus: {
+          css: {
+            "--tw-prose-body": "var(--theme-text)",
+            "--tw-prose-headings": "var(--theme-accent-2)",
+            "--tw-prose-links": "var(--theme-text)",
+            "--tw-prose-bold": "var(--theme-text)",
+            "--tw-prose-bullets": "var(--theme-text)",
+            "--tw-prose-quotes": "var(--theme-quote)",
+            "--tw-prose-code": "var(--theme-text)",
+            "--tw-prose-hr": "0.5px dashed #666",
+            "--tw-prose-th-borders": "#666",
+          },
+        },
         DEFAULT: {
           css: {
             a: {
