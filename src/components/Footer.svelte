@@ -14,17 +14,17 @@
     >
         <a
             href="/"
-            class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline"
+            class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline"
             >Home</a
         >
         <a
             href="/about"
-            class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline"
+            class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline"
             >About</a
         >
         <a
             href="/posts"
-            class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline"
+            class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline"
             >Log</a
         >
     </nav>

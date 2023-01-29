@@ -9,7 +9,7 @@
 <SkipLink />
 <Header />
 
-<main class="flex-1">
+<main class="prose">
     <slot />
 </main>
 
