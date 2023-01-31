@@ -15,7 +15,7 @@
     :root.dark {
         color-scheme: dark;
         --theme-bg: #1d1f21;
-        --theme-link: #d480aa;
+        --theme-link: rgb(186, 74, 38);
         --theme-text: #c9cacc;
         --theme-accent: rgb(186, 74, 38);
         --theme-accent-2: #eee;

@@ -1,4 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<script lang="ts">
+    import type { PageData } from "./$types";
+
+    export let data: PageData;
+
+    $: posts = data.posts;
+</script>
+
+<h2>Recent posts</h2>
+
+{#each posts as post}
+    <div>
+        {post.date.toLocaleDateString()}
+        <a href="/posts/{post.slug}">{post.title}</a>
+    </div>
+{/each}

@@ -15,7 +15,7 @@
         >
             <img
                 src={face}
-                class="w-16 h-16 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0"
+                class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0"
                 alt="Kai Evans face"
             />
             <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a
