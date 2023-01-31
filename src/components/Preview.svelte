@@ -3,6 +3,7 @@
     import Date from "./Date.svelte";
 
     export let post: Post;
+    export let showDescription = true;
 </script>
 
 <Date date={post.date} class="min-w-[100px] text-gray-500" />
@@ -15,4 +16,6 @@
     {post.title}
 </a>
 
-<q class="mt-2 block italic line-clamp-3">{post.description}</q>
+{#if showDescription}
+    <q class="mt-2 block italic line-clamp-3">{post.description}</q>
+{/if}
