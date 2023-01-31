@@ -37,5 +37,9 @@
 
     <HeroBlock {post} />
 
-    {@html post.content}
+    <div
+        class="prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+    >
+        {@html post.content}
+    </div>
 {/if}
