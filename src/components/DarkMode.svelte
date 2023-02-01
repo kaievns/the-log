@@ -3,16 +3,18 @@
 
     let button: HTMLButtonElement;
 
-    const setTheme = (mode: "dark" | "light") => {
-        const html = window.document.documentElement;
+    const setTheme = (theme: "dark" | "light") => {
+        const html = document.documentElement;
 
-        if (mode == "dark") {
+        if (theme == "dark") {
             html.classList.add("dark");
         } else {
             html.classList.remove("dark");
         }
 
-        button.setAttribute("aria-pressed", String(mode === "dark"));
+        localStorage.setItem("theme", theme);
+
+        button.setAttribute("aria-pressed", String(theme === "dark"));
     };
 
     const toggleTheme = () => {
@@ -20,24 +22,10 @@
         setTheme(dark ? "light" : "dark");
     };
 
-    const restoreTheme = () => {
-        const storedTheme =
-            typeof localStorage !== "undefined"
-                ? localStorage.getItem("theme")
-                : null;
-
-        const prefersDark = window.matchMedia(
-            "(prefers-color-scheme: dark)"
-        ).matches;
-
-        const theme =
-            storedTheme === "dark" || (!storedTheme && prefersDark)
-                ? "dark"
-                : "light";
-        setTheme(theme);
-    };
-
-    onMount(restoreTheme);
+    onMount(() => {
+        const darkMode = document.documentElement.classList.contains("dark");
+        button.setAttribute("aria-pressed", String(darkMode));
+    });
 </script>
 
 <button

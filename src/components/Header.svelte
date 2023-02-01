@@ -1,6 +1,5 @@
 <script lang="ts">
     import DarkMode from "./DarkMode.svelte";
-    import Hamburger from "./Hamburger.svelte";
     import face from "src/assets/face.jpg";
 
     const url = { pathname: "/" }; // document.location;
@@ -48,5 +47,4 @@
         </nav>
     </div>
     <DarkMode />
-    <Hamburger />
 </header>
