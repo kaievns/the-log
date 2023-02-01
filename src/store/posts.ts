@@ -1,4 +1,5 @@
 export type Post = {
+  url: string;
   slug: string;
   path: string;
   date: Date;
@@ -29,11 +30,13 @@ export const moduleToPost = (module: any, path: string): Post => {
   const { metadata } = module;
   const date = new Date(Date.parse(metadata.date));
   const slug = path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
+  const url = `http://kaievans.co/posts/${slug}`;
 
   // const content = module.default.render().html;
 
   return {
     ...metadata,
+    url,
     slug,
     date,
     path,

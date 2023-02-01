@@ -2,6 +2,7 @@
     // import "prism-themes/themes/prism-synthwave84.css";
     import "prism-themes/themes/prism-one-dark.css";
     import HeroBlock from "src/components/HeroBlock.svelte";
+    import MetaTags from "src/components/MetaTags.svelte";
     import type { Post } from "src/store/posts";
 
     export let data: any;
@@ -10,7 +11,7 @@
 </script>
 
 {#if post}
-    <!-- <BaseHead title={title} description={description} image={image} /> -->
+    <MetaTags {post} />
     <!-- <div class="sm:grid sm:grid-cols-[3fr_1fr] sm:items-start sm:gap-x-10"> -->
     <!-- <BlogHero content={post} /> -->
     <!-- <aside class="hidden text-right sm:sticky sm:top-20 sm:block">
