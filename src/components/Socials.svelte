@@ -28,10 +28,10 @@
                 <span class="sr-only">Github</span>
             </a>
         </li>
-        <!-- <li>
+        <li>
             <a
                 class="inline-block p-2 sm:hover:text-link"
-                href="https://github.com/chrismwilliams/astro-cactus"
+                href="https://mastodon.social/@kaievans"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -54,7 +54,7 @@
                 </svg>
                 <span class="sr-only">Twitter</span>
             </a>
-        </li> -->
+        </li>
         <li>
             <a
                 class="inline-block p-2 sm:hover:text-link"

@@ -30,14 +30,17 @@ export const moduleToPost = (module: any, path: string): Post => {
   const date = new Date(Date.parse(metadata.date));
   const slug = path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
 
+  // const content = module.default.render().html;
+
   return {
     ...metadata,
     slug,
     date,
     path,
     get content() {
-      const render = module.default.render;
-      return render && render().html;
+      return module.default;
+      // const render = module.default.render;
+      // return render && render().html;
     },
   };
 };

@@ -5,14 +5,8 @@
     import type { Post } from "src/store/posts";
 
     export let data: any;
-
-    const content = async (path: string) => {
-        const module = await import(path);
-        // console.log(module.default);
-    };
-
     $: post = data.post as Post;
-    $: post && content(post.path);
+    $: content = post.content as any;
 </script>
 
 {#if post}
@@ -38,8 +32,8 @@
     <HeroBlock {post} />
 
     <div
-        class="prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+        class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
     >
-        {@html post.content}
+        <svelte:component this={content} />
     </div>
 {/if}
