@@ -10,7 +10,7 @@ tags:
 
 So, I have been working on this app for a few weeks on and off now, and it's somewhat ready for it's maiden flight. So, I have figured what would be a better initial post than to explain how this thing works and what it's made of?
 
-You can find the source code in it's entirety in this [github repo](https://github.com/kaievns/the-log)
+You can find the source code in it's entirety in [this](https://github.com/kaievns/the-log) github repo.
 
 ## Acknowledgements
 
@@ -41,7 +41,7 @@ I'm not going to spend time debating Svelte vs. the rest of the world. Lets just
 
 SvelteKit is very inline with the o/g Svelte and meaningfully extends on it. The net result is that you have a very sensible, standards based web applications development setup that covers probably 95% of use cases out of the box. Which is frankly very refreshing to see those days.
 
-To produces this web-site, which is basically a blogging platform, the only things I really had to install were a markdown processor and tailwind. And I probably didn't need the last one, I just like it. Everything else, routing, data fetching, and a very sensible container/components segregation setup were provided out of the box.
+To create this web-site, which is basically a blogging platform, the only things I really had to install were a markdown processor and tailwind. And I probably didn't need the last one, I just like it. Everything else, routing, data fetching, and a very sensible container/components segregation setup were provided out of the box.
 
 ## What about Tailwind?
 
@@ -61,4 +61,46 @@ Firstly, I really like the idea of separating the data from presentation. Markdo
 
 Secondly, well, I like writing. Well, okay, that's a lie, I hate writing, especially writing truthfully. Like most creative processes it is a lot of pain. But, I cannot stop writing, it's even more pain for me to not regularly dump the contents of my brain in files. And whenever pain meets distractions nothing of value if being produced. I need a simple utilitarian environment to sit with my pain, and write. A text editor and markdown seem to do the trick consistently for me.
 
-And so I have two folders here the `posts` for markdown and the `src` for the application.
+## The "Architecture"
+
+With all the whys out of the way lets look a little into the guts of this app. On the top level, there are basically two
+folders, the `posts` folder where all the data lives, and the `src` folder where the Svelte app lives.
+
+```
+├─ posts/
+  ├─ post-1.md
+  └─ post-2.md
+└─ src/
+  └─ components/
+    ├─ Header.svelte
+    ├─ Footer.svelte
+    └─ ....
+  └─ routes/
+    └─ posts/
+      └─ [...slug]/
+        └─ +page.svelte
+      └─ +page.svelte
+    └─ rss.xml/
+      └─ +server.ts
+    ├─ +layout.svelte
+    └─ +page.svelte 
+```
+
+Svelte is pretty amazing at convention over configuration. Which is very neat, because it very cleanly splits between the `routes/` which is a way to group you page containers and data loading, and the `components/` which has all the generic components.
+
+I'm not going to go at length here about all the details, but it provides a great and very unobtrusive app "architecture" and it's more than enough to make a blogging app work. I have even made the RSS feed as part of the same routing. Because SvelteKit basically let you mix the server side and the front-end in one flow, and mix and match them as you're pleased. So I just have the `rss.xml` folder that has a little "server" in there that compiles the RSS feed of the recent posts.
+
+## How is it deployed?
+
+That's actually the easiest part. SvelteKit has built in adapters for delivering your app. One of the basic ones that comes with the framework, basically crawls your entire app and renders it into highly optimised static website build.
+
+Once that's plugged in, all you have to do is to push it to github pages and do some DNSing. Thankfully npm has a handy package for that as well:
+
+```
+npm install -D gh-pages
+npm run build && gh-pages -d build
+```
+
+Why github pages instead of the likes of versel or netlify?
+
+Well, I just want it it to keep running in case I'm dead. Just kidding. You probably should figure by now that I like simple and reliable tools. Since this whole thing is already on github, there is nothing to manage, just press a button and it's there.

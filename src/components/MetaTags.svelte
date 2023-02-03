@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Post } from "src/store/posts";
+    import face from "src/assets/face.jpg";
 
     export let post: Post;
 
@@ -7,7 +8,7 @@
     $: title = `${post.title} ⁍ ${author}`;
     $: description = post.description;
     $: url = post.url;
-    $: image = "/src/assets/face.jpg";
+    $: image = face;
 </script>
 
 <svelte:head>
