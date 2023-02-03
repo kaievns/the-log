@@ -35,7 +35,7 @@
     <ul class="space-y-2 sm:space-y-0">
         <li>
             <a
-                href="https://github.com/kaievns/halmak"
+                href="https://github.com/kaievns/the-log"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="cactus-link inline-block"
