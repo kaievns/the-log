@@ -1,6 +1,6 @@
 <script lang="ts">
     import DarkMode from "./DarkMode.svelte";
-    import face from "src/assets/face.jpg";
+    import face from "src/assets/face.jpg?w=200&h=200&webp";
 
     const url = { pathname: "/" }; // document.location;
 </script>

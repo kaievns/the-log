@@ -1,8 +1,9 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import type { UserConfig } from "vite";
+import { imagetools } from "vite-imagetools";
 
 const config: UserConfig = {
-  plugins: [sveltekit()],
+  plugins: [sveltekit(), imagetools()],
   resolve: {
     alias: {
       "src/": "/src/",
@@ -13,9 +14,6 @@ const config: UserConfig = {
     fs: {
       allow: ["posts/"],
     },
-  },
-  test: {
-    include: ["src/**/*.{test,spec}.{js,ts}"],
   },
 };
 
