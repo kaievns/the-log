@@ -8,7 +8,7 @@
 <h1 class="title">{post.title}</h1>
 <Date date={post.date} />
 
-{#if post.tags && post.tags.length}
+{#if post.tags.length}
     <div class="inline before:content-['|']">
         <svg
             aria-hidden="true"

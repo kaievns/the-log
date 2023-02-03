@@ -58,7 +58,7 @@
         <li>
             <a
                 class="inline-block p-2 sm:hover:text-link"
-                href="discordapp.com/users/762565692569944095"
+                href="http://discordapp.com/users/762565692569944095"
                 target="_blank"
                 rel="noopener noreferrer"
             >
