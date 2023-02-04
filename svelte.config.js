@@ -3,8 +3,11 @@ import { vitePreprocess } from "@sveltejs/kit/vite";
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
 import { mdsvex } from "mdsvex";
+import remarkMath from "remark-math";
+import remarkRelativeImages from "mdsvex-relative-images";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeFigure from "rehype-figure";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,9 +25,14 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extensions: [".md", ".mdx"],
+      remarkPlugins: [
+        remarkMath,
+        remarkRelativeImages,
+      ],
       rehypePlugins: [
         rehypeSlug,
         rehypeAutolinkHeadings,
+        [rehypeFigure, { className: false }],
       ],
       smartypants: true,
     }),
