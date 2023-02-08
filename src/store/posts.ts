@@ -33,7 +33,7 @@ export const moduleToPost = (module: any, path: string): Post => {
   const { metadata } = module;
   const tags = (metadata.tags || []).map((t: string) => t.toLowerCase());
   const date = new Date(Date.parse(metadata.date));
-  const slug = path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
+  const slug = metadata.slug || path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
   const url = `http://kaievans.co/posts/${slug}`;
 
   // const content = module.default.render().html;

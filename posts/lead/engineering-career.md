@@ -1,4 +1,5 @@
 ---
+slug: MzEzNDAK
 title: Software engineering careers explained
 date: 4 February 2023
 description: I'm going through all the engineering roles and common career paths

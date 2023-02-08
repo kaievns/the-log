@@ -1,4 +1,5 @@
 ---
+slug: MzI5Mgo
 title: How this site is made
 date: 1 February 2023
 description: a bit of technical details about how this web site was created
