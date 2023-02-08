@@ -1,5 +1,6 @@
-import { sveltekit } from "@sveltejs/kit/vite";
 import type { UserConfig } from "vite";
+
+import { sveltekit } from "@sveltejs/kit/vite";
 import { imagetools } from "vite-imagetools";
 
 const config: UserConfig = {

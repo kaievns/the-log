@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Post } from "src/store/posts";
-    import face from "src/assets/face.jpg?w=600&h=600";
+    import face from "src/assets/face.jpg?w=800&h=800";
 
     export let post: Post;
 
