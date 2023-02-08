@@ -6,7 +6,6 @@ description: I'm going through all the engineering roles and common career paths
 tags:
     - management
     - career
-draft: true
 ---
 
 Throughout the years, a lot has been said about software engineering careers. Still, after hiring so many engineers, I find that a lot of people are confused about what a software engineering career actually looks like. Especially in the early years, when all people want is to write code.
@@ -40,7 +39,7 @@ Moreover, as one progresses in their career, a transition between those categori
 
 With all the preambles out of the way, lets look at the actual picture in the context of a software engineering team. Again, keep in mind that this is a simplified version to convey the general structure. In real life it can shrink or expand depending on the size and needs of an organisation. New titles can be introduced, or several roles might go under the same title.
 
-![Engineering roles](images/engineering-roles.png)
+![Engineering roles](./images/engineering-roles.png)
 
 I have grouped all the straight up developer roles into one box, because from the career perspective there is not much difference between them, you just get more skilled and earn a bit more salary, and that's pretty much it.
 
