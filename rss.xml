@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/MjU5MjkK</guid>
+<title>Svelte + Markdown blog images setup</title>
+<link>https://kaievans.co/posts/MjU5MjkK</link>
+<description>A short guide how to setup image assets processing and optimisation in a svelte+markdown blog</description>
+<pubDate>Tue, 07 Feb 2023 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/MzEzNDAK</guid>
 <title>Software engineering careers explained</title>
 <link>https://kaievans.co/posts/MzEzNDAK</link>
