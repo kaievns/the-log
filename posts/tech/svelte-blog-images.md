@@ -45,8 +45,8 @@ The great thing about [mdsvex](https://mdsvex.pngwn.io) -- the default svelte ma
 
 To make this thing work, you will need two plugins. The first one is a remark plugin called
 [mdsvex-relative-images](https://www.npmjs.com/package/mdsvex-relative-images). And the second one
-is a rehype plugin called [https://github.com/josestg/rehype-figure]. Import them both and add them to your `svelte.config.js`
-file in your mdsvex config like so:
+is a rehype plugin called [rehype-figure](https://github.com/josestg/rehype-figure). 
+Import them both and add them to your `svelte.config.js` file in your mdsvex config like so:
 
 ```js
 import remarkRelativeImages from "mdsvex-relative-images";
