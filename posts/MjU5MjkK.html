@@ -25,7 +25,7 @@
 	<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout-8e254f9c.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-c2704cf3.js">
+		<link rel="modulepreload" href="../_app/immutable/start-42528eb2.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-73b08c3b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-d0c4fa27.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
@@ -35,10 +35,10 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
 		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-7da29fe2.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/Date-9f8280aa.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-8ada5593.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-ec9586bc.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/posts-63d9ee51.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-9e138397.js"><title>Svelte + Markdown blog images setup ⁍ Kai Evans</title><!-- HEAD_svelte-m6phnn_START --><meta name="title" content="Svelte + Markdown blog images setup ⁍ Kai Evans"><meta name="description" content="A short guide how to setup image assets processing and optimisation in a svelte+markdown blog"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Svelte + Markdown blog images setup ⁍ Kai Evans"><meta property="og:description" content="A short guide how to setup image assets processing and optimisation in a svelte+markdown blog"><meta property="og:url" content="http://kaievans.co/posts/MjU5MjkK"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-02-07T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/MjU5MjkK"><meta property="twitter:title" content="Svelte + Markdown blog images setup ⁍ Kai Evans"><meta property="twitter:description" content="A short guide how to setup image assets processing and optimisation in a svelte+markdown blog"><meta property="twitter:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><!-- HEAD_svelte-m6phnn_END -->
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-7e1083c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e9b1ad5b.js"><title>Svelte + Markdown blog images setup ⁍ Kai Evans</title><!-- HEAD_svelte-m6phnn_START --><meta name="title" content="Svelte + Markdown blog images setup ⁍ Kai Evans"><meta name="description" content="A short guide how to setup image assets processing and optimisation in a svelte+markdown blog"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Svelte + Markdown blog images setup ⁍ Kai Evans"><meta property="og:description" content="A short guide how to setup image assets processing and optimisation in a svelte+markdown blog"><meta property="og:url" content="http://kaievans.co/posts/MjU5MjkK"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-02-07T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/MjU5MjkK"><meta property="twitter:title" content="Svelte + Markdown blog images setup ⁍ Kai Evans"><meta property="twitter:description" content="A short guide how to setup image assets processing and optimisation in a svelte+markdown blog"><meta property="twitter:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><!-- HEAD_svelte-m6phnn_END -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -90,8 +90,8 @@ Once that is installed, you can configure the optimisation preferences for the i
 <a href="https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins" rel="nofollow">rehype</a> plugins ecosystems. Long story short, remark adds features to convert markdown to HTML, and rehype adds features to convert HTML to HTML; as in post-process HTML itself.</p>
 <p>To make this thing work, you will need two plugins. The first one is a remark plugin called
 <a href="https://www.npmjs.com/package/mdsvex-relative-images" rel="nofollow">mdsvex-relative-images</a>. And the second one
-is a rehype plugin called [https://github.com/josestg/rehype-figure]. Import them both and add them to your <code>svelte.config.js</code>
-file in your mdsvex config like so:</p>
+is a rehype plugin called <a href="https://github.com/josestg/rehype-figure" rel="nofollow">rehype-figure</a>.
+Import them both and add them to your <code>svelte.config.js</code> file in your mdsvex config like so:</p>
 <pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token keyword">import</span> remarkRelativeImages <span class="token keyword">from</span> <span class="token string">"mdsvex-relative-images"</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> rehypeFigure <span class="token keyword">from</span> <span class="token string">"rehype-figure"</span><span class="token punctuation">;</span>
 
@@ -138,14 +138,14 @@ lorem ipsum blah blah blah</code><!-- HTML_TAG_END --></pre>
         <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="kxcl74">
-			import { start } from "../_app/immutable/start-c2704cf3.js";
+		<script type="module" data-sveltekit-hydrate="gn7pkv">
+			import { start } from "../_app/immutable/start-42528eb2.js";
 
 			start({
 				env: {},
 				paths: {"assets":"","base":""},
-				target: document.querySelector('[data-sveltekit-hydrate="kxcl74"]').parentNode,
-				version: "1675822892627",
+				target: document.querySelector('[data-sveltekit-hydrate="gn7pkv"]').parentNode,
+				version: "1675825983380",
 				hydrate: {
 					node_ids: [0, 5],
 					data: [null,null],
