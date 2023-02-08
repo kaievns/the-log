@@ -7,6 +7,7 @@ export type Post = {
   content: string;
   description?: string;
   tags: string[];
+  draft: boolean;
 };
 
 export const fetchAllPosts = async (): Promise<Post[]> => {
@@ -23,7 +24,9 @@ export const fetchAllPosts = async (): Promise<Post[]> => {
     }),
   );
 
-  return entries.sort((a, b) => b.date.getTime() - a.date.getTime());
+  return entries
+    .filter((e) => import.meta.env.DEV || !e.draft) // hide drafts in prod
+    .sort((a, b) => b.date.getTime() - a.date.getTime());
 };
 
 export const moduleToPost = (module: any, path: string): Post => {
