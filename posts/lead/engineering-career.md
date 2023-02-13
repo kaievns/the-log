@@ -43,7 +43,7 @@ With all the preambles out of the way, lets look at the actual picture in the co
 
 I have grouped all the straight up developer roles into one box, because from the career perspective there is not much difference between them, you just get more skilled and earn a bit more salary, and that's pretty much it.
 
-The **tech lead** role can be rather ambiguous for multiple reasons. Generally speaking it sits between the technical and managerial career tracks -- I'll get to that in a second. This is the first time a person is given responsibilities over other people, and it might or might be considered an IC role.
+The **tech lead** role can be rather ambiguous for multiple reasons. Generally speaking it sits between the technical and managerial career tracks -- I'll get to that in a second. This is the first time a person is given responsibilities over other people, and it might or might not be considered an IC role.
 
 The **principal engineer** and **engineering manager** are considered to be part of the middle management. One focuses on technology, and the other one on people and processes. Sometimes you'd see **staff engineer** in this group as well.
 
@@ -97,7 +97,7 @@ Firstly, a startup. There is an old joke that a startup CTO is the most underqua
 Developer -> CTO
 ```
 
-Second example would be a growth company. Here yuu will see an actual management layer, but the technical and the managerial tracks often glued together: EM dubs as a principal engineer, HoE dubs as HoA, and the CTO dups as a VP of Engineering.
+Second example would be a growth company. Here yuu will see an actual management layer, but the technical and the managerial tracks often glued together: EM dubs as a principal engineer, HoE dubs as HoA, and the CTO dubs as a VP of Engineering.
 
 ```
 Developers -> EMs -> Head of Engineering -> CTO -> CEO
@@ -117,6 +117,6 @@ The bigger the company is the harder it is to manage, and they usually end up di
 
 Well, I hope this added some value. I'm reluctant to use the word "clarity" here, because org structures are exceptionally messy topic; especially when politics and egos start to get involved. But, I hope I have managed to explain the underlying principles a little bit.
 
-There is a simpler way to look at this picture and that is called the "scope of responsibilities". All you need to do is to decide for yourself what is it you want to be responsible for. Is that people, technology, processes, maybe both? That will dictate the roles you're looking for, and types of organisations you want to work for.
+There is a simpler way to look at this picture and that is called the "scope of responsibilities". All you need to do is to decide for yourself what is it you want to be responsible for. Is that people, technology, processes, maybe all three? That will dictate the roles you're looking for, and types of organisations you want to work for.
 
 Generally speaking though, there is just one rule. If you want to grow your career, make sure your scope of responsibilities keeps expanding. In the end of the day that what defines **seniority**, how much complexity you can be trusted to handle. And the only thing that matters in answering this question is your past experience. So, always ask for more responsibilities and deliver.
