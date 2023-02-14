@@ -93,8 +93,8 @@ Just like yourself, I hire people regularly, and I feel keenly the effects of th
 
 One of the most transformational experiences in my managerial life was the time when I really started to see people I employ as people. Not developers, not engineers, people. While it is neat, and actually necessary, to have an org structure and well defined job descriptions. The actual people, with their unique needs and circumstances rarely neatly fit into those boxes.
 
-I like to think of people I employ as members of the creative class, or unique snowflakes if you will. All, every single one of them, has a unique life story and goals. Understanding this fact and aligning their goals with their tenure at my company is where the magic happens.
+I like to think of people I employ as members of the creative class, or unique snowflakes if you will. Each and every single one of them, has a unique life story and goals. Understanding this fact and aligning their goals with their tenure at my company is where the magic happens.
 
 Accepting this fact makes my work way more messier that it would be otherwise, but it also makes it this much more satisfying. Making a difference in someone's life while you have a chance is a goal worth living for. It requires some creativity, but hey, guess what? You're a member of the creative class too.
 
-And in that light, there is no us and them. We're all employees, all on the same path, and in the same flow of life. And that is what makes work meaningful.
+And in that light, there is no us and them. We're all employees, all on the same path, and in the same flow of life. And that what makes work meaningful.
