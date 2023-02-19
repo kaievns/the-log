@@ -1,7 +1,11 @@
 ---
 slug: ekyxo
+date: 20 Feb 2023
 title: Why your burndown chart looks like a cliff
-draft: true
+description: We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance
+tags:
+   - management
+   - agile
 ---
 
 Overtime, while working in management, everyone picks up shortcuts for assessing
@@ -11,18 +15,20 @@ smell right.
 
 After staring at burndown charts for years, I feel that I can tell the general
 dynamics in a team and their processes struggles after looking at a few recent
-burndown charts. If the chart looks like a plateau, ~~fire~~ hire a tech lead;
-if it looks like a cliff hire a PO; if it looks like a triangle, leave the team
-alone and go do something else.
+burndown charts. If the chart looks like a plateau, hire a tech lead; if it
+looks like a cliff hire a PO; if it looks like a triangle, leave the team alone
+and go do something else.
+
+![Burndown chart types](./images/burndown-charts.png?w=1024&webp)
 
 Obviously, I'm not going to fire and hire anyone, that's not how management
-really works. I might actually have a completely wrong idea about what's going
-on. But, at the same time, I know that if there is something wrong with the
-burndown charts consistently, sprint after sprint, there are usually reasons for
-it that need investigation.
+works. And, I might actually have a completely wrong idea about what's going on.
+But, at the same time, I know, that if there is something wrong with the
+burndown charts, sprint after sprint consistently, there are usually reasons
+that need investigation.
 
-Today, I'm writing down one of those mental shortcuts, what's the reasoning
-behind it, and what I would look at.
+Today, I'm writing about one of those mental shortcuts and what's the thinking
+behind it.
 
 ## Why burndown charts?
 
@@ -32,12 +38,11 @@ anything, and if I hand to choose just one tool, I'd probably look at the
 frequency of deployments as the most reliable indicator.
 
 Burndown charts are quite ubiquitous though. They are readily available on most
-platforms, and they're visual. And it's easier to tell a story through visual
-cues. I also think that burndown charts a bit more verbose than say the
-deployments frequency number. And finally, as a manager, I would normally know
-the members of the team, their seniority, skill levels, etc. So, when paired
-that with the burndown charts analysis, it gives me a pretty decent idea where
-to start digging.
+platforms, and they're visual. I also think that burndown charts a bit more
+verbose than say the deployments frequency number. And finally, as a manager, I
+would normally know the members of the team, their seniority, skill levels, etc.
+So, when paired that with the burndown charts analysis, it gives me a pretty
+decent idea where to start digging.
 
 ## Burndown patterns
 
@@ -66,7 +71,7 @@ the team. This pattern also produced by new teams that are recalibrating, but it
 doesn't persist over time.
 
 The **triangle** pattern usually means the team does what it supposed to, just
-leave them do their work. Keep in mind that triangles are never perfect, they
+leave them to do their work. Keep in mind that triangles are never perfect, they
 often have small cliffs or plateaus in the last quarter of the graph, that's
 perfectly normal.
 

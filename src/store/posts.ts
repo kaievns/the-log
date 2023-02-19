@@ -26,13 +26,14 @@ export const fetchAllPosts = async (): Promise<Post[]> => {
 
   return entries
     .filter((e) => import.meta.env.DEV || !e.draft) // hide drafts in prod
+    .filter((e) => !e.path.includes("/ideas/")) // hide the ideas folder
     .sort((a, b) => b.date.getTime() - a.date.getTime());
 };
 
 export const moduleToPost = (module: any, path: string): Post => {
   const { metadata } = module;
   const tags = (metadata.tags || []).map((t: string) => t.toLowerCase());
-  const date = new Date(Date.parse(metadata.date));
+  const date = new Date(Date.parse(metadata.date) || new Date());
   const slug = metadata.slug || path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
   const url = `http://kaievans.co/posts/${slug}`;
 
