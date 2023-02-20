@@ -50,8 +50,8 @@ never taught effective planning techniques. Or there is a lack of trust between
 product and engineering, which results in engineers not having enough insight
 into the problem, or not having enough time to do the proper investigation and
 planning. In the end of the planning session, the work just roughly shovelled
-into large buckets and off they go.`),He=f(),T=s("h2"),P=s("a"),ce=s("span"),Mt=l("Cliff type 2: the wall"),Qe=f(),V=s("p"),zt=l(`This type of cliffs often looks like the chunky cliff, but it might look like
-the cliff hanger (see below). The reason why it’s a separate type is that it has
+into large buckets and off they go.`),He=f(),T=s("h2"),P=s("a"),ce=s("span"),Mt=l("Cliff type 2: the wall"),Qe=f(),V=s("p"),zt=l(`This type of cliffs often looks like the chunky cliff, but it might look like a
+cliff hanger too (see below). The reason why it’s a separate type is that it has
 a different kind of a problem underneath. In this case the process is at fault.`),Le=f(),x=s("p"),Dt=l("The "),ye=s("strong"),Jt=l("wall"),Vt=l(` in this instance refers to that mythical wall over which work is
 often thrown. And it usually works like so. Work is dutifully estimated, and
 then generously padded because those pesky QA people — who either sit quietly
@@ -132,8 +132,8 @@ never taught effective planning techniques. Or there is a lack of trust between
 product and engineering, which results in engineers not having enough insight
 into the problem, or not having enough time to do the proper investigation and
 planning. In the end of the planning session, the work just roughly shovelled
-into large buckets and off they go.`),Ga.forEach(t),He=u(e),T=o(e,"H2",{id:!0});var ua=r(T);P=o(ua,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var Ca=r(P);ce=o(Ca,"SPAN",{class:!0}),r(ce).forEach(t),Ca.forEach(t),Mt=h(ua,"Cliff type 2: the wall"),ua.forEach(t),Qe=u(e),V=o(e,"P",{});var Ha=r(V);zt=h(Ha,`This type of cliffs often looks like the chunky cliff, but it might look like
-the cliff hanger (see below). The reason why it’s a separate type is that it has
+into large buckets and off they go.`),Ga.forEach(t),He=u(e),T=o(e,"H2",{id:!0});var ua=r(T);P=o(ua,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var Ca=r(P);ce=o(Ca,"SPAN",{class:!0}),r(ce).forEach(t),Ca.forEach(t),Mt=h(ua,"Cliff type 2: the wall"),ua.forEach(t),Qe=u(e),V=o(e,"P",{});var Ha=r(V);zt=h(Ha,`This type of cliffs often looks like the chunky cliff, but it might look like a
+cliff hanger too (see below). The reason why it’s a separate type is that it has
 a different kind of a problem underneath. In this case the process is at fault.`),Ha.forEach(t),Le=u(e),x=o(e,"P",{});var it=r(x);Dt=h(it,"The "),ye=o(it,"STRONG",{});var Qa=r(ye);Jt=h(Qa,"wall"),Qa.forEach(t),Vt=h(it,` in this instance refers to that mythical wall over which work is
 often thrown. And it usually works like so. Work is dutifully estimated, and
 then generously padded because those pesky QA people — who either sit quietly
