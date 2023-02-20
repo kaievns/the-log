@@ -25,7 +25,7 @@
 	<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout-b4bf6f11.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-0e579a30.js">
+		<link rel="modulepreload" href="../_app/immutable/start-c19ae97b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
@@ -35,10 +35,10 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
 		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-ce811a4a.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-97137330.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-ff52522b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/posts-dc9d7c85.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-45fd3bc4.js"><title>Why your burndown chart looks like a cliff ⁍ Kai Evans</title><!-- HEAD_svelte-m6phnn_START --><meta name="title" content="Why your burndown chart looks like a cliff ⁍ Kai Evans"><meta name="description" content="We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Why your burndown chart looks like a cliff ⁍ Kai Evans"><meta property="og:description" content="We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance"><meta property="og:url" content="http://kaievans.co/posts/ekyxo"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-02-19T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/ekyxo"><meta property="twitter:title" content="Why your burndown chart looks like a cliff ⁍ Kai Evans"><meta property="twitter:description" content="We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance"><meta property="twitter:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><!-- HEAD_svelte-m6phnn_END -->
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-5fb969b9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-fb272edd.js"><title>Why your burndown chart looks like a cliff ⁍ Kai Evans</title><!-- HEAD_svelte-m6phnn_START --><meta name="title" content="Why your burndown chart looks like a cliff ⁍ Kai Evans"><meta name="description" content="We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Why your burndown chart looks like a cliff ⁍ Kai Evans"><meta property="og:description" content="We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance"><meta property="og:url" content="http://kaievans.co/posts/ekyxo"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-02-19T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/ekyxo"><meta property="twitter:title" content="Why your burndown chart looks like a cliff ⁍ Kai Evans"><meta property="twitter:description" content="We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance"><meta property="twitter:image" content="/_app/immutable/assets/face-474a2b5c.jpeg"><!-- HEAD_svelte-m6phnn_END -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -89,7 +89,7 @@ All sorts of other tools could be used to quickly assess a team’s health. If
 anything, and if I hand to choose just one tool, I’d probably look at the
 frequency of deployments as the most reliable indicator.</p>
 <p>Burndown charts are quite ubiquitous though. They are readily available on most
-platforms, and they’re visual. I also think that burndown charts a bit more
+platforms, and they’re visual. I also think that burndown charts are a bit more
 verbose than say the deployments frequency number. And finally, as a manager, I
 would normally know the members of the team, their seniority, skill levels, etc.
 So, when paired that with the burndown charts analysis, it gives me a pretty
@@ -106,7 +106,7 @@ charts are a manifestation of a complex system behaviour, and there are usually
 specific reasons why they look the way they do.</p>
 <p>There are three main shapes that I personally look at when I analyse burndown
 charts behaviour:</p>
-<ol><li>A <strong>plateau</strong> - work finished significantly early</li>
+<ol><li>A <strong>plateau</strong> - work is finished significantly early</li>
 <li>A <strong>triangle</strong> - work goes more or less according to a plan</li>
 <li>A <strong>cliff</strong> - a significant carry over, or most work submitted as a bulk at
 the last minute</li></ol>
@@ -118,7 +118,7 @@ doesn’t persist over time.</p>
 leave them to do their work. Keep in mind that triangles are never perfect, they
 often have small cliffs or plateaus in the last quarter of the graph, that’s
 perfectly normal.</p>
-<p>The most telling pattern is the <strong>cliff</strong> and that’s where might want to get
+<p>The most telling pattern is the <strong>cliff</strong> and that’s where you might want to get
 involved as a manager. There are multiple specific situations that produce
 cliffs, and that’s what I’m going to go through in the rest of the post.</p>
 <h2 id="cliff-type-1-chunky"><a aria-hidden="true" tabindex="-1" href="#cliff-type-1-chunky"><span class="icon icon-link"></span></a>Cliff type 1: chunky</h2>
@@ -191,14 +191,14 @@ want to go poke their brains as well.</p></div></article></main>
         <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="8cknrb">
-			import { start } from "../_app/immutable/start-0e579a30.js";
+		<script type="module" data-sveltekit-hydrate="pynlzc">
+			import { start } from "../_app/immutable/start-c19ae97b.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="8cknrb"]').parentNode,
-				version: "1676850973485",
+				target: document.querySelector('[data-sveltekit-hydrate="pynlzc"]').parentNode,
+				version: "1676856614856",
 				hydrate: {
 					node_ids: [0, 5],
 					data: [null,null],

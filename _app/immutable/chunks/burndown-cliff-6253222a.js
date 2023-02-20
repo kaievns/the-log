@@ -14,7 +14,7 @@ behind it.`),_e=f(),d=s("h2"),w=s("a"),ie=s("span"),ut=l("Why burndown charts?")
 All sorts of other tools could be used to quickly assess a team’s health. If
 anything, and if I hand to choose just one tool, I’d probably look at the
 frequency of deployments as the most reliable indicator.`),Ae=f(),F=s("p"),mt=l(`Burndown charts are quite ubiquitous though. They are readily available on most
-platforms, and they’re visual. I also think that burndown charts a bit more
+platforms, and they’re visual. I also think that burndown charts are a bit more
 verbose than say the deployments frequency number. And finally, as a manager, I
 would normally know the members of the team, their seniority, skill levels, etc.
 So, when paired that with the burndown charts analysis, it gives me a pretty
@@ -26,14 +26,14 @@ think about it from the systems thinking perspective, then you know that systems
 produce consistent behaviour because of their internal structure. Burndown
 charts are a manifestation of a complex system behaviour, and there are usually
 specific reasons why they look the way they do.`),qe=f(),M=s("p"),wt=l(`There are three main shapes that I personally look at when I analyse burndown
-charts behaviour:`),Oe=f(),m=s("ol"),N=s("li"),vt=l("A "),oe=s("strong"),bt=l("plateau"),gt=l(" - work finished significantly early"),kt=f(),W=s("li"),Et=l("A "),re=s("strong"),_t=l("triangle"),It=l(" - work goes more or less according to a plan"),At=f(),R=s("li"),Tt=l("A "),le=s("strong"),Pt=l("cliff"),xt=l(` - a significant carry over, or most work submitted as a bulk at
+charts behaviour:`),Oe=f(),m=s("ol"),N=s("li"),vt=l("A "),oe=s("strong"),bt=l("plateau"),gt=l(" - work is finished significantly early"),kt=f(),W=s("li"),Et=l("A "),re=s("strong"),_t=l("triangle"),It=l(" - work goes more or less according to a plan"),At=f(),R=s("li"),Tt=l("A "),le=s("strong"),Pt=l("cliff"),xt=l(` - a significant carry over, or most work submitted as a bulk at
 the last minute`),Se=f(),g=s("p"),qt=l("The "),he=s("strong"),Ot=l("plateau"),St=l(` doesn’t happen often on a consistent basis. It usually means
 that everything is overestimated, which usually caused by a lack of seniority on
 the team. This pattern also produced by new teams that are recalibrating, but it
 doesn’t persist over time.`),Be=f(),k=s("p"),Bt=l("The "),fe=s("strong"),jt=l("triangle"),Nt=l(` pattern usually means the team does what it supposed to, just
 leave them to do their work. Keep in mind that triangles are never perfect, they
 often have small cliffs or plateaus in the last quarter of the graph, that’s
-perfectly normal.`),je=f(),E=s("p"),Wt=l("The most telling pattern is the "),ue=s("strong"),Rt=l("cliff"),Gt=l(` and that’s where might want to get
+perfectly normal.`),je=f(),E=s("p"),Wt=l("The most telling pattern is the "),ue=s("strong"),Rt=l("cliff"),Gt=l(` and that’s where you might want to get
 involved as a manager. There are multiple specific situations that produce
 cliffs, and that’s what I’m going to go through in the rest of the post.`),Ne=f(),_=s("h2"),I=s("a"),pe=s("span"),Ct=l("Cliff type 1: chunky"),We=f(),z=s("p"),Ht=l(`This type of cliffs often look like the bulk of the work is submitted in the
 last minute. Or sometimes it manifests as a series of smaller cliffs that look
@@ -96,7 +96,7 @@ behind it.`),ba.forEach(t),_e=u(e),d=o(e,"H2",{id:!0});var la=r(d);w=o(la,"A",{"
 All sorts of other tools could be used to quickly assess a team’s health. If
 anything, and if I hand to choose just one tool, I’d probably look at the
 frequency of deployments as the most reliable indicator.`),ka.forEach(t),Ae=u(e),F=o(e,"P",{});var Ea=r(F);mt=h(Ea,`Burndown charts are quite ubiquitous though. They are readily available on most
-platforms, and they’re visual. I also think that burndown charts a bit more
+platforms, and they’re visual. I also think that burndown charts are a bit more
 verbose than say the deployments frequency number. And finally, as a manager, I
 would normally know the members of the team, their seniority, skill levels, etc.
 So, when paired that with the burndown charts analysis, it gives me a pretty
@@ -108,14 +108,14 @@ think about it from the systems thinking perspective, then you know that systems
 produce consistent behaviour because of their internal structure. Burndown
 charts are a manifestation of a complex system behaviour, and there are usually
 specific reasons why they look the way they do.`),Aa.forEach(t),qe=u(e),M=o(e,"P",{});var Ta=r(M);wt=h(Ta,`There are three main shapes that I personally look at when I analyse burndown
-charts behaviour:`),Ta.forEach(t),Oe=u(e),m=o(e,"OL",{});var ae=r(m);N=o(ae,"LI",{});var Ye=r(N);vt=h(Ye,"A "),oe=o(Ye,"STRONG",{});var Pa=r(oe);bt=h(Pa,"plateau"),Pa.forEach(t),gt=h(Ye," - work finished significantly early"),Ye.forEach(t),kt=u(ae),W=o(ae,"LI",{});var Ze=r(W);Et=h(Ze,"A "),re=o(Ze,"STRONG",{});var xa=r(re);_t=h(xa,"triangle"),xa.forEach(t),It=h(Ze," - work goes more or less according to a plan"),Ze.forEach(t),At=u(ae),R=o(ae,"LI",{});var $e=r(R);Tt=h($e,"A "),le=o($e,"STRONG",{});var qa=r(le);Pt=h(qa,"cliff"),qa.forEach(t),xt=h($e,` - a significant carry over, or most work submitted as a bulk at
+charts behaviour:`),Ta.forEach(t),Oe=u(e),m=o(e,"OL",{});var ae=r(m);N=o(ae,"LI",{});var Ye=r(N);vt=h(Ye,"A "),oe=o(Ye,"STRONG",{});var Pa=r(oe);bt=h(Pa,"plateau"),Pa.forEach(t),gt=h(Ye," - work is finished significantly early"),Ye.forEach(t),kt=u(ae),W=o(ae,"LI",{});var Ze=r(W);Et=h(Ze,"A "),re=o(Ze,"STRONG",{});var xa=r(re);_t=h(xa,"triangle"),xa.forEach(t),It=h(Ze," - work goes more or less according to a plan"),Ze.forEach(t),At=u(ae),R=o(ae,"LI",{});var $e=r(R);Tt=h($e,"A "),le=o($e,"STRONG",{});var qa=r(le);Pt=h(qa,"cliff"),qa.forEach(t),xt=h($e,` - a significant carry over, or most work submitted as a bulk at
 the last minute`),$e.forEach(t),ae.forEach(t),Se=u(e),g=o(e,"P",{});var et=r(g);qt=h(et,"The "),he=o(et,"STRONG",{});var Oa=r(he);Ot=h(Oa,"plateau"),Oa.forEach(t),St=h(et,` doesn’t happen often on a consistent basis. It usually means
 that everything is overestimated, which usually caused by a lack of seniority on
 the team. This pattern also produced by new teams that are recalibrating, but it
 doesn’t persist over time.`),et.forEach(t),Be=u(e),k=o(e,"P",{});var tt=r(k);Bt=h(tt,"The "),fe=o(tt,"STRONG",{});var Sa=r(fe);jt=h(Sa,"triangle"),Sa.forEach(t),Nt=h(tt,` pattern usually means the team does what it supposed to, just
 leave them to do their work. Keep in mind that triangles are never perfect, they
 often have small cliffs or plateaus in the last quarter of the graph, that’s
-perfectly normal.`),tt.forEach(t),je=u(e),E=o(e,"P",{});var at=r(E);Wt=h(at,"The most telling pattern is the "),ue=o(at,"STRONG",{});var Ba=r(ue);Rt=h(Ba,"cliff"),Ba.forEach(t),Gt=h(at,` and that’s where might want to get
+perfectly normal.`),tt.forEach(t),je=u(e),E=o(e,"P",{});var at=r(E);Wt=h(at,"The most telling pattern is the "),ue=o(at,"STRONG",{});var Ba=r(ue);Rt=h(Ba,"cliff"),Ba.forEach(t),Gt=h(at,` and that’s where you might want to get
 involved as a manager. There are multiple specific situations that produce
 cliffs, and that’s what I’m going to go through in the rest of the post.`),at.forEach(t),Ne=u(e),_=o(e,"H2",{id:!0});var fa=r(_);I=o(fa,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var ja=r(I);pe=o(ja,"SPAN",{class:!0}),r(pe).forEach(t),ja.forEach(t),Ct=h(fa,"Cliff type 1: chunky"),fa.forEach(t),We=u(e),z=o(e,"P",{});var Na=r(z);Ht=h(Na,`This type of cliffs often look like the bulk of the work is submitted in the
 last minute. Or sometimes it manifests as a series of smaller cliffs that look
