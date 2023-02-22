@@ -38,7 +38,7 @@ anything, and if I hand to choose just one tool, I'd probably look at the
 frequency of deployments as the most reliable indicator.
 
 Burndown charts are quite ubiquitous though. They are readily available on most
-platforms, and they're visual. I also think that burndown charts a bit more
+platforms, and they're visual. I also think that burndown charts are a bit more
 verbose than say the deployments frequency number. And finally, as a manager, I
 would normally know the members of the team, their seniority, skill levels, etc.
 So, when paired that with the burndown charts analysis, it gives me a pretty
@@ -60,7 +60,7 @@ specific reasons why they look the way they do.
 There are three main shapes that I personally look at when I analyse burndown
 charts behaviour:
 
-1. A **plateau** - work finished significantly early
+1. A **plateau** - work is finished significantly early
 2. A **triangle** - work goes more or less according to a plan
 3. A **cliff** - a significant carry over, or most work submitted as a bulk at
    the last minute
@@ -75,7 +75,7 @@ leave them to do their work. Keep in mind that triangles are never perfect, they
 often have small cliffs or plateaus in the last quarter of the graph, that's
 perfectly normal.
 
-The most telling pattern is the **cliff** and that's where might want to get
+The most telling pattern is the **cliff** and that's where you might want to get
 involved as a manager. There are multiple specific situations that produce
 cliffs, and that's what I'm going to go through in the rest of the post.
 
@@ -106,8 +106,8 @@ into large buckets and off they go.
 
 ## Cliff type 2: the wall
 
-This type of cliffs often looks like the chunky cliff, but it might look like
-the cliff hanger (see below). The reason why it's a separate type is that it has
+This type of cliffs often looks like the chunky cliff, but it might look like a
+cliff hanger too (see below). The reason why it's a separate type is that it has
 a different kind of a problem underneath. In this case the process is at fault.
 
 The **wall** in this instance refers to that mythical wall over which work is
