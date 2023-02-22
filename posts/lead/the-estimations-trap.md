@@ -1,13 +1,13 @@
 ---
 slug: 3OvR4
+date: 22 Feb 2023
 title: Why estimations don't really work
-description: Destroying hopes and dreams of those relying on estimations in their delivery
+description: Destroying the hopes and dreams of those relying on estimations in their delivery planning
 thumbnail: ./images/estimations-probability.png
 tags:
     - planning
     - agile
     - management
-draft: true
 ---
 
 I've been through a fair bit of teams; and I have built and managed my own share
@@ -69,10 +69,10 @@ than the other.
 
 And, while we're on the subject of weird distributions, there is yet another
 probability curve to keep in mind. Sometimes, there are more than one common
-outcome, and that will result in the curve having multiple bumps. Those are
+outcome, and that will result in the curve having multiple peaks. Those are
 called multi-modal distributions.
 
-![Bi-modal distribution](./images/bimodal-distribution.png?webp)
+![A bi-modal distribution](./images/bimodal-distribution.png?webp)
 
 Those often happen in complex situations with lots of dependencies and
 non-homogeneous data sources. For example, if you take the distribution of
@@ -95,7 +95,7 @@ with the estimation as any member of the team.
 
 However funny that sounds, that is not the actual problem here.
 
-## So, what's the problem?
+## So, what _is_ the problem?
 
 The problem with the picture is this. When you've been asked to estimate
 something, what you think about is the **mode** value, or the most commonly
@@ -113,7 +113,7 @@ distribution, the **average** is _always larger_ than the **mode** or the
 estimations. And the more complex the task is, the bigger the gap. The work
 therefore, on average, will _always_ take longer than estimated.
 
-Yes, because the math says so.
+Because the math says so.
 
 ## Accuracy and precision
 
@@ -127,7 +127,8 @@ variability.
 
 ![Accuracy and precision](./images/accuracy-precision.png?webp)
 
-Or, in case of the probabilities distribution graph, it looks like so:
+Or, in case of the estimation probabilities distribution graph, it looks like
+so:
 
 ![Accuracy and precision on a graph](./images/accuracy-precision-2.png?webp)
 
@@ -135,36 +136,31 @@ You see now, you can whip your team endlessly into "getting better at
 estimations", working on optimal tasks granularity, etc. And it all will go
 wrong every single time. Because you will push the team to optimise for the
 **accuracy** of the **mode** value estimations; they will be aiming at the wrong
-thing. And then, the team will be repeatedly punished by the high bias between
+thing. And then, the team will be repeatedly punished by the large gap between
 the **mode** and **average** values.
 
 This is called a "high precision, low accuracy" situation. It's like trying to
-measure the dimensions of a piece of gooie rubber with high quality calipers.
+measure the dimensions of a piece of gooey rubber with high quality calipers.
 
 And so, what do the teams do? They pad the crap out of their estimations until
 the **mode** spread overlaps with the **average** value. Everyone does this.
 Either explicitly, or implicitly by using gimmicks like fibonacci numbers, and
 averaging team members estimations.
 
-Here is a fun exercise for you. Go and ask anyone on your team, including your
-scrum master: "why do we use fib numbers? what's the math behind it? and what's
-the point in mixing large and small numbers?". You won't hear a single coherent
-thought in response. Because there is none. It's just padding, to hide the fact
-that this system is inherently flawed.
-
 ## The ugly truth
 
-The truth is that nobody knows how long work will really take. Because nobody
-experienced the tail end of the distribution where the **average** lives. And
-the more complex a task is, the more dependencies there are, the less
-probability that _any_ estimation will be correct.
+The truth is that nobody knows how long work will really take ahead of time.
+Because nobody experienced the tail end of the distribution where the
+**average** lives. And the more complex a task is, the more dependencies there
+are, the less probability that _any_ estimation will be correct.
 
 Work, especially the hard, critical work takes as long as it takes. Estimations
 just lul you into the false sense of control over the situation. Nobody really
 knows the answer, but when you produce a number, any number, it gives a plan a
-flair of legitimacy. And off you go.
+flair of legitimacy. And off you go, telling your boss when it's going to be
+done.
 
-![You did it to yourself](./images/we-ask-for-estimations.jpeg)
+![You did this to yourself](./images/we-ask-for-estimations.jpeg)
 
 ## The final chord
 
@@ -184,11 +180,11 @@ because you had to overshoot your estimations by 100%. And if you finish late,
 your manager will think you're probably not very skilled because work took 50%
 longer. Either the case, they'll probably assign you to more scrum training.
 
-You see, the thing is, even in idealised situation, you're not supposed to win
-at this game no matter what. The moment you produce a number -- be that hours,
-points, or pokemons -- you're screwed. Because everyone's expectations will be
-anchored to the number one way or another. And it's a wrong number to begin
-with.
+You see, the thing is, even in an idealised situation, you're not supposed to
+win at this game no matter what. The moment you produce a number -- be that
+hours, points, or pokemons -- you're screwed. Because everyone's expectations
+will be anchored to the number one way or another. And it's a wrong number to
+begin with.
 
 ## To a manager
 
@@ -206,18 +202,20 @@ that's an F in resources allocation, which is basically your job description.
 
 You obviously can't underestimate requirements, because that's a straight up F
 in management. So, you're most likely to try pushing the team to find some form
-of a reasonable middle ground. Due to the math I've described above it will fail
-roughly 60% of the time. When your efforts will eventually piss off enough
-senior engineers on the team, you will start paying roughly $70-100k per person
-for replacements in cash money, all while delaying your project even further.
-And yes, that's an F in management.
+of a reasonable middle ground in their estimations. Due to the math I've
+described above it will fail roughly 60% of the time. When your efforts will
+eventually piss off enough senior engineers on the team, you will start paying
+roughly $70-100k per person for replacements in cash money, all while delaying
+your project even further. And yes, that's an F in management.
 
 So, repeat after me "estimations is a form of budgeting". While budgeting works
 great in civil engineering, it is completely counterproductive in software
 development. Because software engineering is essentially a break through
 development, which is creative R&D work, which is inherently unpredictable.
 
-There are better tools to manage software development than budgeting.
+There are better tools to manage software development than budgeting. And unless
+it sinks in with you, the team will have little luck changing their ways against
+your will.
 
 ## So, what now?
 
