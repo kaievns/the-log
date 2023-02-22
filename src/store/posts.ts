@@ -6,6 +6,7 @@ export type Post = {
   title: string;
   content: string;
   description?: string;
+  thumbnail?: { src: string; width: number; height: number };
   tags: string[];
   draft: boolean;
 };
@@ -37,8 +38,6 @@ export const moduleToPost = (module: any, path: string): Post => {
   const slug = metadata.slug || path.replace(/(^\/posts\/)|(\.md(x)?$)/g, "");
   const url = `http://kaievans.co/posts/${slug}`;
 
-  // const content = module.default.render().html;
-
   return {
     ...metadata,
     tags,
@@ -48,8 +47,6 @@ export const moduleToPost = (module: any, path: string): Post => {
     path,
     get content() {
       return module.default;
-      // const render = module.default.render;
-      // return render && render().html;
     },
   };
 };

@@ -8,6 +8,7 @@ import remarkRelativeImages from "mdsvex-relative-images";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeFigure from "rehype-figure";
+import { preprocessMarkdownThumbs } from "./lib/posts/thumbs.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -36,6 +37,7 @@ const config = {
       ],
       smartypants: true,
     }),
+    preprocessMarkdownThumbs(),
   ],
 
   extensions: [".svelte", ".md", ".mdx"],

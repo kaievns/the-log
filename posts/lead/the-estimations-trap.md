@@ -1,7 +1,12 @@
 ---
 slug: 3OvR4
 title: Why estimations don't really work
-description: Just ruining the estimations based workflows for everyone
+description: Destroying hopes and dreams of those relying on estimations in their delivery
+thumbnail: ./images/estimations-probability.png
+tags:
+    - planning
+    - agile
+    - management
 draft: true
 ---
 

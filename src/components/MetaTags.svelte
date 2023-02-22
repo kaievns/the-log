@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Post } from "src/store/posts";
-    import face from "src/assets/face.jpg?w=800&h=800";
+    import face from "src/assets/face.jpg?w=800&h=600&metadata";
 
     export let post: Post;
 
@@ -8,7 +8,10 @@
     $: title = `${post.title} ⁍ ${author}`;
     $: description = post.description;
     $: url = post.url;
-    $: image = face;
+    $: thumb = post.thumbnail || face;
+    $: imageSrc = thumb.src;
+    $: imageWidth = Math.round(thumb.width);
+    $: imageHeight = Math.round(thumb.height);
 </script>
 
 <svelte:head>
@@ -24,9 +27,11 @@
     <meta property="og:description" content={description} />
     <meta property="og:url" content={url} />
     <meta property="og:site_name" content={`${author} in writing`} />
-    <meta property="og:image" content={image} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+
+    <meta property="og:image" content={imageSrc} />
+    <meta property="og:image:width" content={imageWidth.toString()} />
+    <meta property="og:image:height" content={imageHeight.toString()} />
+
     <meta property="article:author" content={author} />
     <meta property="article:published_time" content={post.date.toISOString()} />
 
@@ -35,5 +40,6 @@
     <meta property="twitter:url" content={url} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={image} />
+
+    <meta property="twitter:image" content={imageSrc} />
 </svelte:head>
