@@ -2,8 +2,8 @@ import{S as bl,i as vl,s as wl,k as s,q as o,a as m,l as n,m as r,r as a,h as t,
 of them as well. I’ve seen teams that estimate in hours, I’ve seen teams that
 estimate in points, in complexity, in t-shirts, and in pokemons. Okay, I haven’t
 seen teams estimating in pokemons. But, I dare to say that they’d have exactly
-the same outcomes in their delivery as everyone else. Why? Well, because…`),ui=m(),G=s("figure"),ue=s("img"),Qe=s("figcaption"),yo=o("Dr. Evil agile"),mi=m(),me=s("p"),bo=o(`A lot has been said so far about the futility of estimations, and yet it’s 2023
-out there, and teams still dutifully practice the estimations drama. And so, I’m
+the same outcomes in their delivery as everyone else. Why? Well, because…`),ui=m(),G=s("figure"),ue=s("img"),Qe=s("figcaption"),yo=o("Dr. Evil agile"),mi=m(),me=s("p"),bo=o(`A lot have been said so far about futility of estimations, and yet it’s 2023 out
+there, and teams still dutifully practice the estimations drama. And so, I’m
 here to “help”.`),fi=m(),N=s("h2"),R=s("a"),$e=s("span"),vo=o("Quick math"),ci=m(),fe=s("p"),wo=o(`Before you can fully understand my point, I feel it’s necessary to arm you with
 some knowledge. Some of you are well versed in math and statistics, and I
 apologise for dragging you through this. But, some are not, and I hope you’ll
@@ -110,8 +110,8 @@ share in your circles. Thanks muchly, and I’ll see you next time!`),this.h()},
 of them as well. I’ve seen teams that estimate in hours, I’ve seen teams that
 estimate in points, in complexity, in t-shirts, and in pokemons. Okay, I haven’t
 seen teams estimating in pokemons. But, I dare to say that they’d have exactly
-the same outcomes in their delivery as everyone else. Why? Well, because…`),l.forEach(t),ui=f(e),G=n(e,"FIGURE",{class:!0});var sn=r(G);ue=n(sn,"IMG",{src:!0,alt:!0}),Qe=n(sn,"FIGCAPTION",{});var xn=r(Qe);yo=a(xn,"Dr. Evil agile"),xn.forEach(t),sn.forEach(t),mi=f(e),me=n(e,"P",{});var Gn=r(me);bo=a(Gn,`A lot has been said so far about the futility of estimations, and yet it’s 2023
-out there, and teams still dutifully practice the estimations drama. And so, I’m
+the same outcomes in their delivery as everyone else. Why? Well, because…`),l.forEach(t),ui=f(e),G=n(e,"FIGURE",{class:!0});var sn=r(G);ue=n(sn,"IMG",{src:!0,alt:!0}),Qe=n(sn,"FIGCAPTION",{});var xn=r(Qe);yo=a(xn,"Dr. Evil agile"),xn.forEach(t),sn.forEach(t),mi=f(e),me=n(e,"P",{});var Gn=r(me);bo=a(Gn,`A lot have been said so far about futility of estimations, and yet it’s 2023 out
+there, and teams still dutifully practice the estimations drama. And so, I’m
 here to “help”.`),Gn.forEach(t),fi=f(e),N=n(e,"H2",{id:!0});var nn=r(N);R=n(nn,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var Nn=r(R);$e=n(Nn,"SPAN",{class:!0}),r($e).forEach(t),Nn.forEach(t),vo=a(nn,"Quick math"),nn.forEach(t),ci=f(e),fe=n(e,"P",{});var Rn=r(fe);wo=a(Rn,`Before you can fully understand my point, I feel it’s necessary to arm you with
 some knowledge. Some of you are well versed in math and statistics, and I
 apologise for dragging you through this. But, some are not, and I hope you’ll
