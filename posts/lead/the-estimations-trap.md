@@ -18,8 +18,8 @@ the same outcomes in their delivery as everyone else. Why? Well, because...
 
 ![Dr. Evil agile](./images/agile.jpg)
 
-A lot has been said so far about the futility of estimations, and yet it's 2023
-out there, and teams still dutifully practice the estimations drama. And so, I'm
+A lot have been said so far about futility of estimations, and yet it's 2023 out
+there, and teams still dutifully practice the estimations drama. And so, I'm
 here to "help".
 
 ## Quick math
