@@ -67,5 +67,17 @@
                 My custom 40% mechanical keyboard configs
             </p>
         </li>
+        <li>
+            <a
+                href="https://www.instagram.com/osomguitars"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cactus-link inline-block"
+                >Osom Guitars
+            </a>:
+            <p class="inline-block sm:mt-1">
+                A photo reel of my guitar making journey
+            </p>
+        </li>
     </ul>
 </section>

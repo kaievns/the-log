@@ -1,9 +1,8 @@
 <div class="flex flex-wrap items-center gap-x-2 sm:items-center">
-    <p>Find me on</p>
     <ul class="flex flex-1 items-center sm:flex-initial">
         <li>
             <a
-                class="inline-block p-2 sm:hover:text-link"
+                class="inline-block p-2 pl-0 sm:hover:text-link"
                 href="https://github.com/kaievns"
                 target="_blank"
                 rel="noopener noreferrer"

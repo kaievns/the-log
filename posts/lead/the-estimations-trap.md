@@ -135,9 +135,9 @@ so:
 You see now, you can whip your team endlessly into "getting better at
 estimations", working on optimal tasks granularity, etc. And it all will go
 wrong every single time. Because you will push the team to optimise for the
-**accuracy** of the **mode** value estimations; they will be aiming at the wrong
-thing. And then, the team will be repeatedly punished by the large gap between
-the **mode** and **average** values.
+**accuracy** of the **mode** value estimations, they will always be aiming at
+the wrong thing. And then, the team will be repeatedly punished by the large gap
+between the **mode** and **average** values.
 
 This is called a "high precision, low accuracy" situation. It's like trying to
 measure the dimensions of a piece of gooey rubber with high quality calipers.
@@ -188,25 +188,26 @@ begin with.
 
 ## To a manager
 
-Well, hello there. Since you've made it to management, chances are you're not
-dumb and will be less prone to refuting factual information. So, I'll be blunt
-with you here. A manager has one job, to make sure that resources are applied
+Well, hello there. Since you've made it to management, chances are you're smart
+and will be less prone to refuting factual information. So, I'll be blunt with
+you here. A manager has one job, to make sure that resources are applied
 optimally. And if your "management style" is rooted in estimations, you won't be
 doing a stellar job at it. Here is why.
 
-Due to the mathematical model I've described above, chances that you team's
+Due to the mathematical model I've described above, chances that your team's
 estimations will be accurate and precise are pretty slim. The only people who
 deliver their projects consistently on time and budget is the US army; and they
 do that by grossly overestimating everything that moves. For a business entity
-that's an F in resources allocation, which is basically your job description.
+that's an **F** in resources allocation, which is basically your job
+description.
 
-You obviously can't underestimate requirements, because that's a straight up F
-in management. So, you're most likely to try pushing the team to find some form
-of a reasonable middle ground in their estimations. Due to the math I've
+You obviously can't underestimate requirements, because that's a straight up
+**F** in management. So, you're most likely to try pushing the team to find some
+form of a reasonable middle ground in their estimations. Due to the math I've
 described above it will fail roughly 60% of the time. When your efforts will
 eventually piss off enough senior engineers on the team, you will start paying
-roughly $70-100k per person for replacements in cash money, all while delaying
-your project even further. And yes, that's an F in management.
+roughly $50-70k per person for replacements in cash money, all while delaying
+your project even further. And yes, that's an **F** in management.
 
 So, repeat after me "estimations is a form of budgeting". While budgeting works
 great in civil engineering, it is completely counterproductive in software
