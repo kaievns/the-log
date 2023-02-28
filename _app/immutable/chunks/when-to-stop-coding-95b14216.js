@@ -1,0 +1,15 @@
+import{S as L,i as O,s as Q,k as r,q as c,a as x,l as s,m as n,r as g,h as t,c as q,n as h,b as l,F as a,C as j}from"./index-920be987.js";function R(K){let i,H,b,S,P,_,m,C,A,u,f,y,M,E,w,W,k,p,d,v,I;return{c(){i=r("p"),H=c(`As we grow our careers, and we climb higher and higher, at some point most
+engineers face the prospects of parting with the tools. A lot of us struggle
+with the process. And so the question of `),b=r("em"),S=c("when is it the time to stop coding?"),P=c(`
+crops up regularly.`),_=x(),m=r("p"),C=c(`Having wrestled with the question myself in the past, I have figured this might
+be a good topic for a post. My take on it is that you shouldn’t, but it’s a bit
+nuanced. So, buckle up for a bit of a read.`),A=x(),u=r("h2"),f=r("a"),y=r("span"),M=c("What got you here, won’t get you there"),E=x(),w=r("p"),W=c(`A career of a software engineer is a bit of a wretched one. Half of a career we
+spend on getting really good at programming, and then we’re promoted to a
+leadership position, and have to throw most of that skill away.`),k=x(),p=r("h2"),d=r("a"),v=r("span"),I=c("Coding vs. contributing"),this.h()},l(e){i=s(e,"P",{});var o=n(i);H=g(o,`As we grow our careers, and we climb higher and higher, at some point most
+engineers face the prospects of parting with the tools. A lot of us struggle
+with the process. And so the question of `),b=s(o,"EM",{});var z=n(b);S=g(z,"when is it the time to stop coding?"),z.forEach(t),P=g(o,`
+crops up regularly.`),o.forEach(t),_=q(e),m=s(e,"P",{});var B=n(m);C=g(B,`Having wrestled with the question myself in the past, I have figured this might
+be a good topic for a post. My take on it is that you shouldn’t, but it’s a bit
+nuanced. So, buckle up for a bit of a read.`),B.forEach(t),A=q(e),u=s(e,"H2",{id:!0});var N=n(u);f=s(N,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var D=n(f);y=s(D,"SPAN",{class:!0}),n(y).forEach(t),D.forEach(t),M=g(N,"What got you here, won’t get you there"),N.forEach(t),E=q(e),w=s(e,"P",{});var G=n(w);W=g(G,`A career of a software engineer is a bit of a wretched one. Half of a career we
+spend on getting really good at programming, and then we’re promoted to a
+leadership position, and have to throw most of that skill away.`),G.forEach(t),k=q(e),p=s(e,"H2",{id:!0});var F=n(p);d=s(F,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var J=n(d);v=s(J,"SPAN",{class:!0}),n(v).forEach(t),J.forEach(t),I=g(F,"Coding vs. contributing"),F.forEach(t),this.h()},h(){h(y,"class","icon icon-link"),h(f,"aria-hidden","true"),h(f,"tabindex","-1"),h(f,"href","#what-got-you-here-wont-get-you-there"),h(u,"id","what-got-you-here-wont-get-you-there"),h(v,"class","icon icon-link"),h(d,"aria-hidden","true"),h(d,"tabindex","-1"),h(d,"href","#coding-vs-contributing"),h(p,"id","coding-vs-contributing")},m(e,o){l(e,i,o),a(i,H),a(i,b),a(b,S),a(i,P),l(e,_,o),l(e,m,o),a(m,C),l(e,A,o),l(e,u,o),a(u,f),a(f,y),a(u,M),l(e,E,o),l(e,w,o),a(w,W),l(e,k,o),l(e,p,o),a(p,d),a(d,v),a(p,I)},p:j,i:j,o:j,d(e){e&&t(i),e&&t(_),e&&t(m),e&&t(A),e&&t(u),e&&t(E),e&&t(w),e&&t(k),e&&t(p)}}}const U={draft:!0};class V extends L{constructor(i){super(),O(this,i,null,R,Q,{})}}export{V as default,U as metadata};
