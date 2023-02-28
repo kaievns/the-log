@@ -1,0 +1,15 @@
+import{S as G,i as J,s as L,k as r,q as p,a as w,l as o,m as n,h as a,r as I,c as E,n as l,b as s,F as h,C}from"../../../chunks/index-920be987.js";function O(D){let i,u,v,H,k,c,M,x,d,f,_,S,P,b,T,g,y,W,A,m,q;return{c(){i=r("h1"),u=r("a"),v=r("span"),H=p("About"),k=w(),c=r("p"),M=p("Hi there, my name is Kai Evans"),x=w(),d=r("h2"),f=r("a"),_=r("span"),S=p("Random facts"),P=w(),b=r("p"),T=p(`Before my child was born, I have red roughly 300 books within 5 years. Mostly
+non-fiction, business, strategy, history, and such. My biggest year was 91
+books. They had counted a 5 volume edition of WWII history that year, and I’m
+still a bit sensitive about it.`),g=w(),y=r("p"),W=p(`I learned how to surf at the age 34 through books and youtube videos. I surfed
+non stop for almost 7 years after that. I’m still fascinated by the sport. The
+beach is my happy place.`),A=w(),m=r("p"),q=p(`I’m an amateur luthier. I’ve been around guitars since 8th grade, and I have
+build 9 of them so far. I started with electrics, but gradually shifted towards
+high end still string acoustic ones. I can talk about guitars for hours.`),this.h()},l(t){i=o(t,"H1",{id:!0});var e=n(i);u=o(e,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var K=n(u);v=o(K,"SPAN",{class:!0}),n(v).forEach(a),K.forEach(a),H=I(e,"About"),e.forEach(a),k=E(t),c=o(t,"P",{});var N=n(c);M=I(N,"Hi there, my name is Kai Evans"),N.forEach(a),x=E(t),d=o(t,"H2",{id:!0});var B=n(d);f=o(B,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var R=n(f);_=o(R,"SPAN",{class:!0}),n(_).forEach(a),R.forEach(a),S=I(B,"Random facts"),B.forEach(a),P=E(t),b=o(t,"P",{});var F=n(b);T=I(F,`Before my child was born, I have red roughly 300 books within 5 years. Mostly
+non-fiction, business, strategy, history, and such. My biggest year was 91
+books. They had counted a 5 volume edition of WWII history that year, and I’m
+still a bit sensitive about it.`),F.forEach(a),g=E(t),y=o(t,"P",{});var j=n(y);W=I(j,`I learned how to surf at the age 34 through books and youtube videos. I surfed
+non stop for almost 7 years after that. I’m still fascinated by the sport. The
+beach is my happy place.`),j.forEach(a),A=E(t),m=o(t,"P",{});var z=n(m);q=I(z,`I’m an amateur luthier. I’ve been around guitars since 8th grade, and I have
+build 9 of them so far. I started with electrics, but gradually shifted towards
+high end still string acoustic ones. I can talk about guitars for hours.`),z.forEach(a),this.h()},h(){l(v,"class","icon icon-link"),l(u,"aria-hidden","true"),l(u,"tabindex","-1"),l(u,"href","#about"),l(i,"id","about"),l(_,"class","icon icon-link"),l(f,"aria-hidden","true"),l(f,"tabindex","-1"),l(f,"href","#random-facts"),l(d,"id","random-facts")},m(t,e){s(t,i,e),h(i,u),h(u,v),h(i,H),s(t,k,e),s(t,c,e),h(c,M),s(t,x,e),s(t,d,e),h(d,f),h(f,_),h(d,S),s(t,P,e),s(t,b,e),h(b,T),s(t,g,e),s(t,y,e),h(y,W),s(t,A,e),s(t,m,e),h(m,q)},p:C,i:C,o:C,d(t){t&&a(i),t&&a(k),t&&a(c),t&&a(x),t&&a(d),t&&a(P),t&&a(b),t&&a(g),t&&a(y),t&&a(A),t&&a(m)}}}class U extends G{constructor(i){super(),J(this,i,null,O,L,{})}}export{U as default};
