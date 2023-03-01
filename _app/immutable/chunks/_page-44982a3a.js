@@ -1,0 +1,1 @@
+import{f as s}from"./posts-8c0bde24.js";const a=async()=>{const t=await s(),o=[...new Set(t.flatMap(e=>e.tags))].sort();return{posts:t,tags:o}},l=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{l as _,a as l};
