@@ -7,6 +7,12 @@ thumbnail: ./images/burndown-charts.png
 tags:
    - management
    - agile
+medium:
+   tags:
+      - Leadership
+      - Engineering management
+      - Scrum
+      - Agile
 ---
 
 Overtime, while working in management, everyone picks up shortcuts for assessing
@@ -20,7 +26,7 @@ burndown charts. If the chart looks like a plateau, hire a tech lead; if it
 looks like a cliff hire a PO; if it looks like a triangle, leave the team alone
 and go do something else.
 
-![Burndown chart types](./images/burndown-charts.png?w=1024&webp)
+![Burndown chart types](./images/burndown-charts.png)
 
 Obviously, I'm not going to fire and hire anyone, that's not how management
 works. And, I might actually have a completely wrong idea about what's going on.

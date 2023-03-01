@@ -50,7 +50,7 @@ probabilities; more specifically we're talking about probability distributions.
 At which point people think about bell curves and what's known as the "normal"
 distribution.
 
-![Normal distributions](./images/normal-distribution.png?webp)
+![Normal distributions](./images/normal-distribution.png)
 
 In a normal distribution, the **mean**, **median**, and **mode** mean exactly
 the same thing: the peak of the bell curve. And the more difficult a problem is
@@ -60,7 +60,7 @@ A normal distribution is not the only type of distributions. Some of the most
 important cases -- and estimations fall into this category -- are not bell
 shaped, they are skewed and known as asymmetric distributions.
 
-![Asymmetric distributions](./images/asymmetric-distribution.png?webp)
+![Asymmetric distributions](./images/asymmetric-distribution.png)
 
 The **mean**, **median**, and the **mode** will be three different things in
 this case. The reason for it is that the _area_ under the curve represents all
@@ -72,7 +72,7 @@ probability curve to keep in mind. Sometimes, there are more than one common
 outcome, and that will result in the curve having multiple peaks. Those are
 called multi-modal distributions.
 
-![A bi-modal distribution](./images/bimodal-distribution.png?webp)
+![A bi-modal distribution](./images/bimodal-distribution.png)
 
 Those often happen in complex situations with lots of dependencies and
 non-homogeneous data sources. For example, if you take the distribution of
@@ -86,7 +86,7 @@ they all follow the same mathematical principles. They all go from zero to
 infinity, and the probability of them being accurate can be represented by an
 asymmetric, often multi-modal, probabilities distribution curve
 
-![Estimations probability](./images/estimations-probability.png?webp)
+![Estimations probability](./images/estimations-probability.png)
 
 The more complex a task is, and the more dependencies it has, the shallower the
 graph will be, with more peaks showing up. At some point it gets so muddy, that
@@ -125,12 +125,12 @@ variability.
   are
 - `accuracy` or `bias` is how close the results are to the actual/true value
 
-![Accuracy and precision](./images/accuracy-precision.png?webp)
+![Accuracy and precision](./images/accuracy-precision.png)
 
 Or, in case of the estimation probabilities distribution graph, it looks like
 so:
 
-![Accuracy and precision on a graph](./images/accuracy-precision-2.png?webp)
+![Accuracy and precision on a graph](./images/accuracy-precision-2.png)
 
 You see now, you can whip your team endlessly into "getting better at
 estimations", working on optimal tasks granularity, etc. And it all will go
