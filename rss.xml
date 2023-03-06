@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/i8lyo</guid>
+<title>Life without estimations</title>
+<link>https://kaievans.co/posts/i8lyo</link>
+<description>Part two of the estimations rant</description>
+<pubDate>Sun, 05 Mar 2023 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/nIAeA</guid>
 <title>How to make a svelte preprocessor</title>
 <link>https://kaievans.co/posts/nIAeA</link>
