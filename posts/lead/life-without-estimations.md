@@ -146,7 +146,7 @@ those days rather than keep failing deadlines.
 When it comes to accountability the vast majority of companies that struggle
 with estimations have it backwards. Usually, this coincides with "visionary"
 leadership within the company. Visionary leadership and estimations drama go
-hand and hand because of the inherent dynamic in the decisions making within the
+hand in hand because of the inherent dynamic in the decisions making within the
 company, and it usually sounds like so:
 
 > _Boss_: I have this idea, how much will it cost me to build?
