@@ -1,5 +1,7 @@
 ---
 slug: eoNUM
+title: When to stop coding
+description: So thoughts on when an engineering manager should let go of the tools
 draft: true
 ---
 
@@ -29,7 +31,8 @@ same problem arises, what got them to the next level, doesn't necessarily help
 them to become good on this new level.
 
 This is very true a senior engineer to a tech lead transition, and especially
-true for the tech lead to an engineering manager position.
+true for the tech lead to an engineering manager position. Because they are not
+expected to produce code any more.
 
 ## Coping with the transition
 
@@ -52,7 +55,8 @@ as much they should, managers don't manage, and senior leaders don't strategise
 and coach.
 
 While they might _feel_ like they're working hard and contributing a lot, they,
-in fact, don't fulfil their primary responsibilities that their role implies.
+in fact, don't fulfil their primary responsibilities that their role implies at
+full capacity.
 
 ## The limits of possible
 
@@ -64,12 +68,13 @@ The problem here is that there is a limited number of hours in a day. And unless
 a person enacts a some sort of custom hybrid role, they are expected to give
 their new responsibilities their full attention. And when a person spends a
 significant chunk of their time on doing what they are _used to do_, they don't
-spend their time on what they _supposed to do_.
+spend that time on what they _supposed to do_.
 
 A technical term for an engineering manager that keeps acting as a tech lead is
 an overpaid tech lead. Your boss might not say it this way out loud, but if you
 are a freshly minted EM and you keep contributing to the code base, that is
-exactly how they will see you.
+exactly how they will see you. Add to that the fact that you're not that great
+at your new responsibilities yet, and you will understand their displeasement.
 
 The problem is aggravated by the fact that when you take on technical
 challenges, you create expectations in other people that you're going to get it
@@ -107,8 +112,8 @@ to dismiss them.
 All this means is that your reports will much less inclined to give you an open
 feedback to your code base contributions. Moreover, unless they feel
 adventurous, they will avoid making changes to your code as a plague. They just
-don't want to risk unnecessary conversation with their manager. A nail that
-sticks out gets hammered.
+don't want to risk unnecessary conversation with their manager. Because they
+know that a nail that sticks out gets hammered.
 
 To a degree, this is a manageable problem. You can build great relationships of
 trust with your reports, and/or practically twist their arms to make changes to
@@ -134,7 +139,7 @@ definitely need to stop _contributing_ to production codebase as soon as
 possible; I hope that sank in by now. As an EM you might fix a minor bug or two
 on a regular basis, just to keep your hand on the pulse of how the engineering
 process feels like at the moment. Or a principal engineer, if they're very good
-at what they do, might occasionally land a hand to team that struggles.
+at what they do, might occasionally lend a hand to a team that struggles.
 
 Outside of that, it really depends on how much do you actually value technical
 work, and how much spare time you have. Some of us, yours truly included, have
