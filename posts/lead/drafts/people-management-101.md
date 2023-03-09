@@ -1,12 +1,17 @@
 ---
 slug: 0zsDU
+title: Managing people 101
+description: A few advices on people management mindset that I would give a freshly minted engineering manager
+tags:
+    - leadership
+    - management
 draft: true
 ---
 
 When I'm looking for engineering manager candidates among technical leads, the
 way they work with other people is definitely the key. All of them are well
 accomplished as technologists, and they picked up enough process knowledge by
-this point to be dangerous. And, the way they relate to other people is what
+this point to be dangerous. And so, the way they relate to other people is what
 determines to me whether they are ready for the next step or not.
 
 And yet, even with the most talent for working with other people, the first time
@@ -32,15 +37,15 @@ It sounds simple, but it's not. You'd be surprised how many managers, including
 very senior level ones, never learn how to do this effectively. It takes
 practice until this combo becomes natural, and there are few reasons for that.
 
-Defining success in fair and consistent manner is surprisingly difficult. It's
-even more difficult to describe it a succinctly clear and hard to misinterpret
-format.
+Defining success in a fair and consistent manner is surprisingly difficult. It's
+even more difficult to describe it in a succinctly clear and hard to
+misinterpret format.
 
 Ideally, your direct report should have this elevator pitch sized idea of what
 the success looks like. Something that they can take away with them from your
 meetings and latch onto in their minds. It will be exceptionally helpful for
 them to know when and how you're going to be checking in with them on their
-progress.
+progress as well.
 
 As a manager you should sit down and think through those two items every time
 when a new person starts, and when a new project/initiative commences. You need
@@ -62,7 +67,7 @@ closely to the specification as possible. For example:
 A goal is a different thing all together and in this case would sound something
 like this:
 
-> I have a picture that needs hanging. When you have a moment, would you mind
+> I have this picture that needs hanging. When you have a moment, would you mind
 > hanging it somewhere where it's aesthetically pleasing? Thank you.
 
 The key here is to remember that you are managing highly intelligent and
@@ -93,9 +98,9 @@ be thought through and consistent. This is where the _collaborative_ goal
 setting pays off. Because you will always have the leverage of: "I believe we
 had agreed on bla, why am I seeing not bla?" in those conversations.
 
-When people do what they're supposed to do, it's kinda easy. Probably my
-favourite part of the job, actually. You just hand over some gold stars, and
-move onto the next batch of fires.
+When people do what they're supposed to do, feedback is easy; probably my
+favourite part of the job, actually. You just hand out some gold stars, and move
+onto the next batch of fires to put down.
 
 When, on the other hand, things aren't going so smoothly, that is where you need
 to be most diligent and consistent. Coincidently this is where the first time
@@ -126,4 +131,52 @@ because _you are uncomfortable_ with the process. The people you manage deserve
 you being clear and consistent with them. That is where you really earn your
 standing with your people as a leader.
 
+## The key
+
+Some of you are very smart people, and you might be thinking to yourself: _okay,
+set goals, and follow up. how is that different from project management?_. And
+you are right, it does sound exactly like project management: set goals and
+follow up. The difference is that you're not managing projects, you're managing
+people.
+
+This sounds dumb simple, and yet this fact somehow eludes many managers. The
+ability to see other people, not as tools, resources, projects, but as human
+beings is what separates good managers from the average ones.
+
+As long as you keep seeing people as objects, and implement the goal/follow up
+system mechanically, you will keep failing as a manager. The reason for this is
+that you're going to rationalise yours and people's behaviour. And that's a
+straight road to disappointment. Because people are messy and irrational;
+including yourself. And until you really embrace this fact, you're not going to
+progress as a people leader.
+
+For the goals/feedback system to work effectively and collaboratively you need
+to _earn_ the trust of the person you're managing. And trust is never a default
+mode of operation between a manager and an employee, because the manager always
+has the upper hand. The trust needs to be _earned_. And the only way to reliably
+earn the trust of another human being is to build a human connection with them;
+to see them as people.
+
+So, listen to their gripes, and complains, and brags. Try to really understand
+their unique needs and wants without judgement. Even if those needs and wants
+seem stupid or irrelevant to you. Because they have full rights to do whatever
+they want with their life, and your judgement doesn't mean anything in the grand
+schema of things.
+
+Once you do that. They you will naturally tailor the goals and the follow up
+style to those needs and wants of the person you're managing. And that is the
+key to make that work effective.
+
 ## Wrapping up
+
+In the end of the day, people are not going to remember how many features you
+shipped, how much money you made, and how many raises you gave them. But, they
+will remember how you related to them. Did you see them as unique human beings,
+did you validate their wacky needs and wants, did you show up as a human being
+yourself.
+
+People will remember whether you showed gratitude when they succeeded, they will
+remember whether you offered your council when they struggled, and whether you
+were there for them when they failed.
+
+And that is as much direction as you will need in managing people for a while.
