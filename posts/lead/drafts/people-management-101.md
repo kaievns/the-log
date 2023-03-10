@@ -15,8 +15,9 @@ this point to be dangerous. And so, the way they relate to other people is what
 determines to me whether they are ready for the next step or not.
 
 And yet, even with the most talent for working with other people, the first time
-engineering managers often struggle with the concept of managing people. I find
-that many newly minted EMs don't get any coaching ot the matter either.
+engineering managers often struggle with the concept of actually managing
+people. I find that many newly minted EMs don't get any coaching on the matter
+either.
 
 So, today I'm going to share some structures and tips. I hope it will be helpful
 to some of you.
@@ -31,7 +32,7 @@ There are multiple ways to think about it, but one structure that I particularly
 like works like so:
 
 1. Define what the success looks like
-2. Give feedback, or follow up
+2. Give feedback and follow up
 
 It sounds simple, but it's not. You'd be surprised how many managers, including
 very senior level ones, never learn how to do this effectively. It takes
@@ -73,23 +74,23 @@ like this:
 The key here is to remember that you are managing highly intelligent and
 creative people. Giving them tasks is degrading to their intelligence. If they
 wanted to move units, they'd work at a factory. They are not here to do your
-bidding, they are here to problem solve. And, it is your job to give them
-problems, not solutions.
+bidding, they are here to problem solve. And, it is your job as a manager to
+give them problems, not solutions.
 
 You can set up career goals, project goals, business goals, etc. Just remember,
 to set goals together with the people, collaboratively. Because goals that you
 just hand down to people, are called tasks. In the end of the day you need the
 people to own the goals.
 
-The only person you should be giving tasks to is your boss. Tell you a secret
-bosses love tasks, it makes them feel useful on the inside. But, the tradition
-dictates that they are supposed to say "no" three times to your requests before
-doing anything about it. So, use them sparingly
+The only person you should be giving tasks to is your boss, actually. Tell you a
+secret, bosses love tasks, it makes them feel useful on the inside. But, the
+tradition dictates that they are supposed to say "no" three times to your
+requests before doing anything about it. So, use them sparingly
 
 ## Corrective feedback
 
-When you defined your goals well this part is just plain hard. But, when you
-defined your goals poorly, this part is doubly hard, but also awkward. Because
+When you defined your goals well this part is just plain hard. And, when you
+defined your goals poorly, this part is doubly hard, and also awkward. Because
 nobody wants to work for two weeks on something just to hear from their manager:
 "hey, i didn't think it through well the last time, so I've changed my mind"
 
@@ -99,8 +100,8 @@ setting pays off. Because you will always have the leverage of: "I believe we
 had agreed on bla, why am I seeing not bla?" in those conversations.
 
 When people do what they're supposed to do, feedback is easy; probably my
-favourite part of the job, actually. You just hand out some gold stars, and move
-onto the next batch of fires to put down.
+favourite part of the job, actually. You just hand out some gold stars, say
+"thank you", and move onto the next batch of fires to put down.
 
 When, on the other hand, things aren't going so smoothly, that is where you need
 to be most diligent and consistent. Coincidently this is where the first time
@@ -110,9 +111,9 @@ it.
 
 When we're facing a tense situation our fight or flight response kicks in, and
 the natural way to think about the situation is that you have basically two
-options: either let it slide, or challenge the other person. And that is how
-monkeys sort things out. You, as a bit more evolved mammal, don't have to do
-either of them.
+options: either let it slide, or challenge the other person. And that is
+precisely how monkeys sort things out. You, as a bit more evolved mammal, don't
+have to do either of them.
 
 There is a third option, it is called the _assertive_ mode of interaction. You
 neither flee nor challenge. You offer your perspective, reiterate your
@@ -134,10 +135,10 @@ standing with your people as a leader.
 ## The key
 
 Some of you are very smart people, and you might be thinking to yourself: _okay,
-set goals, and follow up. how is that different from project management?_. And
-you are right, it does sound exactly like project management: set goals and
-follow up. The difference is that you're not managing projects, you're managing
-people.
+set goals and follow ups. how is that different from normal project
+management?_. And you are right, it does sound exactly like project management:
+set goals and follow up. The difference is that you're not managing projects,
+you're managing people.
 
 This sounds dumb simple, and yet this fact somehow eludes many managers. The
 ability to see other people, not as tools, resources, projects, but as human
@@ -171,12 +172,12 @@ key to make that work effective.
 
 In the end of the day, people are not going to remember how many features you
 shipped, how much money you made, and how many raises you gave them. But, they
-will remember how you related to them. Did you see them as unique human beings,
-did you validate their wacky needs and wants, did you show up as a human being
-yourself.
+will remember how you related to them. Did you see them as unique human beings?
+Did you validate their wacky needs and wants? Did you show up as a human being
+yourself?
 
 People will remember whether you showed gratitude when they succeeded, they will
 remember whether you offered your council when they struggled, and whether you
 were there for them when they failed.
 
-And that is as much direction as you will need in managing people for a while.
+And that is as much direction as you will need in a while.
