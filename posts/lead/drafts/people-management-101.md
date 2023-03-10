@@ -28,8 +28,9 @@ There are always structures and ways of thinking about problems. We even have
 the chaos theory that structures the utter chaos. Managing people is no
 different, there is a method to the madness.
 
-There are multiple ways to think about it, but one structure that I particularly
-like works like so:
+There are a lot of people management frameworks out there, and some of them are
+a lot to take in for a person new to management and leadership. So, to help new
+starters, I like to give them this very simple structure:
 
 1. Define what the success looks like
 2. Give feedback and follow up
@@ -42,16 +43,9 @@ Defining success in a fair and consistent manner is surprisingly difficult. It's
 even more difficult to describe it in a succinctly clear and hard to
 misinterpret format.
 
-Ideally, your direct report should have this elevator pitch sized idea of what
-the success looks like. Something that they can take away with them from your
-meetings and latch onto in their minds. It will be exceptionally helpful for
-them to know when and how you're going to be checking in with them on their
-progress as well.
-
-As a manager you should sit down and think through those two items every time
-when a new person starts, and when a new project/initiative commences. You need
-to have them on the ready, preferably written down, so you could refer to them
-later.
+And then there is the follow up part that presents its own challenges.
+Especially when it comes to providing negative corrective feedback and working
+through differences in understanding of the goals.
 
 ## Goals vs. tasks
 
@@ -59,8 +53,8 @@ When it comes to defining what the success looks like, people tend to think
 basically in two categories: goals and tasks. Some might even think they are the
 same, but there is a key difference.
 
-Task is a measure of utility. A person is expected to complete the task as
-closely to the specification as possible. For example:
+Task is a measure of utility. A person is expected to complete a task as closely
+to the specification as possible, and as quickly as possible. For example:
 
 > Hey, you there! I want to hang a picture on the wall, so if it's not too much
 > trouble, please drill me a hole right here where I'm pointing.
@@ -71,11 +65,11 @@ like this:
 > I have this picture that needs hanging. When you have a moment, would you mind
 > hanging it somewhere where it's aesthetically pleasing? Thank you.
 
-The key here is to remember that you are managing highly intelligent and
-creative people. Giving them tasks is degrading to their intelligence. If they
-wanted to move units, they'd work at a factory. They are not here to do your
-bidding, they are here to problem solve. And, it is your job as a manager to
-give them problems, not solutions.
+The key here is to remember that you are managing very smart and creative
+people. Giving them tasks is degrading to their intelligence. If they wanted to
+move units, they'd work at a factory. They are not here to do your bidding, they
+are here to problem solve. And, it is your job as a manager to give them
+problems, not solutions.
 
 You can set up career goals, project goals, business goals, etc. Just remember,
 to set goals together with the people, collaboratively. Because goals that you
@@ -110,9 +104,9 @@ uncomfortable. And, it's easy to feel attacked when you're on the other side of
 it.
 
 When we're facing a tense situation our fight or flight response kicks in, and
-the natural way to think about the situation is that you have basically two
+the natural way to think about the situation is that we have basically two
 options: either let it slide, or challenge the other person. And that is
-precisely how monkeys sort things out. You, as a bit more evolved mammal, don't
+precisely how monkeys sort things out. We, as a bit more evolved mammals, don't
 have to do either of them.
 
 There is a third option, it is called the _assertive_ mode of interaction. You
@@ -166,7 +160,7 @@ schema of things.
 
 Once you do that. They you will naturally tailor the goals and the follow up
 style to those needs and wants of the person you're managing. And that is the
-key to make that work effective.
+key to make the management work effective.
 
 ## Wrapping up
 
