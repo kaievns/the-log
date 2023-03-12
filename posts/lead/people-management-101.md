@@ -1,5 +1,6 @@
 ---
 slug: 0zsDU
+date: 12 March 2023
 title: Managing people 101
 description: A few advices on people management mindset that I would give a freshly minted engineering manager
 tags:
@@ -10,23 +11,23 @@ draft: true
 
 When I'm looking for engineering manager candidates among technical leads, the
 way they work with other people is definitely the key. All of them are well
-accomplished as technologists, and they picked up enough process knowledge by
-this point to be dangerous. And so, the way they relate to other people is what
+accomplished as technologists at this point, and they picked up enough process
+knowledge to be dangerous. And so, the way they relate to other people is what
 determines to me whether they are ready for the next step or not.
 
 And yet, even with the most talent for working with other people, the first time
 engineering managers often struggle with the concept of actually managing
-people. I find that many newly minted EMs don't get any coaching on the matter
-either.
+people. And, eventually, drive the bus off the cliff a few times when they
+start.
 
 So, today I'm going to share some structures and tips. I hope it will be helpful
 to some of you.
 
 ## The structure
 
-There are always structures and ways of thinking about problems. We even have
-the chaos theory that structures the utter chaos. Managing people is no
-different, there is a method to the madness.
+There are always structures and ways of thinking about the world around us. We
+even have the chaos theory that structures the utter chaos. Managing people is
+no different, there is a method to the madness.
 
 There are a lot of people management frameworks out there, and some of them are
 a lot to take in for a person new to management and leadership. So, to help new
@@ -41,11 +42,11 @@ practice until this combo becomes natural, and there are few reasons for that.
 
 Defining success in a fair and consistent manner is surprisingly difficult. It's
 even more difficult to describe it in a succinctly clear and hard to
-misinterpret format.
+misinterpret format. That's leadership in a nut shell.
 
 And then there is the follow up part that presents its own challenges.
-Especially when it comes to providing negative corrective feedback and working
-through differences in understanding of the goals.
+Especially when it comes to providing negative feedback and working through
+differences in achieving the goals.
 
 ## Goals vs. tasks
 
@@ -56,7 +57,7 @@ same, but there is a key difference.
 Task is a measure of utility. A person is expected to complete a task as closely
 to the specification as possible, and as quickly as possible. For example:
 
-> Hey, you there! I want to hang a picture on the wall, so if it's not too much
+> Hey, you there! I want to hang a picture on this wall, so if it's not too much
 > trouble, please drill me a hole right here where I'm pointing.
 
 A goal is a different thing all together and in this case would sound something
@@ -72,9 +73,9 @@ are here to problem solve. And, it is your job as a manager to give them
 problems, not solutions.
 
 You can set up career goals, project goals, business goals, etc. Just remember,
-to set goals together with the people, collaboratively. Because goals that you
-just hand down to people, are called tasks. In the end of the day you need the
-people to own the goals.
+to set goals together with the people you manage, collaboratively. Because goals
+that you just hand down to people, are called tasks. In the end of the day you
+need the people to own the goals.
 
 The only person you should be giving tasks to is your boss, actually. Tell you a
 secret, bosses love tasks, it makes them feel useful on the inside. But, the
@@ -107,19 +108,19 @@ When we're facing a tense situation our fight or flight response kicks in, and
 the natural way to think about the situation is that we have basically two
 options: either let it slide, or challenge the other person. And that is
 precisely how monkeys sort things out. We, as a bit more evolved mammals, don't
-have to do either of them.
+have to do either of those.
 
 There is a third option, it is called the _assertive_ mode of interaction. You
 neither flee nor challenge. You offer your perspective, reiterate your
 expectations, and then let the other person figure out how to respond. Most
 likely they will respond with a flight or fight reaction, because you're their
-manager. But, after a while, things will settle and you will get back to problem
-solving in no time.
+manager. But, after a while, things will settle down and you will get back to
+problem solving in no time.
 
 Giving corrective feedback is never easy, it is always uncomfortable, even when
 you get better at it. The sooner you realise that this is part of the job and
-move on the better. Also, same as with goals setting, thinking about feedback in
-collaborative format, helps a lot.
+embrace the discomfort the better. Also, same as with goals setting, thinking
+about feedback in collaborative format, helps a lot.
 
 Never boss people around, but also, never ever skip on corrective feedback
 because _you are uncomfortable_ with the process. The people you manage deserve
@@ -129,21 +130,21 @@ standing with your people as a leader.
 ## The key
 
 Some of you are very smart people, and you might be thinking to yourself: _okay,
-set goals and follow ups. how is that different from normal project
-management?_. And you are right, it does sound exactly like project management:
-set goals and follow up. The difference is that you're not managing projects,
-you're managing people.
+set goals and follow up. how is that different from normal project management?_.
+And you are right, it does sound exactly like project management: set goals and
+follow up. The difference is that you're not managing projects, you're managing
+people.
 
 This sounds dumb simple, and yet this fact somehow eludes many managers. The
 ability to see other people, not as tools, resources, projects, but as human
 beings is what separates good managers from the average ones.
 
-As long as you keep seeing people as objects, and implement the goal/follow up
-system mechanically, you will keep failing as a manager. The reason for this is
-that you're going to rationalise yours and people's behaviour. And that's a
-straight road to disappointment. Because people are messy and irrational;
-including yourself. And until you really embrace this fact, you're not going to
-progress as a people leader.
+As long as you keep seeing people as means to an end, and implement the
+goal/follow up system mechanically, you will keep failing as a manager. The
+reason for this is that you're going to rationalise yours and people's
+behaviour. And that's a straight road to disappointment. Because people are
+messy and irrational; including yourself. And until you really embrace this
+fact, you're not going to progress as a people leader.
 
 For the goals/feedback system to work effectively and collaboratively you need
 to _earn_ the trust of the person you're managing. And trust is never a default
