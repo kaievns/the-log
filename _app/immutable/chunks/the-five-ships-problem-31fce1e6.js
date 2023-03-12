@@ -1,1 +1,0 @@
-import{S as t,i as s,s as a}from"./index-920be987.js";const i={title:"The five ships problem",draft:!0};class r extends t{constructor(e){super(),s(this,e,null,null,a,{})}}export{r as default,i as metadata};

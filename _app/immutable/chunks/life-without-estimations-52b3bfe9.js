@@ -69,7 +69,7 @@ necessary; iteratively.`),fn=u(),we=i("p"),Wa=l(`And that is why the bulk of the
 those days rather than keep failing deadlines.`),cn=u(),M=i("h2"),B=i("a"),gt=i("span"),Sa=l("Consider consistency"),yn=u(),ve=i("p"),Ma=l(`When it comes to accountability the vast majority of companies that struggle
 with estimations have it backwards. Usually, this coincides with “visionary”
 leadership within the company. Visionary leadership and estimations drama go
-hand and hand because of the inherent dynamic in the decisions making within the
+hand in hand because of the inherent dynamic in the decisions making within the
 company, and it usually sounds like so:`),wn=u(),be=i("blockquote"),ge=i("p"),kt=i("em"),Ba=l("Boss"),Ca=l(": I have this idea, how much will it cost me to build?"),vn=u(),ke=i("p"),ja=l(`And here is our whole problem in a nut shell. We estimate an idea that has no
 market proof with tools that have no working math under them. And we do all that
 while treating literally the smartest people in the company as orders takers. No
@@ -257,7 +257,7 @@ necessary; iteratively.`),Ys.forEach(t),fn=m(e),we=s(e,"P",{});var Fs=r(we);Wa=h
 those days rather than keep failing deadlines.`),Fs.forEach(t),cn=m(e),M=s(e,"H2",{id:!0});var ts=r(M);B=s(ts,"A",{"aria-hidden":!0,tabindex:!0,href:!0});var Ks=r(B);gt=s(Ks,"SPAN",{class:!0}),r(gt).forEach(t),Ks.forEach(t),Sa=h(ts,"Consider consistency"),ts.forEach(t),yn=m(e),ve=s(e,"P",{});var Qs=r(ve);Ma=h(Qs,`When it comes to accountability the vast majority of companies that struggle
 with estimations have it backwards. Usually, this coincides with “visionary”
 leadership within the company. Visionary leadership and estimations drama go
-hand and hand because of the inherent dynamic in the decisions making within the
+hand in hand because of the inherent dynamic in the decisions making within the
 company, and it usually sounds like so:`),Qs.forEach(t),wn=m(e),be=s(e,"BLOCKQUOTE",{});var Gs=r(be);ge=s(Gs,"P",{});var ns=r(ge);kt=s(ns,"EM",{});var Js=r(kt);Ba=h(Js,"Boss"),Js.forEach(t),Ca=h(ns,": I have this idea, how much will it cost me to build?"),ns.forEach(t),Gs.forEach(t),vn=m(e),ke=s(e,"P",{});var Vs=r(ke);ja=h(Vs,`And here is our whole problem in a nut shell. We estimate an idea that has no
 market proof with tools that have no working math under them. And we do all that
 while treating literally the smartest people in the company as orders takers. No
