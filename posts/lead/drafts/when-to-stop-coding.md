@@ -10,7 +10,7 @@ engineers face the prospects of parting with the tools. A lot of us struggle
 with the process. And so the question of _when is it the time to stop coding?_
 crops up regularly.
 
-Having wrestled with the question myself in the past, I have figured this might
+Having wrestled with this question myself in the past, I have figured this might
 be a good topic for a post. My take on it is that you shouldn't, but it's a bit
 nuanced. So, buckle up for a bit of a read.
 
@@ -85,8 +85,8 @@ engineers unhappy with you.
 
 As a rule of thumb, a person with more than 5-7 direct reports cannot
 effectively do anything else but manage those people. If they manage them well
-that is. An EM that has 2-4 tech leads reporting to them, will barely have time
-for their other managerial duties.
+that is. And so, an EM that has 2-4 tech leads reporting to them, will barely
+have time for their other managerial duties.
 
 As a CTO, here is what I would roughly expect from people in terms of time spent
 on hands-on technical commitments:
@@ -97,20 +97,21 @@ on hands-on technical commitments:
 - An engineering manager: 5% (keeping up with the trends)
 - Head of engineering: 0%
 - Head of architecture: 5% (keeping up with the trends)
+- CTO/VPoE: 0%
 
 ## The effects of contribution
 
-There is another aspect of this problem that we need to consider though. And
+There is yet another aspect of this problem that we need to consider though. And
 that is how _other_ engineers perceive the work committed by their manager.
 
-The relationship between an employee and their manager are inherently unequal.
+The relationship between an employee and their manager is inherently unequal.
 Yes, a manager might take on a service-leadership stance in their management
 style, and genuinely try to help people they manage. But, in the end of the day
 it is the manager who has the upper hand over an employee. Including the right
 to dismiss them.
 
-All this means is that your reports will much less inclined to give you an open
-feedback to your code base contributions. Moreover, unless they feel
+All this means is that your reports will be much less inclined to give you an
+open feedback to your code base contributions. Moreover, unless they feel
 adventurous, they will avoid making changes to your code as a plague. They just
 don't want to risk unnecessary conversation with their manager. Because they
 know that a nail that sticks out gets hammered.
@@ -124,7 +125,7 @@ first place.
 ## Do you _have to_ stop?
 
 I actually make it a point to never hire engineering managers without a
-technical background. It has to do with strategies and business value, but the
+technical background. It has to do with strategies and business value. But, the
 long story short, an engineering manager supposed to be able to make innate
 value judgements of engineering requirements, because people of other functions
 won't have that ability due to differences in their background.
@@ -132,16 +133,17 @@ won't have that ability due to differences in their background.
 What this means is that technical knowledge is a valuable asset in an
 engineering manager. Without that, any type of manager would do their job
 easily. But, the further you go, the less important that technical knowledge
-becomes. The work becomes more abstract, if that makes sense.
+becomes. The work becomes more abstract from the codebase specifics, if that
+makes sense.
 
 And so, the question whether you have to stop coding is a complex one. You
 definitely need to stop _contributing_ to production codebase as soon as
 possible; I hope that sank in by now. As an EM you might fix a minor bug or two
 on a regular basis, just to keep your hand on the pulse of how the engineering
-process feels like at the moment. Or a principal engineer, if they're very good
+process feels like at the moment. Or, a principal engineer, if they're very good
 at what they do, might occasionally lend a hand to a team that struggles.
 
-Outside of that, it really depends on how much do you actually value technical
+Outside of that, it really depends on how much do you actually _value_ technical
 work, and how much spare time you have. Some of us, yours truly included, have
 an incessant need to build stuff, and you can keep doing that as a hobby your
 entire life. But, you need to recognise and respect the fact that it has very
@@ -159,16 +161,16 @@ whether you want to grow, or you want to keep working on the tools. Yes, some
 companies might accommodate both to a degree through role crafting, but those
 are rare and fleeing setups. I wouldn't count on them long term.
 
-You will eventually have to let go of the tools even if you choose the technical
-track. Simply because of the economic realities. There is no point of paying
-very senior people a whole lot of money for the work that a tech lead can do.
-And so you will eventually transition into architecture and strategy any ways.
+You will eventually have to let go of the tools, even if you choose the
+technical track. Simply because of the economic realities. There is no point of
+paying very senior people a whole lot of money for the work that a tech lead can
+do. And so you will eventually transition into architecture and strategy anyway.
 
 If you want my advise, it is this: get your fill while you're young and hungry,
 because you won't have a whole lot of time for the tools when you move up in the
 world. And if you're truly love just building stuff and ready to sacrifice your
 career for it, than stay a tech lead forever. There are people who do that, and
-plenty of them are happy with the choice. But, sacrifice you will, either way
+plenty of them are happy with their choice. But, sacrifice you will, either way
 you go.
 
 ## P.S.
