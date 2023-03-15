@@ -6,7 +6,6 @@ description: A few advices on people management mindset that I would give a fres
 tags:
     - leadership
     - management
-draft: true
 ---
 
 When I'm looking for engineering manager candidates among technical leads, the
@@ -175,4 +174,5 @@ People will remember whether you showed gratitude when they succeeded, they will
 remember whether you offered your council when they struggled, and whether you
 were there for them when they failed.
 
-And that is as much direction as you will need in a while.
+You will know you're doing something right when people management starts to feel
+less like management and more like spending quality time with your people.
