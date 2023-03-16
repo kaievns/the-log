@@ -11,8 +11,8 @@
 <section>
     <h1 class="title mb-6">Hello friend!</h1>
     <p class="mb-4">
-        Hi, my name is Kai Evans. I'm a technologist, an executive, and a maker
-        of all things. This is my new home where I'm trying to finally assemble
+        Hi, my name is Kai Evans. I'm a technologist, an manager, and a maker of
+        all things. This is my new home where I'm trying to finally assemble
         writings about all the facets of my work and life under one roof. You
         might find me on socials as well:
     </p>

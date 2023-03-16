@@ -91,8 +91,7 @@ have the room to grow.
 
 If you want to address collected technical debt, hire a tech lead. Want to
 restructure an ecosystem, hire a principal engineer. Want to re-build processes,
-hire a HoE or CTO. Want to re-build a company culture, hire a leader type CEO;
-as opposed to a general manager type.
+hire a HoE. Want to rebuild the culture, hire a CTO.
 
 The thing to understand about leaders is that they are not here to make friends.
 They are here to inflict damage. More likely than not they will make enemies.
@@ -114,24 +113,56 @@ to play.
 
 ## The executives
 
-Well, since I started ruining such serious topic with video games analogy, I
-think it's a bit too late to stop. And so, you can think of the executive class
-as the strategists, the thinking type.
+Well, if you have followed my frivolous video games analogy and you now think
+that executives are the strategic type separate from the other two, consider
+yourself rickrolled. Yeah, I know, I wish it was that easy, it would be neat to
+have them three for three lined up like that. But no, an _executive_ is actually
+pretty much the opposite of strategic.
 
-Not to say that other leadership types don't think. But, _executives_ are
-schemers by nature and spend most of their time thinking about probabilities and
-opportunities.
+When you listen to people talking about business development, you will
+constantly hear about strategy and execution. It's always the two: strategy and
+execution. Both have to be great in order for a company to be successful in the
+modern competitive environment.
 
-If a manager and a leader, normally live in the **now**, an _executive_ spends
-most of their time in the **future**. And that is the key to understand their
-mindset. They are leading too, but they are leading from the perspective of the
-future possibilities.
+An _executive_ literally means someone with the power to execute a strategy. And
+as such they belong to the _managerial_ lineage in an organisation; often
+referred to as the "top management". CEO is an _executive_, and VPoE is a
+technology executive.
 
-A decent executive can hold several very conflicting possibilities in their mind
-and still chart a way forward for their company. Which, admittedly, often
-confuses the crap out of the rest of the organisation. And as such, an executive
-needs to have great communication skills. Because if they can't explain their
-thinking well, nothing will be done about their ideas.
+CTO may or may not be an _executive_. In pure form, a CTO is a strategist, but
+you need to think past the titles and look the roles instead. Sometimes CTO is
+both, sometimes just one, and sometimes they are neither.
+
+## The strategist
+
+And so, if an _executive_ is not a strategist, then who is? Well, that's a bit
+complicated. Generally speaking everyone. But mileage can differ.
+
+If I'd generalise it very broadly, then technically speaking the `heads of` are
+responsible for the creation of what's known as a strategic context. But
+strategic context needs to be created collaboratively, otherwise the execution
+will fail. And as such most of the leadership team is involved in strategy.
+
+Moreover, if we start looking at the problem from the perspective of
+organisational enablement. Then, the entire organisation should participate in
+this process. The more brains can strategise the better. And in that light, the
+person who is responsible for _formulating_ the strategy is not necessarily the
+one who came up with it.
+
+Every type of leader needs to be a bit of a strategist in their own field.
+Because thinking things through is what seniority is all about. And now, I can
+tie it back to my silly video game analogy.
+
+The **breach** should have worked out their own plan, and so should the
+**medic**. The **tactician** is the CEO in this group, they have the executive
+authority, and their job is to make sure that strategies are worked out and that
+the team members have all the up to date information and can follow through. The
+_executive_ orchestrates if you will. They are _accountable_ for the entire
+operation.
+
+Did I just rickrolled you twice in a row? Yes, I did.
+
+<!-- ![Never give you up](./images/rickroll.gif) -->
 
 ## A mixed bag of goodies
 
@@ -143,52 +174,22 @@ complex problems.
 As such, it is my believe that it is a mistake to mix all managers, leaders, and
 executives into the same category and use the terms interchangeably. Because, it
 is the lack of understanding and respecting the nature of different leadership
-types leads to the most common organisational problems.
+types that leads to the most common organisational problems.
 
 A company hires a manager expecting them to be a leader. Or, they hire a leader
-and then baffled why they are breaking things instead of managing resources. The
-most common case is that a company hires a leader to break and re-build
+and then act baffled they start breaking things instead of managing resources.
+The most common case is that a company hires a leader to break and re-build
 something, but then can't stomach the change and won't have the leader's back
 when they start roughing the feathers. All of those are avoidable problems.
 
 The important thing to understand here is that none of those roles are better
-than the other, more important than the other, or subordinate to one another.
+than the other; more important than the other; or subordinate to one another.
 Some people are naturally better at one mode of operation than the other. And
 it's the right combination of people and traits that makes a team tick.
-
-## Case in point
-
-As an example, I can talk about myself for a second here, and run you through my
-thinking. I hope it won't look too self-indulgent for the purpose.
-
-I have done virtually every job there is in a software engineering company. And,
-as such I had plenty of opportunities to explore my strength and weaknesses. And
-here is what I have.
-
-I'm not a stellar manager. I can stretch and lean into the role, and I can coach
-people into being some of the best managers there are. I even care for people a
-great deal to do the work effectively. But, I just loose my mind if I spend too
-much time in the _now_. And that causes me to lapse and get into people's faces.
-
-On the other hand, I can be a decent breach. I'm an early adopter of everything
-there was in the last 20 years, and I love breaking stuff apart and rebuilding.
-My fatal flaw though is that I find the process of making enemies stupid. But
-that comes with the job, if you want to do the job well.
-
-But then, I habitually strategise everything that moves. From packing suit cases
-for a vocation to building a large org structure. It's just how I am wired. I
-soak in information, and I structurise everything, and then I make narratives.
-Always scheming, that is the natural state of my mind.
-
-So, yeah, I can make a banger of an executive if I let loose, and I can lead
-people into projects. But, unless I'm paired with good managers who will
-question my thinking, I can leave a crater behind.
-
-Nobody is perfect, ey?
 
 ## Wrapping up
 
 Well, that's all I have for you for now. I hope it was helpful, or at least
 entertaining.
 
-I'll see you all in next one.
+I'll see you all in the next one.
