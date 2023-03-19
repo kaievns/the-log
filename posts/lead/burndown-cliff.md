@@ -2,17 +2,18 @@
 slug: ekyxo
 date: 20 Feb 2023
 title: Why your burndown chart looks like a cliff
-description: We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance
+description: We are going through some examples of a burndown charts analysis,
+  and look at ways to debug a team's performance
 thumbnail: ./images/burndown-charts.png
 tags:
-   - management
-   - agile
+  - management
+  - agile
 medium:
-   tags:
-      - Leadership
-      - Engineering management
-      - Scrum
-      - Agile
+  tags:
+    - Leadership
+    - Engineering management
+    - Scrum
+    - Agile
 ---
 
 Overtime, while working in management, everyone picks up shortcuts for assessing
