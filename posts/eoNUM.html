@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-021d44d5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-85254289.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-c76342b9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-003d668a.js"><title>When to stop coding ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="When to stop coding ⁍ Kai Evans"><meta name="description" content="So thoughts on when an engineering manager should let go of the tools"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="When to stop coding ⁍ Kai Evans"><meta property="og:description" content="So thoughts on when an engineering manager should let go of the tools"><meta property="og:url" content="http://kaievans.co/posts/eoNUM"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/stop-coding-71f43b9e.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="512"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-03-20T04:04:32.615Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/eoNUM"><meta property="twitter:title" content="When to stop coding ⁍ Kai Evans"><meta property="twitter:description" content="So thoughts on when an engineering manager should let go of the tools"><meta property="twitter:image" content="/_app/immutable/assets/stop-coding-71f43b9e.png"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">When to stop coding</h1>
+<time datetime="2023-03-20T04:04:32.615Z" class="">20 March 2023</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag management" href="/tags/management">management</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag career" href="/tags/career">career</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>As we grow our careers, and we climb higher and higher, at some point most
+engineers face the prospects of parting with the tools. And many of us struggle
+with the process. And so the question of <em>when is it the time to stop coding?</em>
+crops up regularly. Having wrestled with this very question myself in the past,
+I have figured this might be a good topic for a post.</p>
+<h2 id="what-got-you-here-wont-get-you-there"><a aria-hidden="true" tabindex="-1" href="#what-got-you-here-wont-get-you-there"><span class="icon icon-link"></span></a>What got you here, won’t get you there</h2>
+<p>A career of a software engineer is a bit of a wretched one. Half of a career we
+spend on getting really good at programming, and then we’re promoted to a
+management position and have to throw most of that skill away.</p>
+<p>On a surface of it, this seems like a bad news, and there is something wrong
+with the software engineering industry. But, it is a common problem across
+multiple industries, probably all of them that have teams.</p>
+<p>Every time the pattern is the same: a person becomes very good on the tools, and
+they get promoted to a manager; a person becomes very good at management and
+they are promoted to senior leadership position. And with each of those changes
+the same problem arises, what got them to the next level, doesn’t necessarily
+help them to become good on this new level.</p>
+<p>This is very true for the senior engineer to a tech lead transition, and
+especially true for the move from a tech lead to an engineering manager
+position. Because they are not expected to produce code any more.</p>
+<h2 id="coping-with-the-transition"><a aria-hidden="true" tabindex="-1" href="#coping-with-the-transition"><span class="icon icon-link"></span></a>Coping with the transition</h2>
+<p>Change is always painful, and people subconsciously try to avoid pain. And so
+the coping mechanisms that people employ when they get to the next level are
+surprisingly similar. People cling to what they know.</p>
+<p>A senior engineer to a tech-lead transition will lean on their technical
+prowess; the tech lead to a manager transition will continue meddling with
+technical decisions; and a manager to a senior leader position will try to
+continue impacting the roadmaps and processes.</p>
+<p>That is a very natural stress response behaviour. People don’t necessarily know
+how to approach their new responsibilities, or don’t feel confident in their new
+abilities, so they try to stick to what they know in order to maintain their
+world picture consistent.</p>
+<p>While understandable, those behaviours are unproductive. Tech leads don’t lead
+as much they should, managers don’t manage, and senior leaders don’t strategise
+and coach.</p>
+<p>While they might <em>feel</em> like they’re working hard and contributing a lot, they,
+in fact, don’t fulfil their primary responsibilities that their role implies at
+full capacity.</p>
+<h2 id="the-limits-of-possible"><a aria-hidden="true" tabindex="-1" href="#the-limits-of-possible"><span class="icon icon-link"></span></a>The limits of possible</h2>
+<p>I understand that when I say that a person doesn’t fulfil their role, that
+sounds harsh. And to a degree it is, a person in fact tries their best after
+all.</p>
+<p>The problem here is that there is a limited number of hours in a day. And unless
+a person enacts a some sort of custom hybrid role, they are expected to give
+their new responsibilities their full attention. And when a person spends a
+significant chunk of their time on doing what they are <em>used to do</em>, they don’t
+spend that time on what they <em>supposed to do</em>.</p>
+<p>A technical term for an engineering manager that keeps acting as a tech lead is
+an overpaid tech lead. Your boss might not say it this way out loud, but if you
+are a freshly minted EM and you keep contributing to the code base, that is
+exactly how they will see you. Add to that the fact that you’re not that great
+at your new responsibilities yet, and you will understand their displeasement.</p>
+<p>The problem is aggravated by the fact that when you take on technical
+challenges, you create expectations in other people that you’re going to get it
+done, and done quickly. As an EM, you will have a long slew of overdue
+responsibilities, you will get distracted, and eventually drop the ball with
+your technical deliveries. And now you will have both, your boss and your
+engineers unhappy with you.</p>
+<p>As a rule of thumb, a person with more than 5-7 direct reports cannot
+effectively do anything else but manage those people. If they manage them well
+that is. And so, an EM that has 2-4 tech leads reporting to them, will barely
+have time for their other managerial duties.</p>
+<p>As a CTO, here is what I would roughly expect from people in terms of time spent
+on hands-on technical commitments:</p>
+<ul><li>An IC engineer: 80%</li>
+<li>A tech lead: 60%</li>
+<li>A principal engineer: 30% (mostly R&amp;D)</li>
+<li>An engineering manager: 5% (keeping up with the trends)</li>
+<li>Head of engineering: 0%</li>
+<li>Head of architecture: 5% (keeping up with the trends)</li>
+<li>CTO/VPoE: 0%</li></ul>
+<h2 id="the-effects-of-contribution"><a aria-hidden="true" tabindex="-1" href="#the-effects-of-contribution"><span class="icon icon-link"></span></a>The effects of contribution</h2>
+<p>There is yet another aspect of this problem that we need to consider though. And
+that is how <em>other</em> engineers perceive the work committed by their manager.</p>
+<p>The relationship between an employee and their manager is inherently unequal.
+Yes, a manager might take on a service-leadership stance in their management
+style, and genuinely try to help people they manage. But, in the end of the day
+it is the manager who has the upper hand over an employee. Including the right
+to dismiss them.</p>
+<p>All this means is that your reports will be much less inclined to give you an
+open feedback to your code base contributions. Moreover, unless they feel
+adventurous, they will avoid making changes to your code as a plague. They just
+don’t want to risk unnecessary conversation with their manager. Because they
+know that a nail that sticks out gets hammered.</p>
+<p>To a degree, this is a manageable problem. You can build great relationships of
+trust with your reports, and/or practically twist their arms to make changes to
+your codebase. But, there are still limits to what you can do here. And you will
+end up doing more work than you had to if you chose not to contribute in the
+first place.</p>
+<h2 id="do-you-have-to-stop"><a aria-hidden="true" tabindex="-1" href="#do-you-have-to-stop"><span class="icon icon-link"></span></a>Do you <em>have to</em> stop?</h2>
+<p>I actually make it a point to never hire engineering managers without a
+technical background. It has to do with strategies and business value. But, the
+long story short, an engineering manager supposed to be able to make innate
+value judgements of engineering requirements, because people of other functions
+won’t have that ability due to differences in their background.</p>
+<p>What this means is that technical knowledge is a valuable asset in an
+engineering manager. Without that, any type of manager would do their job
+easily. But, the further you go, the less important that technical knowledge
+becomes. The work becomes more abstract from the codebase specifics, if that
+makes sense.</p>
+<p>And so, the question whether you have to stop coding is a complex one. You
+definitely need to stop <em>contributing</em> to production codebase as soon as
+possible; I hope that sank in by now. As an EM you might fix a minor bug or two
+on a regular basis, just to keep your hand on the pulse of how the engineering
+process feels like at the moment. Or, a principal engineer, if they’re very good
+at what they do, might occasionally lend a hand to a team that struggles.</p>
+<p>Outside of that, it really depends on how much do you actually <em>value</em> technical
+work, and how much spare time you have. Some of us, yours truly included, have
+an incessant need to build stuff, and you can keep doing that as a hobby your
+entire life. But, you need to recognise and respect the fact that it has very
+little to do with the day job.</p>
+<h2 id="wrapping-up"><a aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a>Wrapping up</h2>
+<p>Look, management can feel very lonely at times. I’ve seen a fair bit of people
+who struggled with this very question, and I can assure you, you are not alone
+in this. In fact, most engineers that worth their salt wrestle with this problem
+sooner or later.</p>
+<p>The reality of it is this. At some point in your career you will have to choose
+whether you want to grow, or you want to keep working on the tools. Yes, some
+companies might accommodate both to a degree through role crafting, but those
+are rare and fleeing setups. I wouldn’t count on them long term.</p>
+<p>You will eventually have to let go of the tools, even if you choose the
+technical track. Simply because of the economic realities. There is no point of
+paying very senior people a whole lot of money for the work that a tech lead can
+do. And so you will eventually transition into architecture and strategy anyway.</p>
+<p>If you want my advise, it is this: get your fill while you’re young and hungry,
+because you won’t have a whole lot of time for the tools when you move up the
+ladder. And if you’re truly love just building stuff and ready to sacrifice your
+career for it, then stay a tech lead forever. There are people who do that, and
+plenty of them are happy with their choice. But, sacrifice you will, either way
+you go.</p>
+<h2 id="ps"><a aria-hidden="true" tabindex="-1" href="#ps"><span class="icon icon-link"></span></a>P.S.</h2>
+<p>Well, this turned up a bit more gloomy than expected, didn’t it. So, if you’re
+really bummed up about letting go of the tools, there are couple of options
+still available.</p>
+<ol><li>Coding as a hobby. Day job is not everything, and if your circumstances allow
+you to keep spending time outside of 9-5, you can still keep working on side
+projects. I know this is not for everyone, but it’s an option. I’ve seen some
+very senior people smurfing in open-source and that keeps them happy and sane
+over extended hauls in management.</li>
+<li>Consider detours on your management career path. Some managers occasionally
+step down in their roles and work on the tools for a bit to regain their
+footing. Short term contract work between management gigs is always an option
+and the pay might be quite comparable to a manager’s salary.</li></ol>
+<p>I myself never really stopped coding despite running a 50+ engineering team.
+There are always interesting things to build out there. Just keep a clean line
+of separation between day job and your hobbies, and you will be fine.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2023 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="vvn89m">
+			import { start } from "../_app/immutable/start-021d44d5.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="vvn89m"]').parentNode,
+				version: "1679285067992",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>

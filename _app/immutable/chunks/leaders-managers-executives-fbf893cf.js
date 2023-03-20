@@ -1,1 +1,0 @@
-import{S as t,i as a,s}from"./index-920be987.js";const l={title:"Managers, leaders, and executives",draft:!0};class o extends t{constructor(e){super(),a(this,e,null,null,s,{})}}export{o as default,l as metadata};
