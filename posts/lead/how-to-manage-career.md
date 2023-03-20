@@ -13,6 +13,7 @@ medium:
     - Software engineering
     - Management
     - Career
+  id: 263a78714ba1
 ---
 
 The great tragedy of the software engineering industry is that it is filled to

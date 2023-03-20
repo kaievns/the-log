@@ -16,6 +16,7 @@ medium:
     - Planning
     - Agile
     - Scrum
+  id: 44f739ce48c2
 ---
 
 I've been through a fair bit of teams; and I have built and managed my own share

@@ -14,6 +14,7 @@ medium:
     - Engineering management
     - Scrum
     - Agile
+  id: fd31f7bec220
 ---
 
 Overtime, while working in management, everyone picks up shortcuts for assessing

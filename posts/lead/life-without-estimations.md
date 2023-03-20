@@ -16,6 +16,7 @@ medium:
     - Planning
     - Agile
     - Scrum
+  id: 3502adec5e56
 ---
 
 Welcome to the part two of our little estimations chat. Having committed some
