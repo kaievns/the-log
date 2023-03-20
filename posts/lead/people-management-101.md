@@ -2,10 +2,17 @@
 slug: 0zsDU
 date: 12 March 2023
 title: Managing people 101
-description: A few advices on people management mindset that I would give a freshly minted engineering manager
+description: A few advices on people management mindset that I would give a
+  freshly minted engineering manager
 tags:
-    - leadership
-    - management
+  - leadership
+  - management
+medium:
+  tags:
+    - Engineering management
+    - People management
+    - Team management
+    - Leadership
 ---
 
 When I'm looking for engineering manager candidates among technical leads, the

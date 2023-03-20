@@ -5,8 +5,15 @@ date: 4 February 2023
 description: I'm going through all the engineering roles and common career paths
 thumbnail: ./images/engineering-roles.png
 tags:
-    - management
-    - career
+  - management
+  - career
+medium:
+  tags:
+    - Engineering management
+    - Career development
+    - Software engineering
+    - Management
+    - Career
 ---
 
 Throughout the years, a lot has been said about software engineering careers.

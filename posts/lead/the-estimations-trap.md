@@ -2,12 +2,20 @@
 slug: 3OvR4
 date: 22 Feb 2023
 title: Why estimations don't really work
-description: Destroying the hopes and dreams of those relying on estimations in their delivery planning
+description: Destroying the hopes and dreams of those relying on estimations in
+  their delivery planning
 thumbnail: ./images/estimations-probability.png
 tags:
-    - planning
-    - agile
-    - management
+  - planning
+  - agile
+  - management
+medium:
+  tags:
+    - Engineering management
+    - Software engineering
+    - Planning
+    - Agile
+    - Scrum
 ---
 
 I've been through a fair bit of teams; and I have built and managed my own share

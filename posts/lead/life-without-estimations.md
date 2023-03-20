@@ -5,10 +5,17 @@ title: Life without estimations
 description: Part two of the estimations rant
 thumbnail: ./images/no-estimations.png
 tags:
-    - management
-    - leadership
-    - planning
-    - agile
+  - management
+  - leadership
+  - planning
+  - agile
+medium:
+  tags:
+    - Engineering management
+    - Software engineering
+    - Planning
+    - Agile
+    - Scrum
 ---
 
 Welcome to the part two of our little estimations chat. Having committed some

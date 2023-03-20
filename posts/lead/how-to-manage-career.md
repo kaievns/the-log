@@ -4,8 +4,15 @@ date: 13 February 2023
 title: Why self-manage your own career
 description: A bit controversial take on self-managing one's career as a software engineer
 tags:
-    - management
-    - career
+  - management
+  - career
+medium:
+  tags:
+    - Engineering management
+    - Career development
+    - Software engineering
+    - Management
+    - Career
 ---
 
 The great tragedy of the software engineering industry is that it is filled to
