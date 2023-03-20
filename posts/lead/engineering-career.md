@@ -14,6 +14,7 @@ medium:
     - Software engineering
     - Management
     - Career
+  id: c1ac070d7f2
 ---
 
 Throughout the years, a lot has been said about software engineering careers.
