@@ -1,18 +1,25 @@
 ---
 slug: eoNUM
+date: 20 March 2023
 title: When to stop coding
 description: So thoughts on when an engineering manager should let go of the tools
-draft: true
+thumbnail: ./images/stop-coding.png
+tags:
+  - management
+  - career
+medium:
+  tags:
+    - Engineering Management
+    - Software Engineering
+    - Career development
+    - Career
 ---
 
 As we grow our careers, and we climb higher and higher, at some point most
-engineers face the prospects of parting with the tools. A lot of us struggle
+engineers face the prospects of parting with the tools. And many of us struggle
 with the process. And so the question of _when is it the time to stop coding?_
-crops up regularly.
-
-Having wrestled with this question myself in the past, I have figured this might
-be a good topic for a post. My take on it is that you shouldn't, but it's a bit
-nuanced. So, buckle up for a bit of a read.
+crops up regularly. Having wrestled with this very question myself in the past,
+I have figured this might be a good topic for a post.
 
 ## What got you here, won't get you there
 
@@ -20,19 +27,19 @@ A career of a software engineer is a bit of a wretched one. Half of a career we
 spend on getting really good at programming, and then we're promoted to a
 management position and have to throw most of that skill away.
 
-On a surface of it, this seems like a bad news, and there is something wrong
-with the software engineering industry. But, it is a common problem across
-multiple industries, probably all of them that have teams.
+On a surface of it this seems like a bad news and there is something wrong with
+the software engineering industry. But, it is a common problem across multiple
+industries, probably all of them that have teams.
 
 Every time the pattern is the same: a person becomes very good on the tools, and
-he gets promoted to a manager; a person becomes very good at management and they
-are promoted to senior leadership position. And with each of those changes the
-same problem arises, what got them to the next level, doesn't necessarily help
-them to become good on this new level.
+they get promoted to a manager; a person becomes very good at management and
+they are promoted to senior leadership position. And with each of those changes
+the same problem arises, what got them to the next level, doesn't necessarily
+help them to become good on this new level.
 
-This is very true a senior engineer to a tech lead transition, and especially
-true for the tech lead to an engineering manager position. Because they are not
-expected to produce code any more.
+This is very true for the senior engineer to a tech lead transition, and
+especially true for the move from a tech lead to an engineering manager
+position. Because they are not expected to produce code any more.
 
 ## Coping with the transition
 
@@ -40,10 +47,10 @@ Change is always painful, and people subconsciously try to avoid pain. And so
 the coping mechanisms that people employ when they get to the next level are
 surprisingly similar. People cling to what they know.
 
-A senior to tech-lead transition will lean on their technical prowess; the tech
-lead to a manager transition will continue meddling with technical decisions;
-and a manager to a senior leader position will try to continue impacting the
-roadmaps and processes.
+A senior engineer to a tech-lead transition will lean on their technical
+prowess; the tech lead to a manager transition will continue meddling with
+technical decisions; and a manager to a senior leader position will try to
+continue impacting the roadmaps and processes.
 
 That is a very natural stress response behaviour. People don't necessarily know
 how to approach their new responsibilities, or don't feel confident in their new
@@ -167,12 +174,28 @@ paying very senior people a whole lot of money for the work that a tech lead can
 do. And so you will eventually transition into architecture and strategy anyway.
 
 If you want my advise, it is this: get your fill while you're young and hungry,
-because you won't have a whole lot of time for the tools when you move up in the
-world. And if you're truly love just building stuff and ready to sacrifice your
-career for it, than stay a tech lead forever. There are people who do that, and
+because you won't have a whole lot of time for the tools when you move up the
+ladder. And if you're truly love just building stuff and ready to sacrifice your
+career for it, then stay a tech lead forever. There are people who do that, and
 plenty of them are happy with their choice. But, sacrifice you will, either way
 you go.
 
 ## P.S.
 
-Well, this turned up a bit more gloomy than I expected.
+Well, this turned up a bit more gloomy than expected, didn't it. So, if you're
+really bummed up about letting go of the tools, there are couple of options
+still available.
+
+1. Coding as a hobby. Day job is not everything, and if your circumstances allow
+   you to keep spending time outside of 9-5, you can still keep working on side
+   projects. I know this is not for everyone, but it's an option. I've seen some
+   very senior people smurfing in open-source and that keeps them happy and sane
+   over extended hauls in management.
+2. Consider detours on your management career path. Some managers occasionally
+   step down in their roles and work on the tools for a bit to regain their
+   footing. Short term contract work between management gigs is always an option
+   and the pay might be quite comparable to a manager's salary.
+
+I myself never really stopped coding despite running a 50+ engineering team.
+There are always interesting things to build out there. Just keep a clean line
+of separation between day job and your hobbies, and you will be fine.
