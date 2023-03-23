@@ -2,7 +2,7 @@
 slug: eoNUM
 date: 20 March 2023
 title: When to stop coding
-description: So thoughts on when an engineering manager should let go of the tools
+description: Some thoughts on when an engineering manager should let go of the tools
 thumbnail: ./images/stop-coding.png
 tags:
   - management
@@ -13,6 +13,7 @@ medium:
     - Software Engineering
     - Career development
     - Career
+  id: 8d11c0100c3f
 ---
 
 As we grow our careers, and we climb higher and higher, at some point most

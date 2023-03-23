@@ -1,5 +1,16 @@
 ---
 title: Managers, leaders, and executives
+description: Digging into the corporate leadership anatomy
+thumbnail: ./images/types-of-leaders.png
+tags:
+  - leadership
+  - management
+medium:
+  tags:
+    - Leadership
+    - Management
+    - Engineering management
+    - Executive
 draft: true
 ---
 
@@ -35,12 +46,12 @@ shield for their team.
 
 Leadership is a tough gig, and it takes everything out of a person to be
 effective in a leadership position. And so, naturally, people tend to play to
-their strengths, and as a result develop preferences, which result in different
-types of leaders.
+their strengths, and, as a result, develop preferences, which in turn produce
+different types of leaders.
 
 ## Roles of leaders
 
-Personal preferences is only a half of the story though. Because any
+Personal preferences is only one half of the story though. Because any
 sufficiently large organisation requires a collection of different leadership
 roles to move forward.
 
@@ -55,9 +66,13 @@ from a game to a game:
    have some sort of scanning capabilities
 3. a **medic** - the one who manages resources and heals others
 
+Although the **tactician** is often referred to as the IGL (in game leader),
+each other person leads in their own speciality. IGL is more of a coordinator
+than a leader. Coordination is their speciality.
+
 And so, there are two halves to the story. There are individual strengths and
 personal preferences, but there are also different tasks and roles that need to
-be enacted in order for the team to be successful.
+be enacted in order for a team to be successful.
 
 This pattern repeats itself not just in video games, but also in actual real
 life organisations. Because the underlying system, the human nature is the same.
@@ -68,12 +83,12 @@ And I hope you can now see how it relates to the subject of this article.
 The role of a managers is to manage resources. And in terms of our little video
 games analogy, a manager is, in many ways, like a combat medic.
 
-The role of a manager is to make sure the team doesn't run out of resources, and
+The role of a manager is to make sure the team doesn't run out of resources and
 energy. And it's a critical role in any organisation because others might not
 necessarily think of those matters deeply while in the midst of their own
 responsibilities.
 
-Some managers, act like secular leaders, they manage the situation by managing
+Some managers act like secular leaders, they manage the situation by managing
 the people. Some managers assume a balls buster stance, and manage through a
 stick and carrot incentives. But, ultimately, they all perform the same role,
 they set the team up for success by managing resources.
@@ -84,14 +99,14 @@ organisation. A CEO is usually expected to be a very good manager.
 
 ## The leaders
 
-If we continue with out little video game analogy, leaders are the ones who
-break things. Some of them are nice about it some are not. But, the point of
-their work is the same: we need to break old things so that the new ones could
-have the room to grow.
+If we continue with out little video game analogy, leaders are the ones who lead
+change; commonly by breaking things. Some of them are nice about it, and some
+are not. But, the point of their work is the same: we need to break old things
+so that the new ones could have the room to grow.
 
 If you want to address collected technical debt, hire a tech lead. Want to
-restructure an ecosystem, hire a principal engineer. Want to re-build processes,
-hire a HoE. Want to rebuild the culture, hire a CTO.
+restructure an ecosystem, hire a principal engineer. Want to rebuild the
+culture, hire a CTO.
 
 The thing to understand about leaders is that they are not here to make friends.
 They are here to inflict damage. More likely than not they will make enemies.
@@ -105,6 +120,8 @@ understand the difference between those two, and hire blindly, or expect a
 person to be good at both. Which is rare, and actually much more difficult to
 achieve from the team dynamics perspective.
 
+![Engineering roles](./images/engineering-roles.png)
+
 If you look at my engineering roles diagram, though. You can roughly think about
 it this way. The two pathways in the engineering career, the technical and the
 managerial ones, roughly reflect this parity. There is technical _leadership_
@@ -113,56 +130,60 @@ to play.
 
 ## The executives
 
-Well, if you have followed my frivolous video games analogy and you now think
-that executives are the strategic type separate from the other two, consider
-yourself rickrolled. Yeah, I know, I wish it was that easy, it would be neat to
-have them three for three lined up like that. But no, an _executive_ is actually
-pretty much the opposite of strategic.
+Now if we follow with my frivolous video games analogy, then the _executives_
+will be the **tactician** class. And here is where I need to slow down a little
+bit, because it gets messy. People upstairs tend to take in the wrong way when
+they are referred to as _tactical_ rather than _strategic_. And people
+downstairs often don't know what people upstairs really do for a living. So, let
+me dig it up bit by bit.
 
-When you listen to people talking about business development, you will
-constantly hear about strategy and execution. It's always the two: strategy and
-execution. Both have to be great in order for a company to be successful in the
-modern competitive environment.
+Generally speaking the term _executive_ means someone with the power to execute
+plans and strategies. Whenever you listen to someone about business development
+matters, it is always the two strategy and execution; both have their place in
+the company success. And an executive is responsible for _execution_. Which puts
+them on the opposite side of _strategy_.
 
-An _executive_ literally means someone with the power to execute a strategy. And
-as such they belong to the _managerial_ lineage in an organisation; often
-referred to as the "top management". CEO is an _executive_, and VPoE is a
-technology executive.
+If you think about this way, then executives are essentially the top of the
+managerial hierarchy, and often referred to as the "top management". But, it is
+a mistake, in my view, to think of them as managers. They are ex-managers.
 
-CTO may or may not be an _executive_. In pure form, a CTO is a strategist, but
-you need to think past the titles and look the roles instead. Sometimes CTO is
-both, sometimes just one, and sometimes they are neither.
+The role of an _executive_ is to _orchestrate_ the execution. They don't lead
+the change, they don't manage resources, they monitor, analyse and coordinate
+the _progress_. They literally spend most of their time in reports and meetings.
+Which is a critical role in any complex situation.
 
-## The strategist
+And in that light, a CEO is an executive. VPoE is an executive. CTO may or may
+not be an executive. In their pure form CTO is actually a strategist, the
+opposite of an executive.
 
-And so, if an _executive_ is not a strategist, then who is? Well, that's a bit
-complicated. Generally speaking everyone. But mileage can differ.
+## The strategist (bonus material)
 
-If I'd generalise it very broadly, then technically speaking the `heads of` are
-responsible for the creation of what's known as a strategic context. But
-strategic context needs to be created collaboratively, otherwise the execution
-will fail. And as such most of the leadership team is involved in strategy.
+And so, if executives are the opposite of strategists, then who are the
+strategists? That's a messy topic that deserves it's own article, but I feel
+that I need to go through this quickly to round it up here.
 
-Moreover, if we start looking at the problem from the perspective of
-organisational enablement. Then, the entire organisation should participate in
-this process. The more brains can strategise the better. And in that light, the
-person who is responsible for _formulating_ the strategy is not necessarily the
-one who came up with it.
+If I would water it down very liberally, then we could say that a **strategy**
+as a set of rules that sit between the **vision** and the actual **plans**. But,
+strategies are rather complex entities, that include functional strategies, and
+coordination strategies. All of them together would form what's known as a
+**strategic context**.
 
-Every type of leader needs to be a bit of a strategist in their own field.
-Because thinking things through is what seniority is all about. And now, I can
-tie it back to my silly video game analogy.
+Think back to our video game analogy. Each speciality will have their own
+functional strategy how they're going to enact their role in the team. That
+includes the IGL who needs a strategy for coordinating the team members to
+maximise their chances of winning the game.
 
-The **breach** should have worked out their own plan, and so should the
-**medic**. The **tactician** is the CEO in this group, they have the executive
-authority, and their job is to make sure that strategies are worked out and that
-the team members have all the up to date information and can follow through. The
-_executive_ orchestrates if you will. They are _accountable_ for the entire
-operation.
+Generally speaking it is the `Head of`s who are responsible for creation of the
+strategic context, but they never do that alone. The entire leadership team
+needs to participate in the process of strategy creation. The `Ho`'s job is to
+put it in writing and communicating the strategy with others.
 
-Did I just rickrolled you twice in a row? Yes, I did.
-
-<!-- ![Never give you up](./images/rickroll.gif) -->
+A CTO in this context is a rather odd figure, because if a company has a high
+functioning VPoE, then CTO will be more of a strategist than an executive. The
+reason for this is that in a such large organisations, there will be multiple
+independent departments led by the `Ho`'s, plus some for of R&D effort, and it
+is the CTO's job to make sure there is a consistent strategic context between
+them.
 
 ## A mixed bag of goodies
 
@@ -171,16 +192,17 @@ talents, and they can stretch to fill in for one or another role. Still the
 structure very much persists whenever groups of people involved in solving
 complex problems.
 
-As such, it is my believe that it is a mistake to mix all managers, leaders, and
-executives into the same category and use the terms interchangeably. Because, it
-is the lack of understanding and respecting the nature of different leadership
-types that leads to the most common organisational problems.
+As such, it is my believe that it is a mistake to mix all: managers, leaders,
+and executives into the same category and use the terms interchangeably.
+Because, it is the lack of understanding and respecting the nature of different
+leadership types that leads to the most common organisational problems.
 
 A company hires a manager expecting them to be a leader. Or, they hire a leader
-and then act baffled they start breaking things instead of managing resources.
-The most common case is that a company hires a leader to break and re-build
-something, but then can't stomach the change and won't have the leader's back
-when they start roughing the feathers. All of those are avoidable problems.
+and then act baffled that they start breaking things instead of managing
+resources. The most common case is that a company hires a leader to break and
+re-build something, but then can't stomach the change and won't have the
+leader's back when they start roughing the feathers. All of those are avoidable
+problems.
 
 The important thing to understand here is that none of those roles are better
 than the other; more important than the other; or subordinate to one another.
