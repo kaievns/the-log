@@ -1,0 +1,1 @@
+import{e}from"./index-4d8f42c1.js";import{f as a}from"./posts-dd53a85a.js";const l=async({params:t})=>{const o=(await a()).filter(s=>s.tags&&s.tags.includes(t.tag));if(o.length===0)throw e(404);return{posts:o,tag:t.tag}},g=Object.freeze(Object.defineProperty({__proto__:null,load:l},Symbol.toStringTag,{value:"Module"}));export{g as _,l};
