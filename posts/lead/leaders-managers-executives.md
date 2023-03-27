@@ -11,7 +11,7 @@ medium:
     - Management
     - Engineering management
     - Executive
-draft: true
+  id: 9c08afca2ac3
 ---
 
 A manager, a leader, and an executive, those terms are often used
@@ -130,23 +130,24 @@ me dig it up bit by bit.
 
 Generally speaking the term _executive_ means someone with the power to execute
 plans and strategies. Whenever you listen to someone talking about business
-development matters, it is always the two: a strategy and execution; both have
-their place in the company success. And so, as the term stands an executive is
-responsible for _execution_. Which puts them on the opposite side of _strategy_.
+development matters, it is always the two: a strategy and the execution; both
+have their place in the company success. And so, as the term stands an executive
+is responsible for _execution_. Which puts them on the opposite side of
+_strategy_.
 
 If you think about this way, then executives are essentially the top of the
 managerial hierarchy, and often referred to as the "top management". But,
-confusingly, it is a mistake, to think of them as managers. They are
-ex-managers, which is a different type all together.
+confusingly, it is a mistake to think of them as managers. They are ex-managers,
+which is a different breed all together.
 
 The role of an _executive_ is to _orchestrate_ the execution. They don't lead
-the change, they don't manage resources, they monitor, analyse and coordinate
-the _progress_. They literally spend most of their time in reports and meetings.
-Which is a critical role in any complex situation.
+the change, they don't manage resources. Instead, they monitor, analyse, and
+coordinate the _progress_. They literally spend most of their time in reports
+and meetings. Which is a critical role in any complex situation.
 
-And in that light, a CEO is an executive. VPoE is an executive. CTO may or may
-not be an executive. In their pure form CTO is actually a strategist, the
-opposite of an executive.
+And in that light, a CEO is an executive. VPoE is an executive. CTO, depending
+on an organisation, may or may not be an executive. In their pure form CTO is
+actually a strategist, the opposite of an executive.
 
 ## The strategist (bonus material)
 
@@ -157,8 +158,9 @@ that I need to go through this quickly to round it up here.
 If I would water it down very liberally, then we could say that a **strategy**
 as a set of rules that sits between a **vision** and actual **plans**. But,
 strategies are rather complex entities that include other strategies, such as
-functional strategies, coordination strategies, risk-management strategies, etc.
-All of them together would form what's known as a **strategic context**.
+functional strategies, people strategies, coordination strategies,
+risk-management strategies, etc. All of them together would form what's known as
+a **strategic context**.
 
 Think back to our video game analogy. Each speciality will have their own
 functional strategy how they're going to enact their role in the team. That
@@ -168,7 +170,7 @@ maximise their chances of winning the game.
 Generally speaking it is the `Head of`s who are responsible for creation of the
 strategic context, but they never do that alone. The entire leadership team
 needs to participate in the process of a strategy creation. The `Head of`'s job
-is to put it in writing and communicating the strategy with others, but it
+is to put it in writing and then communicate the strategy to others. But, it
 doesn't mean that they are the ones who come up with the strategy.
 
 A CTO in this context is a rather odd figure, because if a company has a high
@@ -192,11 +194,11 @@ responsibilities. And that is where the bulk of organisational problems tend to
 stem from.
 
 A company hires a manager expecting them to be a leader. Or, they hire a leader
-and then act baffled that they start breaking things instead of managing
-resources. The most common case is that a company hires a leader to break and
-re-build something, but then can't stomach the change and won't have the
-leader's back when they start roughing the feathers. All of those are avoidable
-problems if we think about the different leadership roles.
+where they wanted a manager and then act baffled that they start breaking things
+instead of managing resources. The most common case is that a company hires a
+leader to break and re-build something, but then can't stomach the change and
+won't have the leader's back when they start roughing the feathers. All of those
+are avoidable problems if we think about the different leadership roles.
 
 The important thing to understand here is that none of those roles are better
 than the other; more important than the other; or subordinate to one another.
