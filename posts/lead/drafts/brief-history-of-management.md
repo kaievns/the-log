@@ -8,12 +8,10 @@ people in there are essentially ex-engineers who never formally studied business
 or management. The knowledge transference happens in an ironically archaic way
 by the word of mouth and best practice sharing.
 
-I don't want to go into the efficacy of this process today, and instead focus on
-the history of management. History might be a rather dry subject, but it's
-important because without knowing how we arrived to where we are, it is
-difficult to plot the way forward.
-
-I'll do my best to make it entertaining though.
+Overtime, I have cobbled together some ideas of how we actually ended up where
+are with our contemporary management practices. And so, I thought that maybe
+it's a good idea to share the story. Maybe I can make it entertaining; albeit in
+a bit cynical way.
 
 ## The ugly old days
 
@@ -35,15 +33,15 @@ to.
 ## The industrial revolution
 
 With the advent of mechanized means of production, the societal structure
-changed dramatically. Now, in addition to the royalty and the peasants, we have
+changed dramatically. Now, in addition to the lords and the peasants, we have
 those who _own_ the means of production, and those who _work_ there. And with
 that we could say that the management and the working classes were established.
 
-It is a mistake though to think of those as managers and workers in the modern
-sense of the word. They where more like oompa-oompas and pain administrators.
-Because the choice for those workers was to either die of starvation on the
-streets, or work in atrocious conditions and die of heavy metals poisoning while
-working at a factory.
+I think, it is a mistake though to think of those as managers and workers in the
+modern sense of the word. They where more like oompa-oompas and pain
+administrators. Because the choice for those workers was to either die of
+starvation on the streets, or work in atrocious conditions and die of heavy
+metals poisoning while working at a factory.
 
 The managers job here is mostly to maintain a steady supply of poor bastards and
 keep up the discipline in attempts to prevent people from rioting too much.
@@ -105,7 +103,7 @@ unmeasurable. And so people started asking questions.
 
 The world was, and still is, a very much class based society, but now there was
 a new class of people: the intellectuals and creatives. People who create
-knowledge and experience for a living. And those people are way too privileged
+knowledge and experiences for a living. And those people were way too privileged
 to be managed the old ways. And so, the management adopted.
 
 Instead of coercing people into doing what they're want them to do by imposing
@@ -121,15 +119,16 @@ market with a new product is a much better deal than competing in a saturated
 market.
 
 And this is where we start seeing the shift towards the servant leadership
-styles, and managers who are not the subject matter experts. Empathy and people
-skills become some of the most desired qualities in a manager.
+styles, and appearance of managers who are not the subject matter experts.
+Empathy and people skills became some of the most desired qualities in a
+manager.
 
 ## The stone age of software
 
 Coming on this legacy, we can see how the early days of the software industry in
 the 80s, 90s were panning out. Most of the software was developed by that
 privileged ex-academia group of people who were treated as special--hence the
-term "specialist", jk. Everything around them would still work on the old
+term "specialist"; jk. Everything around them would still work on the old
 factory mindset, KPIs and all.
 
 Because most of those early days software companies were overcapitalised, they
@@ -156,61 +155,52 @@ factory actually made sense.
 
 ## The age of startups
 
-Two things came out of the corporate software development world. Firstly, the
-naive believe in great personalities and the overnight success; corporates
-looove retelling the humble beginnings stories well into their oppressive
-behemoth stage. And secondly, thanks to the ubiquitous internet infrastructure,
-the barrier for the new businesses entry fell to the floor level.
+As the industry progressed during the 90s, two things happened. Firstly, thanks
+to the internet infrastructure the barrier of the new business entry fell to the
+floor level. And secondly, the corporations became too large and beurocratised
+to innovate effectively.
 
-You see, corporates might not had figured how to reconcile the creative and the
-factory management. I mean, nobody yet figured the way to reconcile between the
-bohemian, bourgeoisie, and the working classes after all. But, at least they
-knew how to run a tight factory. In contrast, the 20-somethings who never held a
-day job and now in a startup wouldn't know much of anything about management.
-
-And so, what do you do when you believe that you're basically an immortal
-incarnation of Steve Jobs, and you have convinced your mom to invest her
-retirement fund into your web page? That's right, you reject everything people
-tell you and then start throwing everything at the wall and see what sticks.
-Welcome to the age of agile.
-
-Well, that's if you're the smart one. Statistically speaking you're more likely
-to gain 15 kilos by stress eating, and disappoint your mom within 3 years by
-basically blindly repeating what your peers do: practice scrum, overhire when
-everyone is hiring, and then go through 3 rounds of layoffs when things get
-dicey.
+As the result, corporations turned into vacuum cleaners of innovation. Instead
+on innovating themselves, they would let somebody else to take the risks and
+then acquire those startups that made something useful. Which, in turn,
+attracted all sorts of risk taking types and created the whole startups
+industry. At which point most corporate management practices went out of the
+window in the game of fail quick or sell to google.
 
 How can we live as an industry with a 90% failure rate? Same as the scratch
 ticket addicts do, you ignore the facts and keep believing that you're special.
 No amount of facts and reasoning will convince an average startup leadership
 that blindly following agile practices is bad for their health, and that scrum
-makes them make stupid decisions on a daily basis.
+makes their teams make suboptimal decisions on a daily basis.
 
 In all seriousness though, the significance of this period is that because
 startups are tight strapped for cash, they could not afford to run the same
-machinery as the corporates do. And once again, the management practices had to
-adopt. People started to experiment with custom roles, flat org-structures, and
-borrowing heavily from the LEAN manufacturing practices. Because when you're a
-small 10 people shop there is no point in overcomplicating things.
+management machinery as the corporates do. And once again, the management
+practices had to adopt. People started to experiment with custom roles, flat
+org-structures, and borrowing heavily from the LEAN manufacturing practices.
+Because when you're a small 10 people shop there is no point in overcomplicating
+things.
 
-As the result, this is where we the raise of the product management and scrum
-masters as the decisions makers; as opposed to the traditional business people
-calling all the shots. Which had a huge impact on how we manage software
-engineering teams.
+As the result, this is where we see the raise of the product management and
+scrum masters as the decisions makers; as opposed to the more traditional setups
+where business people are calling all the shots. Which had a huge impact on how
+we manage software engineering teams those days.
 
-The problem was that they over corrected the change towards product function.
-And although they would structure teams as cross-functional, they wouldn't act
-as cross functional teams. Most product management was essentially the old
-project management in disguise, and the amount of suffering that inflicted on
-engineering teams still reverberates through the community.
+The problem was that in attempts to get products on the market as quickly as
+possible, they over corrected the change towards the product function. Although
+they would structure teams as cross-functional, they wouldn't really act as
+cross functional teams in this period. Most product management was essentially
+the old project management in disguise, agile practices were implemented
+haphazardly, and the amount of suffering that was inflicted on engineering teams
+still reverberates throughout the community.
 
 ## The open-source land
 
 Speaking of having no access to professional management. Do you know what would
-be a manager's most feared nightmare? Open-source. Thousands of people living in
-a weird anarchic frenzy and delivering the best quality and most complex
-software on the planet, completely remote and without a single meeting or a
-manager involved. No offices, no org-structures, no KPIs.
+be a project manager's most feared nightmare? Open-source. Thousands of people
+living in a weird anarchic frenzy and delivering the best quality and most
+complex software on the planet, completely remote and without a single meeting
+or a manager involved. No offices, no org-structures, no KPIs.
 
 The actual realities of open-source work are a bit more complex than that
 though.
@@ -226,52 +216,58 @@ layers of ad-hoc community management. They abandoned KPIs and the annual
 performance reviews as stupid ideas, but it doesn't mean they don't plan and
 coordinate their work.
 
-And lets not forget that open-source is essentially overcapitalised in term of
+And lets not forget that open-source is essentially overcapitalised in terms of
 access to the human talent. Which means that one doesn't really need to run a
-tight ship and manage well. If an idea is good and hyped up enough, there will
-be no end of willing volunteers ready to commit endless human-hours into moving
-the project forward.
+tight ship and manage well to make progress. If an idea is good and hyped up
+enough, there will be no end of willing volunteers ready to commit endless
+human-hours into moving the project forward.
 
 Whether we like it or not, open-source community had a huge impact on work
 environment expectations that engineers have those days. This is where remote
 work and hate for meetings and pointless HR paperwork comes from. And once
 again, management had to adopt. In many good companies those days, DX, community
-engagement, and security have just as much value as customer or stakeholder
-value.
+engagement, and reliability have just as much value as customer or stakeholder
+value. DevRel management cropped up as it's own critical role in a technology
+company.
 
 ## Here and now
 
 Today's software engineering management landscape is a very interesting one. It
 has layers upon layers of ideas from the previous generations, often some of
-those completely contradicting each other. And on top of that there is an
-incessant need to keep improving and finding every edge that can help.
+those completely contradict each other. And on top of that there is an incessant
+need to keep improving and finding every edge that can help improve the
+outcomes.
 
-I think it's easier to think of this landscape as a gradient, that goes from
+I think it's easier to think of this landscape as a gradient that goes from
 completely ad-hoc practices to heavily structured corporate environments. And
 most companies are actually on a transition path from one end to another.
 Startups -> scaleups -> enterprise.
 
 There are few truisms that we have figured out on our journey here though:
 
-1. No function should have the upper hand and truly collaborative environments
-   are the ones that produce results most consistently
-2. People don't need as much management as we thought they do. Autonomy and
-   enablement are the keys to performance
-3. There is no way of predicting the market, and an iterative approach to
-   delivery is the most effective one
-4. Organisations need structure but the structure should not be prescriptive
-5. In creative professions KPIs and annual performance reviews is a colossal
-   waste of everyone time and energy
+- No function should have the upper hand. Truly collaborative environments are
+  the ones that produce results most consistently
+- People don't need as much management as we thought they do. Autonomy and
+  enablement are the keys to performance
+- There is no way of predicting the market, and an iterative approach to
+  delivery is the most effective one
+- Organisational structures create pain one way or another, but lack of
+  structure creates even more pain and suffering
+- In creative professions KPIs and annual performance reviews is a colossal
+  waste of everyone time and energy
 
 On a personal note, management those days often feels a lot like parenting. And
 I'm not talking about treating employees like children. What I mean is that
-there are lots of ways to raise children, and most of them work quite well. And
-yet parents will vehemently disagree on the subject. We are just oversaturated
-with practices and ideas at the moment, and everyone only sees the ones that
-they have personally experienced.
+there are lots of ways to raise children, and most of them work equally well.
+And yet, parents will vehemently disagree on the subject and insist on their way
+being the best. Similarly, in software engineering management we are
+oversaturated with practices and ideas at the moment, and everyone only sees the
+ones that they have personally experienced.
 
-In that light, I believe that the right way to manage a company is the one that
-works. Gee-whiz, thanks for nothing, Kai
+And in that light, I believe that the right way to manage a company is the one
+that works.
+
+Gee-whiz, thanks for nothing, Kai
 
 ## The future
 
@@ -279,15 +275,18 @@ An interesting cultural quirk of humans is that every generation has a tendency
 to think that they are the pinnacle of morality and best practice, and everyone
 before them were basically unwashed savages.
 
-And it's probably true. But, if we follow this line of thinking then we arrive
-to the inevitable conclusion that in a generation or two, it is us who will look
-like unwashed savages. And I'm kind of weirdly excited about that. It gives me
-hope.
+If we follow this line of thinking then we arrive to the inevitable conclusion
+that in a generation or two, it is us who will look like unwashed savages who
+couldn't put two and two together. And I'm kind of weirdly excited about that.
+It gives me hope.
 
-But, there is another way to think about it. Management, at its essence is all
+But, there is another way to think about it. Management at its essence is all
 about managing complexity. Unfortunately, our barely evolved monkey brains are
 made of meat and not all that great at dealing with complexity. We have all
-sorts of biases, glitches, and emotions; eww. And you know who are great at
+sorts of biases, glitches, and emotions; eww. And you know what is great at
 dealing with a lot of unwieldable complexity? That's right.
 
 I for one welcome our new computer overlords.
+
+But then again, I'm just an ex-developer who never had any MBA; so, what do I
+really know?

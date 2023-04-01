@@ -10,7 +10,7 @@ team members.
 
 A typical scrum sprit would usually contain a variety of those stories, plus
 random bug fixes, UI improvements, performance patches, and a whole lot of other
-tasks. And the team members would just grab them one by one as they go.
+tasks. The team members would just grab them one by one as they go.
 
 There is an old thought experiment that contradicts this approach to work. I
 like to occasionally throw it around to test POs/TLs process thinking. And
@@ -21,9 +21,9 @@ As they say, no amount of proof will change the minds of true believers. So, I'm
 not here to change anyone's mind. I'm just sharing an idea.
 
 But, before we go, the credit for this idea should go where it's due. I don't
-know who's the author of this experiment, but I red about it first in a book
-called "beyond the goal", and it's easily one of my top 5 management books of
-all times.
+know who's the original author of this experiment, but I red about it first in a
+book called "beyond the goal". It's easily one of my top 5 management books of
+all times and I couldn't recommend it more.
 
 ## The five ships problem
 
@@ -91,12 +91,12 @@ This graph describes a child birth and shows the dependency between the number
 of people involved in labour and the number of children delivered.
 
 Yes, it's a joke. But, some people take this picture for the face value and use
-it as a proof that teamwork in software engineering is stupid.
+it as a proof that teamwork in software engineering is basically stupid.
 
 Truth be told, I actually have a guilty habit of giving this book to read to new
 tech leads and engineering managers as part of my coaching. It's a test. I want
-to see if the person will understand the joke, or if they will start quoting the
-book verbatim.
+to see if the person will understand the irony, or if they will start quoting
+the book verbatim.
 
 And to be frank, working in a team can be taxing indeed. As a very introvertive
 friend of mine likes to joke: _"I didn't get into software engineering to work
