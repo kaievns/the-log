@@ -107,13 +107,3 @@ tasks one by one, won't they? And many of those tasks can be parallelised,
 because it's vertical slicing and there are layers.
 
 ## Team goals
-
-Okay, raise your hand if you ever been in a situation where you hand to say
-something along the lines of: "erm... honestly, I have no idea. [the other team
-member name] worked on this, go ask them".
-
-Yeah, I know, it's all trick questions today isn't it? Every software engineer
-was in this situation at least three times this week alone. But, wouldn't it be
-amazing not to have this situation as a norm?
-
-The answer to all of those questions is the same: "team goals"

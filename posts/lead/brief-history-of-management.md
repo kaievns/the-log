@@ -1,6 +1,17 @@
 ---
 title: A brief history of management
-draft: true
+description: I have cobbled together some stories about the history of the software engineering management and how we got where we are at the moment.
+thumbnail: ./images/management-history.png
+tags:
+  - management
+  - leadership
+medium:
+  tags:
+    - Management
+    - Engineering Management
+    - Leadership
+    - Technical Leadership
+    - History
 ---
 
 Software engineering management is an interesting business. The vast majority of
@@ -157,7 +168,7 @@ factory actually made sense.
 
 As the industry progressed during the 90s, two things happened. Firstly, thanks
 to the internet infrastructure the barrier of the new business entry fell to the
-floor level. And secondly, the corporations became too large and beurocratised
+floor level. And secondly, the corporations became too large and bureaucratised
 to innovate effectively.
 
 As the result, corporations turned into vacuum cleaners of innovation. Instead
@@ -170,8 +181,8 @@ window in the game of fail quick or sell to google.
 How can we live as an industry with a 90% failure rate? Same as the scratch
 ticket addicts do, you ignore the facts and keep believing that you're special.
 No amount of facts and reasoning will convince an average startup leadership
-that blindly following agile practices is bad for their health, and that scrum
-makes their teams make suboptimal decisions on a daily basis.
+that blindly following agile practices is bad for their health, and that PO
+driven scrum pushes their teams to make suboptimal decisions on a daily basis.
 
 In all seriousness though, the significance of this period is that because
 startups are tight strapped for cash, they could not afford to run the same
@@ -191,16 +202,24 @@ possible, they over corrected the change towards the product function. Although
 they would structure teams as cross-functional, they wouldn't really act as
 cross functional teams in this period. Most product management was essentially
 the old project management in disguise, agile practices were implemented
-haphazardly, and the amount of suffering that was inflicted on engineering teams
-still reverberates throughout the community.
+superficially, and processes were still attempts to command-and-control. The
+amount of suffering that inflicted on engineering teams is still reverberating
+throughout the community.
+
+It's not so much that agile is bad in it's own. The problem was that in this
+period the agile/lean practices were applied within the same old factory mindset
+of command-and-control. One cannot implement enablement practices while at the
+same time assume that workers are dumb and irresponsible. It's either one or
+another. Sadly it is still very much a prevalent mindset in many technology
+companies even in this day and age. We are not out of the woods yet.
 
 ## The open-source land
 
 Speaking of having no access to professional management. Do you know what would
-be a project manager's most feared nightmare? Open-source. Thousands of people
-living in a weird anarchic frenzy and delivering the best quality and most
-complex software on the planet, completely remote and without a single meeting
-or a manager involved. No offices, no org-structures, no KPIs.
+be a project manager's worst nightmare? Open-source. Thousands of people working
+in a weird anarchic frenzy and delivering the best quality and most complex
+software on the planet, completely remote and without a single meeting or a
+manager involved. No offices, no org-structures, no KPIs.
 
 The actual realities of open-source work are a bit more complex than that
 though.
@@ -218,9 +237,9 @@ coordinate their work.
 
 And lets not forget that open-source is essentially overcapitalised in terms of
 access to the human talent. Which means that one doesn't really need to run a
-tight ship and manage well to make progress. If an idea is good and hyped up
-enough, there will be no end of willing volunteers ready to commit endless
-human-hours into moving the project forward.
+tight ship and manage all that well to make progress. If an idea is good and
+hyped up enough, there will be no end of willing volunteers ready to commit
+endless human-hours into moving the project forward.
 
 Whether we like it or not, open-source community had a huge impact on work
 environment expectations that engineers have those days. This is where remote
@@ -256,18 +275,21 @@ There are few truisms that we have figured out on our journey here though:
 - In creative professions KPIs and annual performance reviews is a colossal
   waste of everyone time and energy
 
-On a personal note, management those days often feels a lot like parenting. And
-I'm not talking about treating employees like children. What I mean is that
-there are lots of ways to raise children, and most of them work equally well.
-And yet, parents will vehemently disagree on the subject and insist on their way
-being the best. Similarly, in software engineering management we are
-oversaturated with practices and ideas at the moment, and everyone only sees the
-ones that they have personally experienced.
+Our problem right now is not so much that we don't know what works. Our problem
+right now is two folds. Firstly, management is a slow moving profession, and all
+those new understandings implementation often falls on the shoulders of people
+who learned the ropes in the old days; some of those practices create an
+outright identity crisis in those managers. And secondly, we are quite
+oversaturated with management ideas at this point and that creates a mess of
+confusion.
 
-And in that light, I believe that the right way to manage a company is the one
-that works.
-
-Gee-whiz, thanks for nothing, Kai
+If there is one trend in the contemporary management worth mentioning it will
+the the fact that we are slowly moving away from the idea of management as we
+used to know it--the big boss model--, and shifting towards, well, coaching.
+Teams are filled with grown ups and they are more than capable of making their
+own decisions; that is where the key to the next level of performance lies. And,
+unlike a manager, a coach doesn't make decisions, they train the team to make
+good decisions for themselves.
 
 ## The future
 
@@ -283,8 +305,8 @@ It gives me hope.
 But, there is another way to think about it. Management at its essence is all
 about managing complexity. Unfortunately, our barely evolved monkey brains are
 made of meat and not all that great at dealing with complexity. We have all
-sorts of biases, glitches, and emotions; eww. And you know what is great at
-dealing with a lot of unwieldable complexity? That's right.
+sorts of biases, glitches, and emotions; eww. And do you know what is great at
+dealing with a lot of unwieldable complexity? That's right: computers.
 
 I for one welcome our new computer overlords.
 
