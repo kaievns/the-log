@@ -6,11 +6,18 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/lead/brief-history-of-management</guid>
+<title>A brief history of management</title>
+<link>https://kaievans.co/posts/lead/brief-history-of-management</link>
+<description>I have cobbled together some stories about the history of the software engineering management and how we got where we are at the moment.</description>
+<pubDate>Sun, 02 Apr 2023 23:33:07 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/lead/leaders-managers-executives</guid>
 <title>Managers, leaders, and executives</title>
 <link>https://kaievans.co/posts/lead/leaders-managers-executives</link>
 <description>Digging into the corporate leadership anatomy</description>
-<pubDate>Mon, 27 Mar 2023 02:34:18 GMT</pubDate>
+<pubDate>Sun, 02 Apr 2023 23:33:07 GMT</pubDate>
 </item>
 <item>
 <guid isPermaLink="true">https://kaievans.co/posts/eoNUM</guid>
