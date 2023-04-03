@@ -1,6 +1,8 @@
 ---
 title: A brief history of management
-description: I have cobbled together some stories about the history of the software engineering management and how we got where we are at the moment.
+date: 03 April 2023
+description: I have cobbled together some stories about the history of the
+  software engineering management and how we got where we are at the moment.
 thumbnail: ./images/management-history.png
 tags:
   - management
@@ -12,6 +14,7 @@ medium:
     - Leadership
     - Technical Leadership
     - History
+  id: 6a57f0cd2d04
 ---
 
 Software engineering management is an interesting business. The vast majority of

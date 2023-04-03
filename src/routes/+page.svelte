@@ -35,6 +35,18 @@
     <ul class="space-y-2 sm:space-y-0">
         <li>
             <a
+                href="https://post-technical.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cactus-link inline-block"
+                >Post Technical
+            </a>:
+            <p class="inline-block sm:mt-1">
+                Articles about engineering management
+            </p>
+        </li>
+        <li>
+            <a
                 href="https://github.com/kaievns/the-log"
                 target="_blank"
                 rel="noopener noreferrer"
