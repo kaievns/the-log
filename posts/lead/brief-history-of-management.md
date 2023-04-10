@@ -1,4 +1,5 @@
 ---
+slug: KN7Yc
 title: A brief history of management
 date: 03 April 2023
 description: I have cobbled together some stories about the history of the

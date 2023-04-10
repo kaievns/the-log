@@ -1,5 +1,23 @@
 ---
-title: On culture and belonging
+slug: we0V4
+date: 10 April 2023
+title: On culture and belongingness
+description: Notes on developing high performance culture in a creative organisation
+thumbnail: ./images/culture-and-belongingness.png
+tags:
+  - management
+  - leadership
+  - culture
+  - strategy
+  - org-design
+medium:
+  tags:
+    - Engineering Management
+    - Leadership
+    - Strategy
+    - Organisational culture
+    - Organisational design
+
 ---
 
 I don't think there is a way to avoid the company culture conversations those
@@ -36,7 +54,7 @@ Except, it doesn't exactly work like that. Firstly, values are innately
 subjective, and therefore cannot be objectively measured. Secondly, not all
 values are helpful; it's actually only a very specific group of values that have
 the potential to improve performance. And lastly, this approach can actively
-harm diversity within a company with all the negative consequences.
+harm diversity within a company if values are chosen carelessly.
 
 ## The traffic jam
 
@@ -48,10 +66,10 @@ leaving, some new arriving and trotting along. A constant flow of cars in a
 slowly moving traffic jam.
 
 On most days it would be relatively quiet. Cars come in, cars come out. But on
-some days, something would happen, like road works, or someone gets upset over a
-pedestrian jaywalking across the road. A car would beep, and then another one,
-and then another. People get agitated, stressed, and start behaving poorly while
-being stuck in the line of cars.
+some other days, something would happen, like road works, or someone gets upset
+over a pedestrian jaywalking across the road. A car would beep, and then another
+one, and then another. People get agitated, stressed, and start behaving poorly
+while being stuck in the line of cars.
 
 The weirdest thing is that this constant beeping will just hang in the air the
 whole day. The original problem and drivers who started it are long gone, but
@@ -63,18 +81,18 @@ poisoning people's attitudes all day, until all traffic ceases at night. And the
 next day it'll be like nothing had happened.
 
 A culture is like that, it's an idea that people share. And this idea
-self-perpetuates through groups of people when they interact. And this idea
-stays present long after people who first voiced it out are gone.
+self-perpetuates through groups of people when they interact. And it stays
+present long after people who first voiced it out are gone.
 
 ## How culture actually works
 
 I think "culture" is a rather misleading word for what it is, actually.
 _Bonding_ or _attachment_ would be a more appropriate one.
 
-In historical terms, society and culture are relatively new phenomena. Just as
-most of the language is. As a specie we performed the exact same bonding rituals
-we call "culture" for hundreds of thousands of years before the idea of society
-and modern language appeared.
+In historical terms, society and global culture are relatively new phenomena.
+Just as most of the language is. As a specie we performed the exact same bonding
+rituals we call "culture" for hundreds of thousands of years before the idea of
+society and modern language appeared.
 
 This idea of group belongingness and bonding is so strongly hard wired into us,
 that isolation and loneliness physically hurt. The recent research showed that
@@ -104,9 +122,6 @@ values their web-site. But, the same people will adopt a big-name company values
 with almost religious zeal, because it's a more powerful peer group that can
 assure their steady employment in the years to come.
 
-We all do this dance without the thought even consciously registering in our
-minds.
-
 ## What a high performing culture looks like
 
 If that little pondering above got through to you, then the first thing you need
@@ -115,19 +130,19 @@ want is to belong to a group that provides safety and purpose. And your group
 behaviour needs to reflect that in order to attract more members.
 
 People, especially the creative people who have a bit of an outlier streak to
-them, need to feel safe. Physically, but most importantly psychologically in
-order to do their best work. And that is where creative teams performance
-originates from. A safe environment where they can try new things.
+them, need to feel safe to do their best work. Physically, but most importantly
+psychologically. And that is where creative teams performance originates from. A
+safe environment where they can try new things.
 
 When we talk about psychological safety, I'm not just talking about people being
 free of emotional abuse and bigotry from their peers. I'm also talking about the
 emotional cost of failure. Because if the cost of failure is high, people won't
 take risks. And if people won't take risks, you won't have innovation.
 
-And that is where the bulk of people management efforts should go into. To
-create a safe and nourishing environment where people are free to bring
-themselves to work, take risks, and not feel the wrath of punishment when things
-don't go the way they were planned.
+That is where the bulk of people management efforts should go into. To create a
+safe and nourishing environment where people are free to bring themselves to
+work, take risks, and not feel the wrath of punishment when things don't go the
+way they were planned.
 
 In safe environments there are no long speeches and complex hierarchies. All
 interactions are quick and to the point, people maintain eye contact, and they
@@ -147,7 +162,54 @@ In a way, we all do this in the peer groups where we feel safe. It's just a hard
 wired pinging mechanism that keeps ticking in our brains without us realising
 it.
 
-## Implementation notes
+## Culture vs. strategy
+
+I will be blunt with you here. "Culture beats strategy" is easily in my top 5
+dumb things that very smart people in software industry casually throw around
+like a truism. Why? Well, because culture _is_ your strategy; or at least it
+should be.
+
+It is an established fact that software engineering is a creative profession.
+And, the thing to remember about creative efforts is that they don't pay per
+hour, they pay per a good idea. And for every good idea there might be dozens of
+those that didn't work.
+
+What this means is that creative work has _probabilistic outcomes_. And,
+whenever you start dealing with probabilities, you start dealing with risks.
+People need to take risks to eventually discover good ideas. That's how
+innovation works.
+
+In contemporary ulta-competitive environment where most software products have
+near zero marginal costs, making a 5% better copy of something is not a viable
+strategy. Most products that make it are innovative ones, and the name of the
+game is to innovate constantly and continuously.
+
+And so it follows then that if your organisation _has to_ innovate as a way of
+life, then the team will _have to_ take risks on a continuous basis. Which means
+the strategy should revolve around reducing the cost of failure to as low as
+humanly possible. And that is where the culture steps in.
+
+No amount of "work harder" and "great work/life balance" slogans will do the
+trick here. Because if people don't feel creatively safe, they will take low
+risk/reward items and work really hard on those. There in an endless slew of
+companies out there that always focused on the "low hanging fruit", work on
+those for years and never amount to anything important.
+
+Encouraging people to take risks and getting better at it is a cultural
+phenomena. If risk is encouraged and failures are celebrated, people in the
+company will know that it is safe to try new things and explore. And if you can
+channel those risks into the right direction with processes, sooner or later the
+team will produce something that the customers are willing to pay for.
+
+Culture, the right kind of culture, should be right front and centre of any
+technology company strategy. Culture produces behaviour, and behaviour produces
+results. Therefore:
+
+```
+Strategy -> Culture -> Behaviour -> Results
+```
+
+## Closing notes
 
 To be clear, I don't really argue against having explicitly defined values and
 such. The point I'm making is that they don't really matter all that much,
@@ -158,12 +220,8 @@ Moreover, poorly defined values that reflect the founder's preferences rather
 the need to care for people might work against the company's best interests
 because they might repel otherwise valuable members of the team.
 
-And finally, there is also a tendency among leadership to implement values in a
-rather passive aggressive way. They define them on paper, and then leave the
-enforcement to KPIs and annual reviews.
-
 There is a better way to think about culture. In military they have a good
-saying for that: _culture is what you tolerate_. And I think that is a smarter
+saying about that: _culture is what you tolerate_. And I think that is a smarter
 approach to the problem, because it turns it upside down.
 
 What you really need to do as a leader is to be _consistently intolerable_
@@ -171,6 +229,18 @@ towards behaviours that diminish people's sense of safety and belongingness. Do
 not tolerate blaming, punitive actions, and just common ass-holery among the
 team members. Because when people start asking themselves "am I next?", that is
 where trust is lost and an organisation starts to rot from the within.
+
+The opposite is true as well. Openly _tolerating_ questioning of the leadership
+by employees is healthy. Inviting constructive criticism of established
+practices is healthy. Actively giving people as much responsibility as they can
+stomach does wonders to overall organisational growth. The list goes on and on.
+
+And the last point I want to touch is that a culture cannot be just defined. It
+needs to be modelled by the company leadership team. The reasons are pretty much
+the same, culture goes deeper than words, and most people don't join a company
+to change it's culture, people repeat the behaviour of the authority figures.
+And so, unless the authority figures in a group enact the implicit values,
+nobody will.
 
 Culture is like a bowl of candies. Every time you do something right as a
 leader, you get one candy in. Every time you betray the trust of people, you get

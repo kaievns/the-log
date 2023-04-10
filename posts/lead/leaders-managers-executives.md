@@ -1,4 +1,5 @@
 ---
+slug: CJvXw
 title: Managers, leaders, and executives
 date: 27 March 2023
 description: Digging into the corporate leadership anatomy

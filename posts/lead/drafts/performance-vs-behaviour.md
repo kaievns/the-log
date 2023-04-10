@@ -1,22 +1,30 @@
 ---
+slug: JIgbM
 title: Performance management, output vs. behaviour
 draft: true
 ---
 
 One of the key responsibilities of any manager is to manage performance of their
 direct reports. Which, despite of being a seemingly obvious concept, is a
-surprisingly murky subject that many managers struggle with, often through their
+surprisingly murky subject that many managers struggle with. Often through their
 entire careers.
+
+I have a rather contrarian view on this subject when it comes to creative
+professionals like software engineers. And today I'm trying to outline the
+point.
 
 ## The price chart
 
-I'll start with a bit of a diversion. Look below, it's a NASDAQ price chart.
+I'll start with a bit of a diversion. Look at the picture below, it's a random
+slice of the NASDAQ price chart.
 
 <!-- ![NASDAQ price chart](./images/price-chart.png) -->
 
 Do you see the ups and downs, right? So, just buy low and sell high. Leverage
 yourself to the tits and you'll get rich in no time. Money grow on trees, easy
-peasy lemon squeezy. Except roughly 95% of people who try that fail.
+peasy lemon squeezy, right? Well yes, except roughly 95% of rather smart people
+who try that fail. Price charts look obvious in retrospect, but really hard to
+predict ahead of time.
 
 The EU actually has a law that requires brokers to disclose their account
 liquidation numbers. And on average, of people who try trading financial markets
@@ -30,7 +38,7 @@ find a market fit for their products?
 That's right 95% of them will fail. Not because they're run by idiots, but
 because pleasing the market is a surprisingly tough gig. And anyone who tells
 you that they had the right idea from the beginning and it all worked out, are
-either an idiot, or a liar. Or they are trying to sell you consultancy services.
+either a fool, or a liar. Or they are trying to sell you consultancy services.
 
 ## Creative bottom line
 
@@ -62,7 +70,7 @@ effort.
 Success in a creative field comes from having an edge that tilts probabilities
 of success in one's favour. That edge comes from experience and knowing what a
 person is doing. An edge is not a guarantee though, it just allows one to stack
-up their wins and losses that will result in a profit long term.
+up their wins and losses so that would result in a net profit long term.
 
 ## Performance management
 
@@ -73,7 +81,7 @@ their output.
 
 Unfortunately, that is not how creative efforts work. Creative work doesn't pay
 by the hour, it pays per a good market fit idea. And for every good idea there
-is usually a dozen of not so great ones. Produced by exactly the same people.
+are usually a dozen of not so great ones. Produced by exactly the same people.
 
 And I'm talking about pure product work here, not taking into the consideration
 all other organisational, logistic, compliance, and financial complexities
@@ -84,7 +92,7 @@ It's just not a very smart idea.
 
 There is one good use for KPIs based performance management in any creative
 industry though, and that is to drive people out. If you really want to get rid
-of a person, just put them on performance improvement plan with objective KPIs
+of a person, just put them on a performance improvement plan with objective KPIs
 attached, and they will resign themselves after the first check in.
 
 If you like your people and really want to retain them, then maybe consider
@@ -108,18 +116,17 @@ Here is a very simple model from adult responsibilities development theory:
 - `inter-dependent` - a person can lead/coach others
 
 Each level is defined via a person's behaviour which results in the types of
-tasks they can be trusted to reliably deliver. There are other more elaborate
+tasks they can be trusted to reliably handle. There are other more elaborate
 models like that.
 
 The point of this approach is that it is the _behaviour_ of a person that
-dictate the outcomes, rather than skill and knowledge. And that is a very true
+dictates the outcomes, rather than skill and knowledge. And that is a very true
 idea in creative professions, especially in this day and age when knowledge has
 become a commodity.
 
 And if you subscribe to the idea that it is the _behaviour_ that drives the
 outcomes in a creative field, then it follows that performance management should
-focus on those behaviours rather than the bottom line figures and objectively
-quantifiable KPIs.
+focus on those behaviours rather than the bottom line figures and outcomes.
 
 ## Real life examples
 
@@ -133,7 +140,7 @@ Let's say we have a super simple developer career ladder that looks like so:
 - `senior engineer` - corresponds to the **independent**
 - `technical lead` - corresponds to the **inter-dependent**
 
-I have purposefully kept it simple so I could like their expected _behaviours_
+I have purposefully kept it simple so I could link their expected _behaviours_
 to the responsibilities development model I have mentioned above. And so the
 model works like so:
 
