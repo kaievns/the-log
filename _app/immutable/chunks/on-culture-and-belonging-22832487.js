@@ -93,7 +93,7 @@ life, then the team will `),Me=s("em"),Da=i("have to"),La=i(` take risks on a co
 the strategy should revolve around reducing the cost of failure to as low as
 humanly possible. And that is where the culture steps in.`),bt=u(),le=s("p"),Ra=i(`No amount of “work harder” and “great work/life balance” slogans will do the
 trick here. Because if people don’t feel creatively safe, they will take low
-risk/reward items and work really hard on those. There in an endless slew of
+risk/reward items and work really hard on those. There is an endless slew of
 companies out there that always focused on the “low hanging fruit”, work on
 those for years and never amount to anything important.`),kt=u(),he=s("p"),Fa=i(`Encouraging people to take risks and getting better at it is a cultural
 phenomena. If risk is encouraged and failures are celebrated, people in the
@@ -217,7 +217,7 @@ life, then the team will `),Me=r(we,"EM",{});var Zo=l(Me);Da=h(Zo,"have to"),Zo.
 the strategy should revolve around reducing the cost of failure to as low as
 humanly possible. And that is where the culture steps in.`),we.forEach(t),bt=p(e),le=r(e,"P",{});var en=l(le);Ra=h(en,`No amount of “work harder” and “great work/life balance” slogans will do the
 trick here. Because if people don’t feel creatively safe, they will take low
-risk/reward items and work really hard on those. There in an endless slew of
+risk/reward items and work really hard on those. There is an endless slew of
 companies out there that always focused on the “low hanging fruit”, work on
 those for years and never amount to anything important.`),en.forEach(t),kt=p(e),he=r(e,"P",{});var tn=l(he);Fa=h(tn,`Encouraging people to take risks and getting better at it is a cultural
 phenomena. If risk is encouraged and failures are celebrated, people in the
