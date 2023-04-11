@@ -1,6 +1,10 @@
 ---
 slug: JIgbM
 title: Performance management, output vs. behaviour
+description: A piece on employee performance management through behavioural characteristics
+tags:
+  - management
+  - leadership
 draft: true
 ---
 
@@ -20,11 +24,11 @@ slice of the NASDAQ price chart.
 
 <!-- ![NASDAQ price chart](./images/price-chart.png) -->
 
-Do you see the ups and downs, right? So, just buy low and sell high. Leverage
-yourself to the tits and you'll get rich in no time. Money grow on trees, easy
-peasy lemon squeezy, right? Well yes, except roughly 95% of rather smart people
-who try that fail. Price charts look obvious in retrospect, but really hard to
-predict ahead of time.
+Do you see the ups and downs, right? So... Just buy low and sell high, or buy
+the dip. Leverage yourself to the tits and you'll get rich in no time. Money
+grow on trees, easy peasy lemon squeezy, right? Well yes, except roughly 95% of
+rather smart people who try that fail. Price charts look obvious in retrospect,
+but they are surprisingly hard to predict ahead of time.
 
 The EU actually has a law that requires brokers to disclose their account
 liquidation numbers. And on average, of people who try trading financial markets
@@ -33,11 +37,12 @@ for a living, 70-80% blow up their accounts within few months.
 The point I'm making is that markets are _really_, _really_, and I mean _really_
 unpredictable. And that's markets in their pure form, just money moving around.
 What does it tell you about more complex situations like a startup trying to
-find a market fit for their products?
+find a market fit for their products amidst of all the complexities of running a
+company?
 
-That's right 95% of them will fail. Not because they're run by idiots, but
+That's right, 95% of them will fail. Not because they're run by idiots, but
 because pleasing the market is a surprisingly tough gig. And anyone who tells
-you that they had the right idea from the beginning and it all worked out, are
+you that they had the right idea from the beginning and it all worked out are
 either a fool, or a liar. Or they are trying to sell you consultancy services.
 
 ## Creative bottom line
@@ -54,30 +59,29 @@ Engineers, product designers, marketers. Those are the people who create the
 bulk of business value out of thin air.
 
 Here is the problem though. If the markets are inherently unpredictable, then
-how you can attach quantifiable KPIs to creative work that supposed to deliver
-bottom line effect in those markets? Well, you really can't. Because there is no
+how you can attach quantifiable bottom line KPIs to creative work that supposed
+to deliver results in those markets? Well, you really can't. Because there is no
 telling what the market will do ahead of time.
 
 And what's the next best thing? That's right, define those KPIs as a reflection
-of how well a person "executes" on the Key Crew vision.
-
-But then again, if 95% of very smart people fail at trading pure price action in
-financial markets, then what does it say about the Key Crew ability to predict
-the market fit with their vision? And so we're back to the same problem again,
-trying to measure the bottom line effect from innately unpredictable creative
-effort.
+of how well a creative person "executes" on the Key Crew vision. But then again,
+if 95% of very smart people fail at trading pure price action in financial
+markets, then what does it say about the Key Crew ability to predict the market
+fit with their vision? And so we're back to the same problem again, trying to
+measure the bottom line effect from innately unpredictable creative effort.
 
 Success in a creative field comes from having an edge that tilts probabilities
 of success in one's favour. That edge comes from experience and knowing what a
 person is doing. An edge is not a guarantee though, it just allows one to stack
-up their wins and losses so that would result in a net profit long term.
+up their wins and losses so that they would result in a net profit long term.
 
 ## Performance management
 
 The roots of the type of performance measurements that we're trying to use on
 members of the creative class are going all the way back to the factory floors.
-That's where they started to measure worker's performance and assign KPIs to
-their output.
+That's where they started to measure worker's performance and assign measurable
+KPIs to their output. How many nuts and bolts they have tightened, or how much
+coal have they shovelled into a furnace per hour.
 
 Unfortunately, that is not how creative efforts work. Creative work doesn't pay
 by the hour, it pays per a good market fit idea. And for every good idea there
@@ -88,15 +92,15 @@ all other organisational, logistic, compliance, and financial complexities
 attached to pretty much any creative endeavour in a technology company those
 days.
 
-It's just not a very smart idea.
+Measuring creative output as brickwork is just not a very smart idea.
 
 There is one good use for KPIs based performance management in any creative
 industry though, and that is to drive people out. If you really want to get rid
 of a person, just put them on a performance improvement plan with objective KPIs
 attached, and they will resign themselves after the first check in.
 
-If you like your people and really want to retain them, then maybe consider
-doing the opposite of what makes people leave.
+If you like your people and would rather want to retain them, then maybe
+consider doing the opposite of what makes people leave.
 
 ## The behavioural model
 
@@ -106,18 +110,18 @@ to the same point.
 
 Seniority of a person in any field is defined by their experience. Roughly
 speaking seniority represents the amount of complexity a person can be _trusted_
-to deal with. Those past experiences define the person's _behaviour_, or
-attitude towards the problems they are working on.
+to deal with unassisted. Those past experiences define the person's _behaviour_,
+or attitude, towards the problems they are working on.
 
 Here is a very simple model from adult responsibilities development theory:
 
-- `dependant` - a person cannot take on tasks without a supervision
+- `dependant` - a person is unable to take on tasks without a supervision
 - `independent` - a person can perform most tasks by themselves
-- `inter-dependent` - a person can lead/coach others
+- `inter-dependent` - a person can lead and coach others
 
 Each level is defined via a person's behaviour which results in the types of
-tasks they can be trusted to reliably handle. There are other more elaborate
-models like that.
+tasks they can be trusted to reliably handle. This is just a simple example,
+there are other more elaborate models like that.
 
 The point of this approach is that it is the _behaviour_ of a person that
 dictates the outcomes, rather than skill and knowledge. And that is a very true
@@ -134,7 +138,7 @@ Let me give you a few examples that are closer to the real life situations. It
 is still a rather simplified model, but you can expand from there to your own
 situation.
 
-Let's say we have a super simple developer career ladder that looks like so:
+Let's say we have a very simple developer career ladder that looks like so:
 
 - `junior developer` - corresponds to the **dependant**
 - `senior engineer` - corresponds to the **independent**
@@ -156,7 +160,7 @@ fit the expectations based on their seniority:
 - A senior engineer requires constant input and corrections to their work. Which
   means they cannot commit production work independently. Their _behaviour_
   matches the junior developer rather than a senior one
-- A tech lead throws their weight around, breaks away the team and takes on
+- A tech lead throws their weight around, breaks away from the team and takes on
   technical tasks independently. Their _behaviour_ reflects the **independent**
   senior engineer role rather a technical lead one
 - A junior developer takes tasks and completes them with satisfactory quality on
@@ -165,7 +169,7 @@ fit the expectations based on their seniority:
 - A senior engineer helps their team members to compare pros and cons of a
   technical decision, gives their opinion, and actively tries to elevate other
   members in terms of their skill and knowledge. This person is focused on the
-  team **inter-dependencies** and _behave_ like a tech lead
+  team **inter-dependencies** and _behaves_ like a tech lead
 
 Again this is a rather simplistic structure just to demonstrate the point. But,
 I hope you get an idea of how it hinges together, and how it could be expanded
@@ -179,16 +183,13 @@ rather than the outcomes themselves.
 
 ## Continuous performance management
 
-And now we've came to the past part of this system: the actual people
-management.
-
-One of the biggest drawdowns of a factory style management system with objective
-bottom line KPIs and annual performance reviews is the disconnect between what a
-person does and what their performance review says. It's bad enough that in
-creative industry a person's effort doesn't always reflects in the market
-results. But, giving a person "quantifiable" feedback months later when they
-can't even remember the details of what they did is exceptionally counter
-productive to their growth and development.
+One of the biggest drawdowns of a factory style management systems with
+objective bottom line KPIs and annual performance reviews is the disconnection
+between what a person does and what their performance review says. It's bad
+enough that in creative industry a person's effort doesn't always reflects in
+the marketable results. But, giving a person "quantifiable" feedback months
+later when they can't even remember the details of what they did is
+exceptionally counter productive to their growth and development.
 
 In behavioural systems that approach just doesn't work. Behavioural feedback, in
 order to be effective, needs to be immediate. That is especially critical when a
@@ -198,9 +199,9 @@ entirely confident yet about expectations for their new role.
 And in that light, the behaviour based management systems focus on what's known
 as the continuous performance management. Those normally manifest as weekly
 1-on-1s and regular coaching sessions. The idea is that rather than wait for
-annual or quarterly reviews, a person gets immediate feedback--both positive and
-negative-- for their behaviour. Expectations are constantly reiterated and gaps
-are addressed before they develop into actual problems.
+annual or quarterly reviews, a person receives an immediate feedback to their
+behaviour; both positive and negative. Expectations are constantly reiterated
+and gaps are addressed before they develop into actual problems.
 
 This approach allows the people to reach their optimal performance levels and
 become productive as quickly as possible. Which, in turn, leads the positive
@@ -224,20 +225,57 @@ those here.
 
 Depending on the state of HR and regulatory compliance pressures, you might face
 some pushback implementing such systems. You'll get lectured about setting SMART
-goals, KPIs and all of that. Worst come to worst, you can always squeeze your
-behavioural based system into objective looking KPIs. Do all the required annual
-performance paperwork, but then exercise continuous performance management
-practices on the daily basis. HR doesn't really need to know about those. It's
-extra pain, but can be workable for the greater good.
+goals, KPIs and all of that. But, worst come to worst, you can always squeeze
+your behavioural based system into objective looking KPIs. Do all the required
+annual performance paperwork, but then exercise continuous performance
+management practices on the daily basis. HR doesn't really need to know about
+those. It's extra pain, but can be workable for the greater good.
 
 Second one is people challenges. People are all different, but generally
-speaking we could say that there are two groups structured and organic. People
+speaking we could say that there are two groups: structured and organic. People
 who prefer to interact organically tend to have no problem with those
 behavioural systems. The structured ones on the other hand might need a bit
 more, well, structuring. For those people you can take your creative license
-rather far and wrap the behavioural patterns into SMART goals.
+rather far and wrap the behavioural patterns into SMART goals, gaps analysis and
+all. Behavioural systems might feel wishy-washy but they can be structured quite
+well.
 
-Whatever you do, keep this in mind. Make sure that behaviours are defined
-clearly and consistently. And, don't succumb to the pressure of defining
-performance in terms of output. If you do, sooner or later you will regret your
-life choices.
+I guess what I'm trying to say here is tha whatever you do, make sure that
+behaviours are defined clearly and consistently. And, don't succumb to the
+pressure of defining performance in terms of output. If you do, sooner or later
+you will regret your life choices. And so will your people.
+
+## PS the bottom line
+
+If you have red enough of my articles, you know I tend to be a bit abrasive when
+it comes to mediocre management practices. And so to avoid distractions, I have
+saved this for the last. Because some people have problems grasping the obvious.
+
+So, what about the bottom line then? It's still important, right? Of course it
+is.
+
+The thing is though, there is a little gap between an individual creative person
+performance and the bottom line results. And that little gap is called the
+company leadership and strategy.
+
+The creative input of people working at a company is like fuel, it fill the
+company with creative potential. But if it is not channelled in the right
+direction by processes, vision and purpose, it all can be expanded into the thin
+air and amount to nothing. Throughout my career I've seen countless thousands of
+engineer/hours being committed without aim, structure or prep work. And I see
+this as rather tragic waste of human potential.
+
+And so when we assign the responsibility over the bottom line outcomes onto an
+IC shoulders, especially without giving them the full authority over the
+execution, we are dumping our own leadership responsibilities on them. The
+technical term for this is blame shifting.
+
+A leader is always ultimately _accountable_ for their team output. And they are
+directly _responsible_ for making sure that their team's creative efforts go
+into the right direction. That is the job. It's just as creative as any other,
+with all the probabilistic outcomes overheads. Sometimes we're right, sometimes
+we're wrong. And getting better at being wrong is the key.
+
+If you really feel strongly about connecting the bottom line to an IC's output,
+make it a bonus; people love bonuses. But, never threaten a person's self-image
+and income over what's really your own responsibilities.

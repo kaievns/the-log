@@ -17,7 +17,7 @@ medium:
     - Strategy
     - Organisational culture
     - Organisational design
-
+  id: a0fd9d376235
 ---
 
 I don't think there is a way to avoid the company culture conversations those
@@ -42,13 +42,14 @@ appreciation culture. Other two like bigotry, you have a bigotry culture between
 them.
 
 And so companies leadership those days tries to tap into this bonding process by
-setting company values in hopes of spawning a uniformed culture. Which, as the
+setting company values in hopes of spawning an uniformed culture. Which, as the
 theory goes, supposed to result in better performance.
 
 The same goes for changing a culture. You change the values, those who agree
 with the new norms stay, those who disagree leave. You attract and repeal the
-right kind of people to proliferate the culture at the company. Some even try to
-measure how well people fit into the culture.
+right kind of people to proliferate the culture at the company. Some lunatics
+even try to measure how well people fit into the culture through KPIs and annual
+performance reviews.
 
 Except, it doesn't exactly work like that. Firstly, values are innately
 subjective, and therefore cannot be objectively measured. Secondly, not all
@@ -118,16 +119,15 @@ own values.
 
 And that is exactly what happens in the employment market. Nobody in all
 seriousness really cares about a no-name startup putting such and such as their
-values their web-site. But, the same people will adopt a big-name company values
-with almost religious zeal, because it's a more powerful peer group that can
-assure their steady employment in the years to come.
+values on their website. But, the same people will adopt a big-name company
+values with almost religious zeal, because it's a more powerful peer group that
+can assure their steady employment in the years to come.
 
 ## What a high performing culture looks like
 
 If that little pondering above got through to you, then the first thing you need
 to understand is this. Words don't matter, behaviours do. What people innately
-want is to belong to a group that provides safety and purpose. And your group
-behaviour needs to reflect that in order to attract more members.
+want is to belong to a group that provides safety and purpose.
 
 People, especially the creative people who have a bit of an outlier streak to
 them, need to feel safe to do their best work. Physically, but most importantly
@@ -155,7 +155,7 @@ on: "am I safe here? what if I do this, do you still like me?".
 
 My 2.5yo daughter does this non stop. She pushes buttons a bit too far all the
 time. But, she doesn't do this to be annoying or elicit attention. She does it
-to double check that I can take it, and she's safe with her parent no matter
+to double check that I can take it and that she's safe with her parent no matter
 what.
 
 In a way, we all do this in the peer groups where we feel safe. It's just a hard
@@ -170,7 +170,7 @@ like a truism. Why? Well, because culture _is_ your strategy; or at least it
 should be.
 
 It is an established fact that software engineering is a creative profession.
-And, the thing to remember about creative efforts is that they don't pay per
+And, the thing to remember about creative efforts is that they don't pay by the
 hour, they pay per a good idea. And for every good idea there might be dozens of
 those that didn't work.
 
@@ -191,7 +191,7 @@ humanly possible. And that is where the culture steps in.
 
 No amount of "work harder" and "great work/life balance" slogans will do the
 trick here. Because if people don't feel creatively safe, they will take low
-risk/reward items and work really hard on those. There in an endless slew of
+risk/reward items and work really hard on those. There is an endless slew of
 companies out there that always focused on the "low hanging fruit", work on
 those for years and never amount to anything important.
 
@@ -235,12 +235,12 @@ by employees is healthy. Inviting constructive criticism of established
 practices is healthy. Actively giving people as much responsibility as they can
 stomach does wonders to overall organisational growth. The list goes on and on.
 
-And the last point I want to touch is that a culture cannot be just defined. It
-needs to be modelled by the company leadership team. The reasons are pretty much
-the same, culture goes deeper than words, and most people don't join a company
-to change it's culture, people repeat the behaviour of the authority figures.
-And so, unless the authority figures in a group enact the implicit values,
-nobody will.
+The last point I want to touch is that a culture cannot be simply defined. It
+needs to be modelled by the company leadership team on the daily basis. The
+reasons are pretty much the same, culture goes deeper than words, and most
+people don't join a company to change its culture. Instead people repeat the
+behaviour of the company authority figures. And so, unless the authority figures
+in a group enact the implicit values, nobody will.
 
 Culture is like a bowl of candies. Every time you do something right as a
 leader, you get one candy in. Every time you betray the trust of people, you get
