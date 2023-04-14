@@ -25,10 +25,10 @@ slice of the NASDAQ price chart.
 <!-- ![NASDAQ price chart](./images/price-chart.png) -->
 
 Do you see the ups and downs, right? So... Just buy low and sell high, or buy
-the dip. Leverage yourself to the tits and you'll get rich in no time. Money
-grow on trees, easy peasy lemon squeezy, right? Well yes, except roughly 95% of
-rather smart people who try that fail. Price charts look obvious in retrospect,
-but they are surprisingly hard to predict ahead of time.
+the dip as they say. Leverage yourself to the gills and you'll get rich in no
+time. Money grow on trees, easy peasy lemon squeezy, right? Well yes, except
+roughly 95% of rather smart people who try that fail. Price charts look obvious
+in retrospect, but they are surprisingly hard to predict ahead of time.
 
 The EU actually has a law that requires brokers to disclose their account
 liquidation numbers. And on average, of people who try trading financial markets
@@ -42,8 +42,9 @@ company?
 
 That's right, 95% of them will fail. Not because they're run by idiots, but
 because pleasing the market is a surprisingly tough gig. And anyone who tells
-you that they had the right idea from the beginning and it all worked out are
-either a fool, or a liar. Or they are trying to sell you consultancy services.
+you that they had the right idea from the beginning and it all worked out as
+expected are either a fool, or a liar. Or they are trying to sell you
+consultancy services.
 
 ## Creative bottom line
 
@@ -59,9 +60,10 @@ Engineers, product designers, marketers. Those are the people who create the
 bulk of business value out of thin air.
 
 Here is the problem though. If the markets are inherently unpredictable, then
-how you can attach quantifiable bottom line KPIs to creative work that supposed
-to deliver results in those markets? Well, you really can't. Because there is no
-telling what the market will do ahead of time.
+how can you attach fair and quantifiable bottom line KPIs to creative work that
+supposed to deliver results in those markets? Well, you really can't. Because
+there is no telling what the market will do ahead of time, and the bottom line
+outcomes are at a large degree random.
 
 And what's the next best thing? That's right, define those KPIs as a reflection
 of how well a creative person "executes" on the Key Crew vision. But then again,
@@ -94,10 +96,11 @@ days.
 
 Measuring creative output as brickwork is just not a very smart idea.
 
-There is one good use for KPIs based performance management in any creative
-industry though, and that is to drive people out. If you really want to get rid
-of a person, just put them on a performance improvement plan with objective KPIs
-attached, and they will resign themselves after the first check in.
+There is one good use for bottom line KPIs based performance management in any
+creative industry though, and that is to drive people out. If you really want to
+get rid of a person, just put them on a performance improvement plan with
+objective KPIs attached, and they will resign themselves after the first check
+in.
 
 If you like your people and would rather want to retain them, then maybe
 consider doing the opposite of what makes people leave.
@@ -171,25 +174,21 @@ fit the expectations based on their seniority:
   members in terms of their skill and knowledge. This person is focused on the
   team **inter-dependencies** and _behaves_ like a tech lead
 
-Again this is a rather simplistic structure just to demonstrate the point. But,
-I hope you get an idea of how it hinges together, and how it could be expanded
-to encompass the entire engineering department with all the necessary seniority
-levels.
-
-Also, I hope you have noticed the complete absence of the bottom line outcomes
-in this model, such as lines of code delivered, timelines, dollar figures, etc.
-That is because we are managing the _behaviours_ that lead to the outcomes,
-rather than the outcomes themselves.
+I hope it makes more sense now, and you can see how a person's behaviour is
+linked to their ability to enact each seniority level role. There is no bottom
+line KPIs in here, no lines of code, points per sprint shipped or anything like
+that. And yet, this system allows us to clearly delineate performance and
+seniority levels.
 
 ## Continuous performance management
 
 One of the biggest drawdowns of a factory style management systems with
 objective bottom line KPIs and annual performance reviews is the disconnection
 between what a person does and what their performance review says. It's bad
-enough that in creative industry a person's effort doesn't always reflects in
-the marketable results. But, giving a person "quantifiable" feedback months
-later when they can't even remember the details of what they did is
-exceptionally counter productive to their growth and development.
+enough that in creative industry a person's effort doesn't always reflect in the
+marketable results. But, giving a person "quantifiable" feedback months later
+when they can't even remember the details of what they did is exceptionally
+counter productive to their growth and development.
 
 In behavioural systems that approach just doesn't work. Behavioural feedback, in
 order to be effective, needs to be immediate. That is especially critical when a
@@ -197,14 +196,14 @@ person is in the process of transitioning between seniority levels and not
 entirely confident yet about expectations for their new role.
 
 And in that light, the behaviour based management systems focus on what's known
-as the continuous performance management. Those normally manifest as weekly
+as the **continuous performance management**. Which normally manifests as weekly
 1-on-1s and regular coaching sessions. The idea is that rather than wait for
 annual or quarterly reviews, a person receives an immediate feedback to their
 behaviour; both positive and negative. Expectations are constantly reiterated
 and gaps are addressed before they develop into actual problems.
 
 This approach allows the people to reach their optimal performance levels and
-become productive as quickly as possible. Which, in turn, leads the positive
+become productive as quickly as possible. Which, in turn, leads to the positive
 outcomes as soon as the circumstances will allow.
 
 My personal favourite part of continuous behaviour based performance management
@@ -213,69 +212,58 @@ justify a person's promotion. As soon as a person can demonstrate behaviour
 consistent with their next level, and they have skill/knowledge for it, they can
 be safely promoted. This allows a company to elevate their overall seniority
 levels very quickly, which inevitably has a positive impact on the bottom line
-deliverables. Because the more skilled people are, the better the chances that
+deliverables. Because the more senior people are, the better the chances that
 they will produce something market worthy.
 
-## A word of caution
+## The bottom line
 
-Admittedly, it's not all butterflies and rainbows in the behavioural land. This
-is by far the best performance management approach that I know of in terms of
-outcomes, but implementation tends to face some challenges. I'll mention two of
-those here.
+There is a yet another way to look at the problem, that we need to discuss,
+though. When we say that behaviour leads to positive results, there are a few
+missing bits in this structure.
 
-Depending on the state of HR and regulatory compliance pressures, you might face
-some pushback implementing such systems. You'll get lectured about setting SMART
-goals, KPIs and all of that. But, worst come to worst, you can always squeeze
-your behavioural based system into objective looking KPIs. Do all the required
-annual performance paperwork, but then exercise continuous performance
-management practices on the daily basis. HR doesn't really need to know about
-those. It's extra pain, but can be workable for the greater good.
+We can think about the problem this way. Behaviours are essentially the
+pre-requisites, or leading indicators if you will. And the bottom line outcomes
+are the lagging indicators. And we need to consider what sits in between the
+two.
 
-Second one is people challenges. People are all different, but generally
-speaking we could say that there are two groups: structured and organic. People
-who prefer to interact organically tend to have no problem with those
-behavioural systems. The structured ones on the other hand might need a bit
-more, well, structuring. For those people you can take your creative license
-rather far and wrap the behavioural patterns into SMART goals, gaps analysis and
-all. Behavioural systems might feel wishy-washy but they can be structured quite
-well.
+The right types of behaviours lead to high performance. But any type of high
+performance can be aimlessly exhausted into the void without producing any
+marketable results. The history of technology is littered with corpses of
+companies that wasted endless years of high quality engineering efforts without
+producing anything useful.
 
-I guess what I'm trying to say here is tha whatever you do, make sure that
-behaviours are defined clearly and consistently. And, don't succumb to the
-pressure of defining performance in terms of output. If you do, sooner or later
-you will regret your life choices. And so will your people.
+What sits between creative efforts, or energy, and the bottom line output is,
+well, management. A company needs a vision, a strategy and a plan to channel
+those creative efforts in the right direction. It is especially true in complex
+situations with dozens of individuals involved. Without a structure there will
+be no direction.
 
-## PS the bottom line
+And so we're back to the same point. When we assign the bottom line KPIs to a
+creative worker efforts, that seems like a good idea. But, it puts the
+managerial and leadership burden on theirs shoulders. And because most employees
+have no influence over their leadership's decisions, the technical term for this
+is blame shifting.
 
-If you have red enough of my articles, you know I tend to be a bit abrasive when
-it comes to mediocre management practices. And so to avoid distractions, I have
-saved this for the last. Because some people have problems grasping the obvious.
+## Implementation notes
 
-So, what about the bottom line then? It's still important, right? Of course it
-is.
+Although behaviour based systems are the best way to manage people's performance
+that I know of, they are not all unicorns and rainbows. The main drawback is
+that they can be rather murky. Also, depending on the state of your HR and
+regulatory pressures, they can face some implementation challenges.
 
-The thing is though, there is a little gap between an individual creative person
-performance and the bottom line results. And that little gap is called the
-company leadership and strategy.
+The good news is that there are options. With a little bit of creative
+tinkering, behavioural system can be easily fit into old-school HR setups as
+regular JDs and KPIs. And continuous performance management masked as regular
+1on1s.
 
-The creative input of people working at a company is like fuel, it fill the
-company with creative potential. But if it is not channelled in the right
-direction by processes, vision and purpose, it all can be expanded into the thin
-air and amount to nothing. Throughout my career I've seen countless thousands of
-engineer/hours being committed without aim, structure or prep work. And I see
-this as rather tragic waste of human potential.
+Another challenge is very long corporate ladders. Coming up with distinct
+behavioural types for a 7 levels deep engineering seniority ladder can be a
+struggle. Still there are few options: one can either shorten the ladder and
+compensate people based on tenure. Or, they can engage the team itself to
+produce those distinct behaviours as a way to separate between the levels. You'd
+be surprised how much implicit hubris there usually is among team members to
+justify their seniority levels. You can channel that into a positive structure.
 
-And so when we assign the responsibility over the bottom line outcomes onto an
-IC shoulders, especially without giving them the full authority over the
-execution, we are dumping our own leadership responsibilities on them. The
-technical term for this is blame shifting.
-
-A leader is always ultimately _accountable_ for their team output. And they are
-directly _responsible_ for making sure that their team's creative efforts go
-into the right direction. That is the job. It's just as creative as any other,
-with all the probabilistic outcomes overheads. Sometimes we're right, sometimes
-we're wrong. And getting better at being wrong is the key.
-
-If you really feel strongly about connecting the bottom line to an IC's output,
-make it a bonus; people love bonuses. But, never threaten a person's self-image
-and income over what's really your own responsibilities.
+Whatever you do, though. Make sure that those behavioural definitions are well
+structured and clearly articulated. It is really easy to get confused in the
+absence of objective numbers.
