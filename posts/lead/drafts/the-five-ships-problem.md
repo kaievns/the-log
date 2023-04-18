@@ -3,27 +3,18 @@ title: The five ships problem
 draft: true
 ---
 
-We talk a lot about vertical vs. horizontal slicing. We write user stories that
-encapsulate multiple architecture layers to define _user value_. And then we
-hire a whole bunch of full-stack engineers and spread those stories among the
-team members.
-
-A typical scrum sprit would usually contain a variety of those stories, plus
-random bug fixes, UI improvements, performance patches, and a whole lot of other
-tasks. The team members would just grab them one by one as they go.
+A typical scrum sprint would have a variety of tasks. Some user stories, some
+bug fixes, ongoing UI improvements, performance and security patches, and all
+sorts of other tasks. And the engineers are expected to pick them one by one and
+deliver as they go.
 
 There is an old thought experiment that contradicts this approach to work. I
 like to occasionally throw it around to test POs/TLs process thinking. And
 weirdly enough a lot of them fail at the experiment; or they give the right
-answer, but keep sticking to the opposite practice in their day job.
+answer, but keep sticking to the opposite practices in their day job.
 
 As they say, no amount of proof will change the minds of true believers. So, I'm
 not here to change anyone's mind. I'm just sharing an idea.
-
-But, before we go, the credit for this idea should go where it's due. I don't
-know who's the original author of this experiment, but I red about it first in a
-book called "beyond the goal". It's easily one of my top 5 management books of
-all times and I couldn't recommend it more.
 
 ## The five ships problem
 
@@ -77,20 +68,20 @@ The real choice is this:
 1. 2-3 pissed off customers and full inventory overheads
 2. 2-3 extra happy customers and less inventory overheads
 
-And yeah, it's a trick question, there is no real choice.
+Yes, it's a trick question, there is no real choice.
 
 ## The mythical man month
 
 One of the most provocative software projects management books ever written is
-probably "the mythical man month". I consider it a great piece of management
-satire, and it has this famous graph:
+probably "the mythical man month". I consider it a great piece of engineering
+management satire, and it has this famous graph:
 
 <!-- ![Mythical man month](./images/people-vs-children.png) -->
 
 This graph describes a child birth and shows the dependency between the number
 of people involved in labour and the number of children delivered.
 
-Yes, it's a joke. But, some people take this picture for the face value and use
+Yes, it's a joke. But, some people take this picture at the face value and use
 it as a proof that teamwork in software engineering is basically stupid.
 
 Truth be told, I actually have a guilty habit of giving this book to read to new
@@ -107,3 +98,49 @@ tasks one by one, won't they? And many of those tasks can be parallelised,
 because it's vertical slicing and there are layers.
 
 ## Team goals
+
+The point of this idea is quite simple. Multi-tasking is counter productive not
+just for individuals, but for the teams as well. It is counter intuitive because
+it _feels_ like you're getting more done, but you really don't.
+
+While unlike an individual we could or could not make a strong case for the
+context-switch overheads, one thing is certain a focused approach to delivering
+value to a customer as fast as possible is important. And, it is even more
+important in an agile team context, because unlike ships in the dock there are
+priorities. Focusing on delivering the highest priority items first through a
+group effort is the key.
+
+Ideally, a team needs to move away from treating the backlog as a bucket of
+random things to do, and start thinking about _team goals_ instead. What the
+team is shipping in each iteration.
+
+Although this might sound like an anti-scrum propaganda, I'm not making the case
+against off the shelf agile practices here. Team goals can still be split into
+user stories and tasks.
+
+The point is that there is more than one way to split work into user stories and
+tickets. And all too often this split happens to facilitate independent work
+between the team members, which is counter productive. The same work could be,
+in many cases, organised in a way to involve most of the team in parallel. Even
+an assortment random bug fixes could be bucketed together into a team based bug
+squash session.
+
+Not only this will get the work done faster, it also will reduce cascading
+failure risks, as well as improve the team cohesion by feeding their collective
+sense of achievement.
+
+## Beyond the teams
+
+This story goes beyond specific teams and feeds into the overall organisation
+design. It's a rather nebulous topic, but I will touch on it very briefly here.
+
+Once we go beyond a single team and start considering the entire organisation
+context, we inevitably going to start talking about LEAN/Agile and the
+ubiquitous spotify model. All of those revolve around the idea of a value
+stream.
+
+In that context a value stream is essentially a sequence of team goals attached
+to a specific theme, like auth, or content, or billing. The work is iterative
+and goes one step at a time. And if a team starts meandering between multiple
+goals, that's generally considered a sign that the value steam slicing could be
+better.
