@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-cd403a15.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-65cfbfab.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-e54d4012.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-d7fa2c41.js"><title>Performance management, output vs. behaviour ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Performance management, output vs. behaviour ⁍ Kai Evans"><meta name="description" content="A piece on employee performance management through behavioural characteristics"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Performance management, output vs. behaviour ⁍ Kai Evans"><meta property="og:description" content="A piece on employee performance management through behavioural characteristics"><meta property="og:url" content="http://kaievans.co/posts/JIgbM"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/performance-behaviour-05d91cb9.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="512"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-04-16T14:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/JIgbM"><meta property="twitter:title" content="Performance management, output vs. behaviour ⁍ Kai Evans"><meta property="twitter:description" content="A piece on employee performance management through behavioural characteristics"><meta property="twitter:image" content="/_app/immutable/assets/performance-behaviour-05d91cb9.png"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">Performance management, output vs. behaviour</h1>
+<time datetime="2023-04-16T14:00:00.000Z" class="">17 April 2023</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag management" href="/tags/management">management</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag leadership" href="/tags/leadership">leadership</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>One of the key responsibilities of any manager is to manage performance of their
+direct reports. Which, despite of being a seemingly obvious concept, is a
+surprisingly murky subject that many managers struggle with. Often throughout
+their entire careers.</p>
+<p>I have a rather contrarian view on this subject when it comes to creative
+professionals like software engineers. And today I’m trying to outline the
+point.</p>
+<h2 id="the-price-chart"><a aria-hidden="true" tabindex="-1" href="#the-price-chart"><span class="icon icon-link"></span></a>The price chart</h2>
+<p>I’ll start with a bit of a diversion. Look at the picture below, it’s a random
+slice of the NASDAQ price chart.</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/price-chart-e3f81dde.webp" alt="NASDAQ price chart"><figcaption>NASDAQ price chart</figcaption></figure>
+<p>Do you see the ups and downs, right? So… Just buy low and sell high, or buy
+the dip as they say. Leverage yourself to the gills and you’ll get rich in no
+time. Money grow on trees, easy peasy lemon squeezy, right? Well yes, except
+roughly 95% of rather smart people who try that fail. Price charts look obvious
+in retrospect, but they are surprisingly hard to predict ahead of time.</p>
+<p>The EU actually has a law that requires brokers to disclose their account
+liquidation numbers. And on average, of people who try trading financial markets
+for a living, 70-80% blow up their accounts within the first few months.</p>
+<p>The point I’m making is that markets are <em>really</em>, <em>really</em>, and I mean <em>really</em>
+unpredictable. And that’s markets in their pure form, just money moving around.
+What does it tell you about more complex situations like a startup trying to
+find a market fit for their products amidst of all the complexities of running a
+company?</p>
+<p>That’s right, 95% of them will fail. Not because they’re run by idiots, but
+because pleasing the market is a surprisingly tough gig. And anyone who tells
+you that they had the right idea from the beginning and it all worked out as
+expected is either a fool, or a liar. Or they are trying to sell you consultancy
+services.</p>
+<h2 id="creative-bottom-line"><a aria-hidden="true" tabindex="-1" href="#creative-bottom-line"><span class="icon icon-link"></span></a>Creative bottom line</h2>
+<p>At the end of the day, what matters in any organisation is the bottom line; if
+that doesn’t move there is no organisation, pure and simple. And when we start
+talking about organisational performance, team performance, or an individual
+performance, what we really want to see is their effect on the bottom line.
+That’s why we hire people in the first place.</p>
+<p>This is particularly true for the creative class workers. Because it is their
+creative output that has the most impact on the organisational performance in
+the market. Engineers, product designers, marketers. Those are the people who
+create the bulk of business value out of thin air.</p>
+<p>Here is the problem though. If the markets are inherently unpredictable, then
+how can you attach fair and quantifiable bottom line KPIs to creative work that
+supposed to deliver results in those markets? Well, you really can’t. Because
+there is no telling what the market will do ahead of time, and the bottom line
+outcomes are, at a large degree, random.</p>
+<p>If that’s not an option, then what’s the next best thing? That’s right, define
+those KPIs as a reflection of how well a creative person “executes” on the Key
+Crew vision. But then again, if 95% of very smart people fail at trading pure
+price action in financial markets, then what does it say about the Key Crew
+ability to predict the market fit with their vision? And so we’re back to the
+same problem again, trying to measure the bottom line effect from innately
+unpredictable creative effort.</p>
+<p>Success in a creative field comes from having an edge that tilts probabilities
+of success in one’s favour. That edge comes from experience and knowing what a
+person is doing. An edge is not a guarantee though, it just allows one to stack
+up their wins and losses so that they would result in a net profit long term.</p>
+<h2 id="performance-management"><a aria-hidden="true" tabindex="-1" href="#performance-management"><span class="icon icon-link"></span></a>Performance management</h2>
+<p>The roots of the type of performance measurements that we’re trying to use on
+members of the creative class are going all the way back to the factory floors.
+That’s where they started to measure worker’s performance and assign measurable
+KPIs to their output. How many nuts and bolts they have tightened, or how much
+coal have they shovelled into a furnace per hour.</p>
+<p>Unfortunately, that is not how creative efforts work. Creative work doesn’t pay
+by the hour, it pays per a good market fit idea. And for every good idea there
+are usually a dozen of not so great ones. Produced by exactly the same people.</p>
+<p>And I’m talking about pure product work here, not taking into the consideration
+all other organisational, logistic, compliance, and financial complexities
+attached to pretty much any creative endeavour in a technology company those
+days.</p>
+<p>Measuring creative output as brickworks is just not a very smart idea.</p>
+<p>There is one good use for bottom line KPIs based performance management in any
+creative industry though, and that is to drive people out. If you really want to
+get rid of a person, just put them on a performance improvement plan with
+objective KPIs attached, and they will resign themselves after the first check
+in.</p>
+<p>If you like your people and would rather want to retain them, then maybe
+consider doing the opposite of what makes people leave.</p>
+<h2 id="the-behavioural-model"><a aria-hidden="true" tabindex="-1" href="#the-behavioural-model"><span class="icon icon-link"></span></a>The behavioural model</h2>
+<p>Fortunately, there is another way to look at this problem. And that is to use a
+behavioural model. There are a few frameworks to choose from, but they all boil
+down to the same point.</p>
+<p>Seniority of a person in any field is defined by their experience. Roughly
+speaking seniority represents the amount of complexity a person can be <em>trusted</em>
+to deal with unassisted. Those past experiences define the person’s <em>behaviour</em>,
+or attitude, towards the problems they are working on.</p>
+<p>Here is a very simple model from the adult responsibilities development theory:</p>
+<ul><li><code>dependant</code> - a person is unable to take on tasks without a supervision</li>
+<li><code>independent</code> - a person can perform most tasks by themselves</li>
+<li><code>inter-dependent</code> - a person is focused on leading and coaching others</li></ul>
+<p>Each level is defined via a person’s behaviour which results in the types of
+tasks they can be trusted to reliably handle. The point of this approach is that
+it is the <em>behaviour</em> of a person that dictates the outcomes, rather than skill
+and knowledge. And that is a very true idea in creative professions, especially
+in this day and age when knowledge has become a commodity.</p>
+<p>And if you subscribe to the idea that it is the <em>behaviour</em> that drives the
+outcomes in a creative field, then it follows that performance management should
+focus on those behaviours rather than the bottom line figures and outcomes.</p>
+<h2 id="real-life-examples"><a aria-hidden="true" tabindex="-1" href="#real-life-examples"><span class="icon icon-link"></span></a>Real life examples</h2>
+<p>Let me give you a few examples that are closer to the real life situations to
+give you an idea of how it looks like. I made this super simple software
+engineering seniority ladder below. I have limited it to just three steps so I
+could link it to the behavioural framework above.</p>
+<ul><li><code>junior developer</code> - corresponds to the <strong>dependant</strong>, they supposed to learn
+and ask a lot of questions,they are not supposed to commit production work
+unsupervised</li>
+<li><code>senior engineer</code> - corresponds to the <strong>independent</strong>, meaning they supposed
+to be able to solve most technical problems unassisted</li>
+<li><code>technical lead</code> - corresponds to the <strong>inter-dependent</strong>, they supposed to
+navigate technical decisions and coach people</li></ul>
+<p>Now lets look at a few situations where <em>behaviours</em> of those engineers don’t
+fit the expectations based on their seniority:</p>
+<ul><li>A senior engineer requires constant input and corrections to their work. Which
+means they cannot commit production work independently. Their <em>behaviour</em>
+matches the junior developer rather than a senior one</li>
+<li>A tech lead throws their weight around, breaks away from the team and takes on
+technical tasks independently. Their <em>behaviour</em> reflects the <strong>independent</strong>
+senior engineer role rather a technical lead one</li>
+<li>A junior developer takes on tasks and completes them with satisfactory quality
+on their own. They can tackle the bulk of technical challenges by themselves.
+In this instance they <em>behave</em> like an <strong>independent</strong> senior engineer.</li>
+<li>A senior engineer helps their team members to compare pros and cons of a
+technical decision, gives their opinion, and actively tries to elevate other
+members in terms of their skill and knowledge. This person is focused on the
+team <strong>inter-dependencies</strong> and <em>behaves</em> like a tech lead</li></ul>
+<p>Here is another set of behavioural issues. Those don’t represent as much of a
+level mismatch, but rather point out that a correction needs to be made to help
+a person to fulfil their role in a more consistent way:</p>
+<ul><li>A junior engineer keeps picking up tasks way above their head and try to work
+on those independently without a guidance. In this case you might need to
+reiterate the need for focusing on learning from others.</li>
+<li>A senior engineer, perfectly capable of solving problems on their own,
+constantly asks for hand-holding. Looks like they need some enablement work
+done.</li>
+<li>A tech lead keeps trying to be the smartest person in the room without paying
+much attention to how it affects other members of the team. They probably
+could use some self-awareness and people skills coaching to overcome the
+habit.</li></ul>
+<p>I hope it makes more sense now, and you can see how a person’s behaviour is
+linked to their ability to enact each seniority level role. There is no bottom
+line KPIs in here, no lines of code, no points per sprint shipped or anything
+like that. And yet, this system allows us to clearly delineate performance and
+seniority levels.</p>
+<h2 id="continuous-performance-management"><a aria-hidden="true" tabindex="-1" href="#continuous-performance-management"><span class="icon icon-link"></span></a>Continuous performance management</h2>
+<p>One of the biggest drawbacks of a factory style management systems with
+objective bottom line KPIs and annual performance reviews is the disconnection
+between what a person does and what their performance review says. It’s bad
+enough that in creative industry a person’s effort doesn’t always reflect in the
+marketable results. But, giving a person “quantifiable” feedback months later
+when they can’t even remember the details of what they did is exceptionally
+counter productive to their growth and development.</p>
+<p>In behavioural systems that approach just doesn’t work. Behavioural feedback, in
+order to be effective, needs to be immediate. That is especially critical when a
+person is in the process of transitioning between seniority levels and not
+entirely confident yet about expectations for their new role.</p>
+<p>And in that light, the behaviour based management systems focus on what’s known
+as the <strong>continuous performance management</strong>. Which normally manifests as weekly
+1-on-1s and regular coaching sessions. The idea is that rather than wait for
+annual or quarterly reviews, a person receives an immediate feedback to their
+behaviour; both positive and negative. Expectations are constantly reiterated
+and gaps are addressed before they develop into actual problems.</p>
+<p>This approach allows the people to reach their optimal performance levels and
+become productive as quickly as possible. Which, in turn, leads to the positive
+outcomes as soon as the circumstances will allow.</p>
+<p>My personal favourite part of continuous behaviour based performance management
+is that one doesn’t need to wait for quarterly or annual numbers to arrive to
+justify a person’s promotion. As soon as a person can demonstrate behaviour
+consistent with their next level, and they have skill/knowledge for it, they can
+be safely promoted. This allows a company to elevate their overall seniority
+levels very quickly. Which, inevitably, has a positive impact on the bottom line
+deliverables. Because the more senior people are, the better the chances that
+they will produce something market worthy.</p>
+<h2 id="the-bottom-line"><a aria-hidden="true" tabindex="-1" href="#the-bottom-line"><span class="icon icon-link"></span></a>The bottom line</h2>
+<p>There is a yet another way to look at the problem, that we need to discuss,
+though. Because, when we say that correct behaviour leads to positive results,
+there are a few missing bits in this structure.</p>
+<p>We can think about the problem this way. Behaviours are essentially the
+pre-requisites, or leading indicators if you will. And the bottom line outcomes
+are the lagging indicators. And so, we need to consider what sits in between
+those two.</p>
+<p>The right types of behaviours lead to high performance. But any type of high
+performance can be aimlessly exhausted into the void without producing any
+marketable results. The history of technology is littered with corpses of
+companies that wasted endless years of high quality engineering efforts without
+producing anything useful.</p>
+<p>What sits between creative efforts, or energy, and the bottom line output is,
+well, management. A company needs a vision, a strategy and a plan to channel
+those creative efforts in the right direction. It is especially true in complex
+situations with dozens of individuals involved. Without a structure there will
+be no direction.</p>
+<p>And so we’re back to the same point. When we assign the bottom line KPIs to a
+creative worker efforts, that seems like a good idea. But, it puts the
+managerial and leadership burden on theirs shoulders. And because most employees
+have no influence over their leadership’s decisions, the technical term for this
+is blame shifting.</p>
+<h2 id="final-remarks"><a aria-hidden="true" tabindex="-1" href="#final-remarks"><span class="icon icon-link"></span></a>Final remarks</h2>
+<p>To be clear, I’m not against KPIs; role definitions need to be clear and
+structured. I am arguing against using KPIs as a blunt tool to measure the
+<em>output</em> rather than <em>behaviour</em>; be that bottom line dollar figures or lines of
+code produced.</p>
+<p>Product adoption in the market is probabilistic. Software engineering is
+probabilistic. Management is at most making the best guess with limited
+information. The same exact person can work on the same exact task 5 times and
+produce 5 different outcomes. In any creative endeavour there is a gap between
+the person’s best efforts and the final results.</p>
+<p>The tendency for measuring the output is understandable, it is much easier to
+quantify than something as fluffy as a behaviour. But having something
+objectively measurable doesn’t necessarily produce the true reflection of the
+reality. Because every objective measurement requires an <em>interpretation</em> to
+produce meaning. And if the interpretation if flawed then so will be the
+meaning.</p>
+<p>The best predictor of a person’s performance in a creative field that we know of
+is their <em>behaviour</em>; or how well they enact their <em>role</em> in an organisation.
+It’s not the only aspect of a role; skill and knowledge definitely have a
+significant part. But, <em>behaviour</em> plays the central role, and that what should
+be primarily used as a measurement stick for one’s performance.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2023 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="17ubri2">
+			import { start } from "../_app/immutable/start-cd403a15.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="17ubri2"]').parentNode,
+				version: "1681776833262",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>
