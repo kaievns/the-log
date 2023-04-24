@@ -1,7 +1,23 @@
 ---
 slug: mDPrA
+date: 24 April 2023
 title: The beach
-draft: true
+description: A short essay about the role of technology in a software
+  development organisation
+thumbnail: ./images/the-beach.png
+tags:
+  - strategy
+  - management
+  - technology
+  - leadership
+medium:
+  tags:
+    - Engineering management
+    - Technical strategy
+    - Leadership
+    - Management
+    - Strategy
+  id: bd15bee036b9
 ---
 
 When we look at software engineering companies throughout the years, we can see
