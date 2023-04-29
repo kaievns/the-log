@@ -1,16 +1,28 @@
 ---
 slug: xMLqU
-title: Risk management 101
+date: 1 May 2023
+title: Risk management fundamentals
+description: Diving into the basics of risk management, tools and tactics
+tags:
+  - management
+  - leadership
+  - strategy
+medium:
+  tags:
+    - Engineering management
+    - Technical leadership
+    - Risk management
+    - Strategy
 ---
 
-Lets talk about some boring stuff. The one that saves lives and companies alike.
-The risk management. However critical this topic seems, it's weirdly rarely
-taught to new managers, especially those promoted to engineering management from
-technical leads without formal education.
+Lets talk about some boring stuff. The type that saves lives and companies
+alike. The risk management. However critical this topic seems, it's surprisingly
+rarely taught to new managers, especially those promoted to engineering
+management from technical leads without formal education.
 
-People skills and technical chops are great, but if we keep doing dumb things
-with risk management we will be net negative long term. So, I'm here to share
-what I have gathered so far on the subject.
+People skills and technical chops are great, but if we keep doing less than
+stellar things with risk management we will be net negative long term. Today I'm
+here to share what I have gathered so far on the subject.
 
 ## What _is_ risk?
 
@@ -192,3 +204,14 @@ We can even think of running a business as a whole as an exercise in risk
 management and think about it this way: the team does the actual work, and the
 manager manages the risks. So that the team could focus on doing their best
 work.
+
+And in that light, risk management practices go way beyond managing operational
+or delivery failures. All the agile practices are essentially about managing the
+risks of investing development time. A good people strategy is essentially about
+managing the risks of turnover. Building a good company culture is about
+managing the risks associated with disagreements. The list goes on and on.
+
+Once you start thinking of your managerial job in terms of risk management --
+rather than people, technology, and processes management -- your job will start
+to come to you much more naturally. And it is this risk management mindset that
+will eventually prepare you to take on a more strategic role in an organisation.
