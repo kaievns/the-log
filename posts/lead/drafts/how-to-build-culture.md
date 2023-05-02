@@ -5,8 +5,8 @@ title: How to build a good culture
 
 There is no shortage of talk about building a good culture in organisations
 those days. And if you have red my article about the
-[inner workings of a culture](/posts/lead/on-culture-and-belonging.md) -- yes, a
-shameless plug -- you know I have a rather specific view on the subject.
+[inner workings of a culture](/posts/we0V4) -- yes, a shameless plug -- you know
+I have a rather specific view on the subject.
 
 And so, today, I wanted to step away from generalisms and talk more specifics:
 how to actually build a decent culture. And yes, it doesn't have to involve

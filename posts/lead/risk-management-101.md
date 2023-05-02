@@ -3,6 +3,7 @@ slug: xMLqU
 date: 1 May 2023
 title: Risk management fundamentals
 description: Diving into the basics of risk management, tools and tactics
+thumbnail: ./images/risk-management.png
 tags:
   - management
   - leadership
@@ -13,12 +14,13 @@ medium:
     - Technical leadership
     - Risk management
     - Strategy
+  id: 35d7eae04d61
 ---
 
-Lets talk about some boring stuff. The type that saves lives and companies
-alike. The risk management. However critical this topic seems, it's surprisingly
-rarely taught to new managers, especially those promoted to engineering
-management from technical leads without formal education.
+Lets talk about some boring stuff. The one that saves lives and companies alike.
+The risk management. However critical this topic seems, it's surprisingly rarely
+taught to new managers, especially those promoted to engineering management from
+technical leads without formal education.
 
 People skills and technical chops are great, but if we keep doing less than
 stellar things with risk management we will be net negative long term. Today I'm
@@ -30,10 +32,9 @@ Whatever you do in life, you take a risk. You step outside, you risk getting hit
 by a bus. You apply for a job, you risk being rejected. You breath in, you risk
 getting infected. Literally everything you do involves risks. Even when you
 don't do anything you risk missing opportunities. And that makes risks almost
-invisible to our minds; something we don't really like thinking about much. It's
-somehow unnatural to us to think about death and loosing stuff.
+invisible to our minds; something we don't really like thinking about much.
 
-In the most simplified way, we could say that risk is a likelihood of a loss;
+In the most simplified way, we could say that a risk is a likelihood of a loss;
 material, emotional, or any other. A risk always involves two things: damage and
 probability. And that is exactly how it's defined in most industries.
 
@@ -60,15 +61,15 @@ It looks somewhat like so:
 | Dave gets upset  | low        | Dave is sensitive | give him a hug  |
 
 Here is the thing though. A risk register, although a critical piece of
-documentation, is just a useless cover-my-ass proclamation if it is not paired
+documentation, is just a useless cover-my-back proclamation if it is not paired
 with sensible risk management practices and sound decision making. And that is
 what we will be looking at in the rest of this article.
 
 ## Asymmetric risks
 
 A risk is only one side of the story. The other one is a reward. There is always
-one. And when you pair a risk and a reward, you have what's called a risk to
-reward ratio.
+one. And when you pair a risk and a reward, you have what's called **a risk to
+reward ratio**.
 
 Life being a messy endeavour, risks and rewards almost never come in equal
 proportions; usually one is larger than the other. In cases when the risk is
@@ -134,7 +135,7 @@ one of the following happens:
 
 A cycle or two later the same thing happens, and then again, and then again.
 Everyone is just struck by this weirdest case of amnesia. It's like a ground hog
-day, but no one remembers anything. Well, except your boss and your investors
+day, except no one remembers anything. Well, your boss and your investors
 probably do.
 
 This happens _a lot_. Everyone I know can recall a handful of examples like
@@ -147,13 +148,14 @@ When something abnormal happens we instinctively seek explanations. And the
 easiest explanation of them all is: _"it's [name] fault. but they're alright.
 they won't do it again. Lets just give them some space and move on."_
 
-I'm here to tell you that this is horse shit. Because a human failure is always
-a result of a faulty system they operate in. People don't make mistakes because
-they're are dumb, people make mistakes because systems allow for mistakes. But,
+I'm here to tell you that this is a BS. A human failure is always a result of a
+faulty system they operate in. People don't make mistakes because they're are
+dumb, people make mistakes because systems allow for mistakes to happen. But,
 because risks are probabilistic we somehow miss the fact that failures are
 random and attribute them to a person who happened to be there when they occur.
 
-When that happens, the overall system starts drifting into an eventual failure.
+When that happens and continues unchallenged, the overall system starts drifting
+into an eventual failure.
 
 ## The essence of risk management
 
@@ -181,19 +183,19 @@ in this group.
 By **controls** we mean reducing the _probability_ of a risk occurrence. Some
 risks are unavoidable. For example we have to deploy new applications, and that
 comes with a risk of damaging the current operational environment. We can
-_control_ this risk by automating deployments and employing sensible continuous
-delivery practices.
+_control_ this risk by automating deployments, writing tests, and employing
+sensible continuous delivery practices.
 
 And finally, by **containment** we mean a set of processes directed to dealing
 with the aftermath of a failure. The basic idea here is that having the team
-unprepared for dealing with a failure is a risk too. Preventing cascading
+unprepared for dealing with a failure is a risk on its own. Preventing cascading
 failures is another element in this category.
 
 ## Final notes
 
-Risk management is a rather extensive topic and wouldn't fit into an article
-even if I could express it all. But, I hope this gave you a general idea what
-it's all about and what tools you have at your disposal.
+Risk management is a rather extensive topic and wouldn't fit into a single
+article even if I could express it all. But, I hope this gave you a general idea
+what it's all about and what tools you have at your disposal.
 
 Thinking about risks requires a rather different mindset. One needs to think of
 risks more as if they have already happened and less as a distant possibility.
@@ -202,8 +204,8 @@ general.
 
 We can even think of running a business as a whole as an exercise in risk
 management and think about it this way: the team does the actual work, and the
-manager manages the risks. So that the team could focus on doing their best
-work.
+manager manages the risks. So that the team could focus on doing their best work
+rather than dealing with failures.
 
 And in that light, risk management practices go way beyond managing operational
 or delivery failures. All the agile practices are essentially about managing the
@@ -212,6 +214,7 @@ managing the risks of turnover. Building a good company culture is about
 managing the risks associated with disagreements. The list goes on and on.
 
 Once you start thinking of your managerial job in terms of risk management --
-rather than people, technology, and processes management -- your job will start
-to come to you much more naturally. And it is this risk management mindset that
-will eventually prepare you to take on a more strategic role in an organisation.
+rather than people, technology, and processes management -- your managerial
+responsibilities will start coming to you much more naturally. And it is this
+risk management mindset that will eventually prepare you to take on a more
+strategic role in an organisation.
