@@ -8,16 +8,18 @@ those days. And if you have red my article about the
 [inner workings of a culture](/posts/we0V4) -- yes, a shameless plug -- you know
 I have a rather specific view on the subject.
 
-And so, today, I wanted to step away from generalisms and talk more specifics:
-how to actually build a decent culture. And yes, it doesn't have to involve
-buying a ping-pong table and hanging the company values posters in the office.
+And so, today, I wanted to step away from those generalisms and talk more
+specifics: how to actually build a decent culture. And yes, it doesn't have to
+involve buying a ping-pong table and hanging the company values posters in the
+office.
 
 ## What are the rules
 
 As I said in my previous article, I'm not a huge fan of values based culture
 creation. Because it's not specific enough for the actual goal we're trying to
-achieve. And so, instead I will talk about it in terms of creating a good solid
-environment conducive to creative work, such as software engineering.
+achieve; which is building a great engineering culture. And so, instead, I will
+talk about it in terms of creating a good solid environment conducive to
+creative work, such as software engineering.
 
 My main problem with values driven environments is that they tend to mostly
 contain and proliferate the founders values rather than the group's needs and
@@ -47,9 +49,9 @@ As a leader, you need to forgo your own comfort and focus on those three.
 ## Culture and belongingness
 
 Belongingness is the foundation of any strongly cohesive group dynamic. It is
-the sense of belongingness that generates the unconditional trust that all high
+the sense of belongingness that generates the implicit trust that all high
 performing teams require to operate successfully; especially if a decent amount
-of stress involved.
+of stress and uncertainty involved.
 
 Belongingness is a double edged tool though. The easiest way to cultivate a
 sense of belongingness is to run an exclusive club. If all the members are
@@ -68,17 +70,17 @@ because it is intuitive and non-verbal. Words don't really matter much here, and
 a person needs to _feel_ like they belong to a group, not to rationalise it.
 
 The problem here is that belongingness grows out of one's _identity_. If a
-person can bring their whole self into a group and drop the barriers, and hence
-become a productive member of a peer group, then they can say that they belong
-there. If on the other hand, their identity is not acknowledged or considered
-inferior the identities of the rest of the group, then this person is bound to
-struggle regardless of anyone's best efforts and intentions.
+person can bring their whole self into a group and drop their barriers -- and
+hence become a productive member of a peer group -- then they can say that they
+belong there. If on the other hand, their identity is not acknowledged or
+considered inferior the identities of the rest of the group, then this person is
+bound to struggle regardless of anyone's best efforts and intentions.
 
 There is a way out of this mess, and it's called **diversity**. An identity of a
 group can be purposefully crafted around the idea of diversity as the unifying
-factor. If a group is purposefully non-homogeneous, and differences are prised,
-then it is bringing the unique self into the group that turns into the bonding
-factor. Being different brings value.
+factor. If a group is purposefully non-homogeneous, and differences are innately
+valued, then it is bringing that unique self into the group that turns into the
+bonding factor. Being different brings value to the group.
 
 It is a surprisingly difficult feat to pull off, though. Basically because in
 any diverse environment there is usually a dominant group that will _allow_ for
@@ -96,22 +98,100 @@ Look, I didn't say it will be easy. Nothing worth doing is easy.
 
 ## The future that binds us
 
-In my humble opinion, the dumbest thing any leader can do is to threaten firing
-people if they won't do what they are told. Another one in the same category
-would be going into redundancies and expect that those who remains would feel
-grateful to still have a job. Here is another one, hire a whole lot of
+In my humble opinion, one of the moronic thing any leader can do is to threaten
+firing people if they won't do what they are told. Another one in the same
+category would be going into redundancies and expect that those who remain would
+feel grateful to still have a job. Here is another one, hire a whole lot of
 contractors to get to the market faster.
 
 What do you think all of those decisions have in common and why they are
-detrimental to creating a good robust culture? It's one thing, those decisions
-either threaten or don't assume continuity in a relationship.
+detrimental to creating a good robust culture? It's just one thing: those
+decisions either threaten or don't assume continuity in a relationship.
 
-Continuity is another critical ingredient in any healthy culture. Because if
-there is no future, or the future is highly uncertain, then why bother? Why
-bother going extra mile, why bother to be helpful, why even bother staying with
-the group? Time is universally in a limited supply for everyone, and no-one in
-their right mind will invest their most precious assent into something that has
-no future.
+Continuity, or shared future, is another critical ingredient in any healthy
+culture. Because if there is no future, or the future is highly uncertain, then
+why bother? Why bother going extra mile, why bother to be helpful, why even
+bother staying with the group? Time is universally in a limited supply for
+everyone, and no-one in their right mind will invest their most precious assent
+into something that has no future.
 
 Even the most loyal to the company and it's mission will mentally check out and
 play it safe if their future with the company is threatened.
+
+Employment is a source of income for most people, but it is also a source of
+purpose. It is especially true for the most impactful creative professionals.
+Because creative people seek creative experiences, that's how they derive
+meaning and value in their lives. And an act of creation is innately linked with
+things to come, the future. Break that link and you break the reason for a
+creative person to show up for work.
+
+The opposite is also true. Buy creating a lofty goal, a leader can create a
+narrative where the work people do is linked to a shared future. And that is why
+"lets change the world for the better" slogans are so effective, even though
+they are kind of a cringe. The goal doesn't have to be saving the world though,
+it could as well be as mundane as building a decent place to work.
+
+If a sense of belongingness is a fundament for trust and formation of a robust
+culture, then the shared future is the glue that keeps everyone together.
+
+## Safe environment
+
+There is and endless list of amazing articles about psychological safety at a
+work place. So, I won't beat around the bush and repeat the point. But, I wanted
+to add a few points that relate to building a good culture at work.
+
+If belongingness and shared future are prerequisites for people to show up
+excited about work, then their safety basically defines the limits to as far as
+people will go in their efforts.
+
+Creative work is always exploratory and uncertain. Every time an engineer takes
+up a ticket and start writing code, they take risks. Risks that thing won't pan
+out the way they imagined, risks that they will run into unexplored areas, risks
+that their solution will explode weeks later. And they will only take as much
+risks as their appetite for possible repercussions will allow them.
+
+Here is the problem though. The team's leader/manager is the most privileged
+person in the group. As the result they won't _feel_ or _see_ the risks the way
+the people who actually do the work do. It is especially true in a
+cross-functional environment where the leader can't make innate value judgements
+for half of the people on the team.
+
+One smart person described it this way. Imagine you're working at a nuclear
+waste excavation and disposal site, and you have a Geiger's counter. Actually
+most of your team don't, it's just a few of them have geiger counters. Just
+_believing_ that everyone's safe without listening to those who can actually
+measure the environment is basically irresponsible.
+
+Psychological safety issues in a team don't start with the leadership or it's
+strongest members, they affect the most vulnerable first. Junior devs,
+minorities, people who are going through a rough patch in life. Those are the
+people you have to _really listen to_ if you are serious about building
+psychological safety at work.
+
+Ever heard of a canary in a mine? Every single team has one. Make sure you find
+them and listen to them all the time.
+
+## Closing remarks
+
+I'll try to wrap it up in a rather controversial way. But this is the best
+analogy I have at the moment.
+
+Has it ever bugged you how much similarity there is between christian religious
+structures and contemporary run off the mill corporate business setting? In most
+of those companies an employee is expected to universally accept the N values,
+and then demonstrate unconditional trust into the clergy and their decisions.
+
+Given how long christianity has survived so far, it might be not the most
+terrible idea. But there is also a very dramatic history of suppressed
+innovation and intolerance for divergent ideas. And so, if we're trying to
+create a culture that supports disruptive innovation, that might be not the best
+system to use as a template.
+
+Where you might want to look instead is copying practices from creative
+undergrounds, because that is where innovation naturally happen. And most of
+those share similar traits: praising diversity, shared drive for building the
+better tomorrow, and looking after the most vulnerable members of the community.
+
+Do that in any form that works for you and you will be better off in terms of
+building a productive engineering culture than 90% of those companies that hang
+their values posters on walls
