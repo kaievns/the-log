@@ -1,13 +1,21 @@
 ---
 slug: lEfNk
 date: 08 May 2023
-title: How to build a good culture
+title: How to build a great culture
 description: Diving into the nitty gritty of building a great culture at a workplace
+thumbnail: ./images/how-to-create-culture.png
 tags:
   - management
   - leadership
   - culture
-draft: true
+medium:
+  tags:
+    - Engineering management
+    - Technical leadership
+    - Psychological safety
+    - Work culture
+    - Leadership
+  id: cfbcaf029c53
 ---
 
 There is no shortage of talk about building a good culture in organisations
@@ -37,9 +45,9 @@ that ever happens.
 
 Instead, I want to talk about the fundamentals. I want to talk about building a
 great working environment with strong peers cohesion from scratch. How it works
-and what's important. So, lets dive into this.
+and what's important.
 
-There is most likely more than one way to look at the problem, but there is a
+There are, most likely, more than one way to look at the problem, but there is a
 framework that had stuck with me throughout the years. It defines the
 prerequisites for a person's safe and productive attachment to a peer group.
 It's formulated through the following three fundamental questions:
@@ -66,7 +74,7 @@ well when they face change.
 We don't have to walk far to see examples of that. The history of open-source is
 littered with the white middle-class dude communities. They all struggle to
 expand beyond those circles even when they try really hard to be open and
-inclusive. Because, if an new member is not like the 90% of a homogeneous group,
+inclusive. Because if an new member is not like the 90% of a homogeneous group,
 they won't feel like they belong there, no matter what the group leaders say.
 
 And that brings us to the main point. We call this a _sense_ of belonging
