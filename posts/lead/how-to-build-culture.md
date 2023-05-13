@@ -190,11 +190,11 @@ them and listen to them all the time.
 I'll try to wrap it up in a rather controversial way. But, this is the best
 analogy I have at the moment.
 
-Have you ever notice how similar religious structures and contemporary corporate
-environments are? When you look at a company after a company, you'll see that
-all of them have N tenets that employees supposed to adopt as their own, and on
-top of that they have to demonstrate unconditional trust into the clergy and
-their decisions.
+Have you ever noticed how similar religious organisations structures and
+contemporary corporate environments are? When you look at a company after a
+company, you'll see that all of them have N tenets that employees supposed to
+adopt as their own, and on top of that they have to demonstrate unconditional
+trust into the clergy and their decisions.
 
 Given how long religions tend to survive, it might be not the most terrible
 idea. But, there is also a very dramatic history of suppressed innovation and
