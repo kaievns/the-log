@@ -3,9 +3,9 @@ slug: BfUL8
 title: The inverse Conway's manoeuvre 
 ---
 
-Today we're going to be talking about an often forgotten topic: the
-interdependency between the software architecture and an organisation structure;
-and how to use that to one's advantage.
+Today we're going to be looking at an often forgotten topic: the interdependency
+between the software architecture and an organisation structure; and how to use
+that to one's advantage.
 
 ## Who is Conway
 
@@ -23,15 +23,15 @@ Which eventually became known as the Conway's law.
 
 ## The Conway's law
 
-What the Conway's law describes is the interdependency between the application
-architecture and the organisational structure. And that is an important factor
-to keep in mind when an organisation starts to run more than one team.
+What the Conway's law describes is the interdependency between an application
+architecture and an organisational structure. Which is an important factor to
+keep in mind when an organisation starts to run more than one team.
 
-For example, if the application has a monolithic architecture then the team that
+For example, if an application has a monolithic architecture then the team that
 works on it will have to have a monolithic structure. If we try to run several
-teams on an application like that, because of the internal dependencies, that
-will inevitably create friction between the teams. And, eventually, they will
-start _acting_ like one large team.
+independent teams on an application like that, because of the internal
+dependencies, that will inevitably create friction between these teams. And,
+eventually, they will start _acting_ like one large team.
 
 Conversely, if an application has a modular architecture like, for example,
 microservices based architecture. That will land itself very well to be handled
@@ -47,19 +47,19 @@ Conway's law is quite ubiquitous, and it could be used to one's advantage.
 ## The inverse Conway's manoeuvre
 
 In a traditional software development company we would see some Very Smart
-People designing an applications architecture, and then the engineering
-management team would "execute" on that vision by creating teams to support that
+People designing an application architecture. And then an engineering management
+team would "execute" on that vision by creating teams to support that
 architecture.
 
 As the Conway's law demonstrates there is a clear dependency between the
 architecture and an organisational structure. And, as such, that approach may or
-may not work out in the company's favour depending on whether the proposed
-architecture matches the created org structure.
+may not work out in the company's favour; depending on whether the proposed
+architecture matches the company's org structure.
 
 This approach can, and should be flipped around. And that is where what's known
-as the _inverse Conway's manoeuvre comes_ in handy. The idea is that instead of
-an architecture being handed down to the teams as a gospel, the teams themselves
-should be structured _first_ in a way that would produce the needed
+as the **inverse Conway's manoeuvre** comes in handy. The idea is that instead
+of an architecture being handed down to the teams as a gospel, the teams
+themselves should be structured _first_ in a way that would produce the needed
 architecture.
 
 The most common case scenario is that an org chart is created of small
@@ -72,17 +72,17 @@ structure.
 In the age of agile, architecture is a feeble master to serve. Because defining
 architecture ahead of time in exact details is a cardinal sin akin to trying to
 predict the future with product features. Sooner or later it will disappoint the
-same way the waterfall practices do.
+same way as waterfall practices do.
 
 That does not mean that architectural patterns are a bad idea. It just means
 that the system needs to evolve along side the product discovery process. And
 since we don't know what the product will really look like after it meets the
-markets, a predefined architecture will sooner or later turn into a technical
-debt.
+markets, that predefined architecture will sooner or later will start getting in
+the way of getting work don.
 
-In non-trivial cases technology always follows the organisational structure, and
-the organisational structure can be purposefully attached to the business
-structure. And that sequence will eventually put technology in the most
+In non-trivial cases architecture always follows the organisational structure,
+and the organisational structure can be purposefully attached to the business
+structure. And that structure will eventually put technology in the most
 impactful position.
 
 ## A common use case
@@ -102,19 +102,30 @@ The problem is that the Very Smart Person has no history with the application,
 but the team does. They dutifully start chopping the monolith to pieces, and
 then one of two scenarios occur. Either the team rebuilds the original monolith
 into a distributed monolith. Or they call BS on the new architecture because
-everything is hard and mass resign. It's not that the proposed architecture is
-bad, the Very Smart Person knows what they're doing after all. The problem is
-that the architecture didn't match the way the original team works.
+everything is hard; and then they mass resign. It's not that the proposed
+architecture is bad, the Very Smart Person knows what they're doing after all.
+The problem is that the architecture didn't match the way the original team was
+operating.
 
-A better approach is to partition the original team into independent squads,
-then let each squad to take ownership over specific areas of the application,
-and then let these squads tear the application apart along the lines of
-ownership.
+A better approach is to partition the original team into independent squads.
+Then let each squad take ownership over specific areas of the application. And
+then let these squads tear the application apart along the lines of ownership.
 
-Everyone will be crying the first month or two, but you can use those points of
-tension as a radar for where exactly the changes need to be made in the
-architecture. In most cases the teams won't even need a Very Smart Person
-telling them what to do.
+Everyone complains the first month or two, because we have changed the way the
+team used to operate. And that change started to show pain points when applied
+to the old monolith. But, this pain also pushes the teams toward splitting the
+old architecture as quickly and sensibly as possible. In most cases the teams
+won't even need a Very Smart Person to guide them through the process.
 
 We design the communication patterns _first_ (independent squads), and then we
 let those communication patterns to drive architectural decisions.
+
+## Wrapping up
+
+The Conway's law is a great tool to have in your pocket whether you are an
+engineering manager, or in the field of technical leadership. Scaling software
+engineering organisations is surprising challenging and tools like that can get
+very handy.
+
+Also, if you liked this idea and want more, I can recommend diving into the
+field of the devops topology, that have a lot more to offer.
