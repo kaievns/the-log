@@ -1,19 +1,33 @@
 ---
 slug: BfUL8
-title: The inverse Conway's manoeuvre 
+date: 15 May 2023
+title: The inverse Conway's manoeuvre
+description: An article about interdependency between architecture and org structure
+thumbnail: ./images/inverse-conway.png
+tags:
+  - leadership
+  - management
+medium:
+  tags:
+    - Leadership
+    - Management
+    - Engineering management
+    - Technical leadership
+    - Strategy
+  id: e92a18a200e9
 ---
 
 Today we're going to be looking at an often forgotten topic: the interdependency
 between the software architecture and an organisation structure; and how to use
 that to one's advantage.
 
-## Who is Conway
+## Who is Conway?
 
-There are two luminary people in software engineering named Conway that are
-often mistakenly thought to be the same person. One is a british mathematician
-_John_ Conway famous for creating the
+There are two luminary people in software engineering named Conway who are often
+mistakenly thought to be the same person. One is a british mathematician _John_
+Conway famous for creating the
 [game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). And the
-other is _Melvin_ Conway an american computer scientist who postulated the
+other one is _Melvin_ Conway an american computer scientist who postulated the
 following idea:
 
 > Organizations, who design systems, are constrained to produce designs which
@@ -78,7 +92,7 @@ That does not mean that architectural patterns are a bad idea. It just means
 that the system needs to evolve along side the product discovery process. And
 since we don't know what the product will really look like after it meets the
 markets, that predefined architecture will sooner or later will start getting in
-the way of getting work don.
+the way of getting the work done.
 
 In non-trivial cases architecture always follows the organisational structure,
 and the organisational structure can be purposefully attached to the business
@@ -102,7 +116,7 @@ The problem is that the Very Smart Person has no history with the application,
 but the team does. They dutifully start chopping the monolith to pieces, and
 then one of two scenarios occur. Either the team rebuilds the original monolith
 into a distributed monolith. Or they call BS on the new architecture because
-everything is hard; and then they mass resign. It's not that the proposed
+everything is hard; and then people start leaving. It's not that the proposed
 architecture is bad, the Very Smart Person knows what they're doing after all.
 The problem is that the architecture didn't match the way the original team was
 operating.
