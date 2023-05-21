@@ -16,7 +16,7 @@ unpack it and show how leadership works structurally.
 
 Leadership can be a pretty murky business. It varies from an industry to
 industry significantly, and to make matters even worse, most software
-engineering companies start essentially as snowflakes; as much unique as their
+engineering companies start essentially as snowflakes; as unique as their
 complement of founders.
 
 Fortunately for us, people have done a fair bit of thinking on the subject.
@@ -33,8 +33,8 @@ planet. So, let me unpack each of those in order.
 ## The B-HAG
 
 Vision is easier explained through another term called **BHAG**. Which stands
-for: "Big Hairy Audacious Goal". I know, explaining an unknown via another
-unknown, just stay with me here for a second.
+for: "Big Hairy Audacious Goal". I know, I know, explaining an unknown via
+another unknown, just stay with me here for a second.
 
 A good vision is not some ephemeral abstract pipe dream. "World domination" is
 not a good vision. "Making a lot of money" is not a good vision either. That's
@@ -48,8 +48,9 @@ point and reads well. That's my definition of success. And so, similarly,
 enough money to buy a house in Sydney".
 
 The vision also needs to be challenging, something you can't just go and buy off
-the shelf. "Make a good cup of coffee" is not a BHAG, "Create a best coffee
-house in 30 minutes walking distance radius" is; well, at least to some people.
+the shelf. "Make a good cup of coffee" is not a BHAG, "Create the best coffee
+house within 30 minutes walking distance" is; well, at least to some people it
+is.
 
 And finally, a good vision needs to be hairy. "Getting a six-pack" is difficult,
 but it's not complicated, you just diet well and exercise, any average Joe with
@@ -82,8 +83,7 @@ rules that help a team to move towards the vision. For example:
 
 - Avoid major expensive air ports
 - Avoid air plane maintenance costs
-- Target the low income demographic
-- Make experience miserable for people with money
+- Target the low income demographic who won't complain about the service
 
 Apologies for a bit of poignant examples. Here is a better one:
 
@@ -97,13 +97,13 @@ Apologies for a bit of poignant examples. Here is a better one:
 - Don't use technology for evil
 
 I hope this starts to make sense. A good strategy should be linked _directly_ to
-the vision, and it should _not_ have specific details. Because a strategy is not
-a plan, a strategy is a decision making heuristic.
+the **vision**, and it should _not_ have specific details. Because a strategy is
+not a plan, a strategy is a decision making heuristic.
 
 ## What is _not_ a strategy
 
-Before I jump into the **plan** part, I think it's worth saying a few words on
-what is often considered a strategy, but really not.
+Before I jump into the **plan** part, I think it's worth saying a few words
+about what is often considered a strategy, but really is not.
 
 Operational efficiency is not a strategy. All too often strategy decks contain
 terms like "agile", "reducing cycle time", and such. All of those are great
@@ -119,7 +119,7 @@ being is that it is very easy to get lost in best practices and start applying
 them without moving any closer to the vision.
 
 I know first hand how aggravating the term non-value adding activity can be when
-applied to a best practice; we all have the best intentions. But if it doesn't
+applied to a best practice; we all have the best intentions. But, if it doesn't
 add value, it most likely burns resources that could be used for something else.
 
 ## So, what's with the plan?
@@ -145,7 +145,7 @@ are the best ones to have.
 
 ## How the structure evolves
 
-Now we know the structure of leadership: vision -> strategy -> plan. And le can
+Now we know the structure of leadership: vision -> strategy -> plan. And we can
 see how one flows out of the other. Now it's time to add another dimension to
 it.
 
@@ -162,12 +162,13 @@ started as a game development team but then pivoted to make, well, the slack
 app.
 
 One needs a strongly coherent and well bonded team to pull off a pivot though.
-Because a pivot often comes with significant employee churn.
+Because a pivot often comes with significant employee churn. Because people who
+joined earlier might not necessarily subscribe to a new vision.
 
 Strategy is also a rather slow moving target. But, unlike vision that requires
 some dramatic impact to be changed, a strategy is normally goes through regular
 revisions; usually in the form of annual strategy reviews. A strategy depends as
-much on a vision as on the market condition and the complexities of the
+much on a vision as on the market conditions and the complexities of the
 organisation itself. As both of those change the strategy needs regular
 adjustments.
 
@@ -186,7 +187,7 @@ Traditionally, on the organisation level, the structure would work like so:
 3. Middle-management creates and executes **plans** based on the vision and the
 
 But, the interesting thing is that leadership has a bit of a fractal nature. The
-structure and the principles repeat themselves on the smaller scope over and
+structure and the principles repeat themselves on the smaller scopes over and
 over again. The product level, the project level, even the team level.
 
 Here is an example how a tech-lead could apply the same structure to lead their
@@ -198,7 +199,7 @@ team of engineers.
 
 - Create great working conditions
 - Build stuff that matters
-- People and relationships matter
+- People and relationships are important
 
 **Plan**:
 
@@ -208,8 +209,9 @@ team of engineers.
 - Spend quality time together as a team
 
 As you can see it is exactly the same structure. As a team leader you create a
-shared **vision** for the team. Then together you create a set of rules (a
-**strategy**). And then based on those you iterate on **plans** to get there.
+shared **vision** for the team. Then together with the team you create a set of
+rules (a **strategy**). And then based on those you iterate on **plans** to get
+there.
 
 We can apply this structure not just to lead down, but also to lead up. For
 example:
@@ -219,10 +221,10 @@ example:
 **Strategy**:
 
 - Always be clear about what do they actually want from you
-- Reports must be regular, crystal clear and have to BS
+- Reports must be regular, crystal clear, and have to BS
 - Never take shit from your boss, they must learn to respect you
+- Cultivating a personal relationship is important
 - Always deliver on your commitments
-- Invest in the relationship
 
 **Plan**:
 
@@ -235,7 +237,7 @@ example:
 ## Wrapping up
 
 I don't know what else to add here. I hope the idea makes sense now, and you can
-apply it to your own circumstances. And always keep in mind the structure:
+apply it to your own circumstances. Always keep in mind the structure:
 
 ```
 Vision -> Strategy -> Plan
