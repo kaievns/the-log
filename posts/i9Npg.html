@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-8afede43.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-693ed441.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-93a6f279.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-1610b60e.js"><title>Managing quality beyond technical debt ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Managing quality beyond technical debt ⁍ Kai Evans"><meta name="description" content="A deep dive into quality management structure"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Managing quality beyond technical debt ⁍ Kai Evans"><meta property="og:description" content="A deep dive into quality management structure"><meta property="og:url" content="http://kaievans.co/posts/i9Npg"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/quality-management-ce635ca6.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-06-05T01:49:58.252Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/i9Npg"><meta property="twitter:title" content="Managing quality beyond technical debt ⁍ Kai Evans"><meta property="twitter:description" content="A deep dive into quality management structure"><meta property="twitter:image" content="/_app/immutable/assets/quality-management-ce635ca6.png"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">Managing quality beyond technical debt</h1>
+<time datetime="2023-06-05T01:49:58.252Z" class="">5 June 2023</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag leadership" href="/tags/leadership">leadership</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag management" href="/tags/management">management</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag strategy" href="/tags/strategy">strategy</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>The quality of software engineering is a bit of a beaten up topic. But,
+unfortunately, these conversations spend much of the time talking about
+technical debt and why it’s, well, bad. While that’s not wrong, the subject of
+quality is bit more complex than that, and today I wanted to share what I have
+learned so far.</p>
+<p>Before we start, a quick disclaimer to avoid confusion. When I say the term
+“quality” here, I mean quality of a product as a whole, not just technical debt
+specifically.</p>
+<h2 id="the-intuition"><a aria-hidden="true" tabindex="-1" href="#the-intuition"><span class="icon icon-link"></span></a>The intuition</h2>
+<p>Generally speaking, most conversations about managing quality revolve around the
+following intuition. The better the quality the more expensive the product is.
+And the more expensive the product the less willing the customers are to pay for
+it, and hence we get less customers and profits.</p>
+<p>If we add those two ideas together then it follows that some sort of an optimum
+state of ballance needs to be found between investing in quality and making
+profits. Which, generally speaking, makes sense.</p>
+<p>Here is another idea that universally accepted as something that makes sense:</p>
+<blockquote><p>Fish rots from the head down</p></blockquote>
+<p>It sounds right and might even correlate with our experience, but it’s factually
+incorrect. Have you ever seen chefs picking up fish at a fish market? They
+always sniff fish tails, because that’s where it <em>actually</em> starts rotting.</p>
+<h2 id="the-cost-of-quality"><a aria-hidden="true" tabindex="-1" href="#the-cost-of-quality"><span class="icon icon-link"></span></a>The cost of quality</h2>
+<p>Quality practitioners use two terms to describe the quality management
+framework:</p>
+<p><strong>The cost of great quality</strong> - defines the amount of investments necessary to
+bring quality higher. Just as intuition tells us, the higher the quality the
+higher the cost. But, it’s not a linear relationship, it’s an exponential one.
+As in the initial investments buy more quality, but eventually quality stops
+growing with additional investments.</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/cost-of-good-quality-65540dcf.webp" alt="Cost of great quality"><figcaption>Cost of great quality</figcaption></figure>
+<p><strong>The cost of poor quality</strong> - defines the amount of investments necessary to
+maintain poor quality products. This includes costs such as operational costs
+associated with fixes, product recalls, customer management, missed opportunity
+cost, etc. Again a non-linear relationship, the initial small lapses in quality
+cost less than more major quality issues. Which in extreme situations can cost
+the company a business.</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/cost-of-poor-quality-028e768d.png" alt="Cost of poor quality"><figcaption>Cost of poor quality</figcaption></figure>
+<p>And so, if we put those two graphs together, we would expect to see an
+intersection of the lines, and that is what our intuition tells us is the sweet
+spot between cost and quality that will result in maximum profits.</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/cost-vs-quality-62ce6424.webp" alt="Cost vs. quality"><figcaption>Cost vs. quality</figcaption></figure>
+<p>And just as with the fish rotting from the head down, this seems intuitively
+like a sensible idea, except it is not factually correct.</p>
+<h2 id="the-problem"><a aria-hidden="true" tabindex="-1" href="#the-problem"><span class="icon icon-link"></span></a>The problem</h2>
+<p>The main fallacy here is that there no scale to the picture. We’re sort of
+<em>expecting</em> that the cost of good quality and the cost of poor quality will
+revolve around the same numbers and intersect somewhere in the middle; like the
+supply and demand graphs.</p>
+<p>That is just not the cast in most situations. Most likely when put on the same
+scale the combined graph would look like so:</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/cost-vs-quality-2-e385aaf9.png" alt="Cost vs. quality in reality"><figcaption>Cost vs. quality in reality</figcaption></figure>
+<p>Generally speaking the gap between the cost of good quality and the cost of poor
+quality will depend on two things: production volume and margins. The higher the
+production volume the higher the poor quality overheads, because one has more
+customers to serve. And conversely, the lower the production margins, the lower
+the cost of good quality, because the cost of quality per an additional item is
+lower.</p>
+<p>Now, if we think of an environment such as software engineering where the
+production volume can count in hundreds of millions of users, and production of
+an additional copy, aka margin cost, is virtually zero, it’s easy to understand
+that the gap between the cost of good quality and the cost of the poor quality
+will be exceptionally large.</p>
+<p>Which means that in a well functioning software engineering company there is no
+really compromise to make or balance to find. The company should invest in as
+much quality as it can afford, because the cost of poor quality grossly
+outweighs the cost of good quality.</p>
+<h2 id="another-dimension"><a aria-hidden="true" tabindex="-1" href="#another-dimension"><span class="icon icon-link"></span></a>Another dimension</h2>
+<p>There is yet another dimension to this problem as well. Because quality in
+products in not an uniformly distributed entity and actually has a deeper
+structure. Virtually any set of features that a product has could be divided
+into three categories:</p>
+<ol><li><code>Baseline expectations</code> - people don’t even think about those as features.
+For example, a car should have four fully inflated wheels and an engine.</li>
+<li><code>Required features</code> - those are the features that people usually use to
+describe a product. For example, a car should be quiet on the inside, and it
+should have a good infotainment system, and it should be comfortable for a
+family of four.</li>
+<li><code>Delighters</code> - those are the features that customers didn’t ask or even
+thought about, but they enhance the value of the product in the user’s eyes.
+Things like ergonomics or visual presentation would fall into this category.</li></ol>
+<p>This is related to quality because there are different quality expectations for
+each category of features. The baseline expectations should work every single
+time without a fail. For example a car must start, or a wet-site must open up.
+The required features should work most of the time as well, spared some
+exceptional circumstances: like for example some parts of your application could
+be unavailable due to a new deployment or a production bug. And delighters are
+expected to mostly work, but if they don’t it won’t affect the users much: say
+if the visual blings in an app stopped working for a day or two.</p>
+<h2 id="in-practice"><a aria-hidden="true" tabindex="-1" href="#in-practice"><span class="icon icon-link"></span></a>In practice</h2>
+<p>So, lets quickly recap what we have gathered so far. There are two main ideas:</p>
+<ol><li>In a software product company the cost of poor quality grossly outweighs the
+cost of good quality.</li>
+<li>The internal structure of product quality dictates that the baseline features
+must have great quality as a default expectation, and required features
+should follow close behind. Meaning that 95+% of any application’s features
+are <em>expected</em> to have great quality.</li></ol>
+<p>Both of those ideas point in the same direction, that investing in quality as
+much as possible is the most sensible approach. Zero technical debt is the way
+to go.</p>
+<p>Now, I don’t know about you, but I think this idea that you must invest in
+quality as much as possible won’t sit great with most people. Who would want to
+spend all their profits on quality, right? And once again, it’s just like with
+the fish rotting from the head, the contradiction seems sensible, except it is
+not factually correct.</p>
+<p>When we step down to the real world practicalities, we will realise that spare
+extreme cases, the quality is not capped by the amount of investment a company
+can pour into it, the quality is capped by the state the art of the mainstream
+technology that’s the company uses to create their products.</p>
+<p>For example, the quality of cars or smartphones manufacturing is limited by the
+quality of the parts manufacturing process. Similarly the quality of a web
+application service is limited by the cloud infrastructure vendor’s SLA, and the
+security is limited by the security vendor’s guarantees.</p>
+<h2 id="funding-the-quality"><a aria-hidden="true" tabindex="-1" href="#funding-the-quality"><span class="icon icon-link"></span></a>Funding the quality</h2>
+<p>Spare some behemoth companies like Apple, Google, or Samsung that can invest in
+pushing technology beyond its limits and invest in getting even better quality
+of products, most companies rely on technology vendors and hence are limited by
+the best practices associated with these technologies rather than money that
+they can spend on quality.</p>
+<p>Still, even best practice level product development costs money. And so, often
+times the conversation goes back to the idea that quality makes products more
+expensive, which in turn negatively impacts sales. So, I wanted to add a few
+points to that end as well.</p>
+<p>The most likely situation where this might be the case is really when a company
+is trying to operate in an oversaturated market and doesn’t segment it’s
+offerings well. Meaning the company competes on margins rather than product
+offerings. In a narrow band of highly optimised market production costs will be
+everything, and unless the company invests in cheaper manufacturing processes
+they won’t be able to afford quality.</p>
+<p>That is not entirely the case in the SaaS products markets. The reason is that
+the margin costs are near zero, which means that creating a 1-to-1 carbon copy
+of another product will mostly produce basically an IP infringement law suit.</p>
+<p>Most half-decent product strategies in the SaaS market are inherently
+anticompetitive. Most successful software products operate in specific niches
+and hence the cost of great quality should be priced in. Because if the quality
+is not there, the company will instantly loose most of it’s customers to a
+competitor that can make the same thing 10% better. Hence the products that
+ultimately succeed have the quality baked in as a default</p>
+<h2 id="wrapping-up"><a aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a>Wrapping up</h2>
+<p>There is actual science behind this madness. And if you’re interested in the
+actual statistical analysis and quantifiable methodology, I would strongly
+recommend diving into lean six-sigma. It’s not entirely software engineering,
+but the thinking and methods still apply.</p>
+<p>If you’re not up for that, then here is a short wrap. As far as software
+development goes, you best bet is to use existing best practice as a default
+expectation. Better yet, if you have some resources to spare, investing in
+discovering better than the best practice will greatly improve the bottom line
+outcomes.</p>
+<p>And conversely, operating on a level below best practice is basically throwing
+the money into the wind. The main reason why situations like that exist is
+because the company leadership never bothered to count the cost of poor quality,
+and the expenses that go into maintaining poor quality applications largely go
+unnoticed.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2023 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="teqzef">
+			import { start } from "../_app/immutable/start-8afede43.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="teqzef"]').parentNode,
+				version: "1685929792478",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>
