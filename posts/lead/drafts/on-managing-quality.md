@@ -4,17 +4,21 @@ title: A bit on managing quality
 ---
 
 The quality of software engineering is a bit of a beaten up topic. But,
-unfortunately, these conversations spend much of the time trying to demonstrate
-that technical debt is, well, bad. While it's not wrong, the subject of quality
-is bit more complex than that, and today I wanted to share what I have learned
-so far.
+unfortunately, these conversations spend much of the time talking about
+technical debt and why it's, well, bad. While that's not wrong, the subject of
+quality is bit more complex than that, and today I wanted to share what I have
+learned so far.
+
+Before we start, a quick disclaimer to avoid confusion. When I say the term
+"quality" here, I mean quality of a product as a whole, not just technical debt
+specifically.
 
 ## The intuition
 
-Generally speaking, a lot of conversations about managing quality revolve around
-the following intuition. The better the quality the more expensive the product
-is. And the more expensive the product the less willing the customers are to pay
-for it, and hence we get less customers and profits.
+Generally speaking, most conversations about managing quality revolve around the
+following intuition. The better the quality the more expensive the product is.
+And the more expensive the product the less willing the customers are to pay for
+it, and hence we get less customers and profits.
 
 If we add those two ideas together then it follows that some sort of an optimum
 state of ballance needs to be found between investing in quality and making
@@ -24,11 +28,9 @@ Here is another idea that universally accepted as something that makes sense:
 
 > Fish rots from the head down
 
-It sounds right, but it's factually incorrect. Have you ever seen chefs picking
-up fish at a fish market? They always sniff fish tails, because that's where it
-_actually_ starts rotting.
-
-Now that I have your attention, last bring some structure into this.
+It sounds right and might even correlate with our experience, but it's factually
+incorrect. Have you ever seen chefs picking up fish at a fish market? They
+always sniff fish tails, because that's where it _actually_ starts rotting.
 
 ## The cost of quality
 
@@ -37,8 +39,8 @@ framework:
 
 **The cost of great quality** - defines the amount of investments necessary to
 bring quality higher. Just as intuition tells us, the higher the quality the
-higher the cost. But, it's not a linear relationship, it's a logarithmic one. As
-in the initial investments buy more quality, but eventually quality stops
+higher the cost. But, it's not a linear relationship, it's an exponential one.
+As in the initial investments buy more quality, but eventually quality stops
 growing with additional investments.
 
 <!-- ![Cost of great quality](./images/cost-of-great-quality.png) -->
@@ -64,9 +66,9 @@ like a sensible idea, except it is not factually correct.
 ## The problem
 
 The main fallacy here is that there no scale to the picture. We're sort of
-_expect_ that the cost of good quality and the cost of poor quality will revolve
-around the same numbers and intersect somewhere in the middle; like the supply
-and demand graphs.
+_expecting_ that the cost of good quality and the cost of poor quality will
+revolve around the same numbers and intersect somewhere in the middle; like the
+supply and demand graphs.
 
 That is just not the cast in most situations. Most likely when put on the same
 scale the combined graph would look like so:
@@ -80,7 +82,7 @@ customers to serve. And conversely, the lower the production margins, the lower
 the cost of good quality, because the cost of quality per an additional item is
 lower.
 
-Now, if we think of an environment such us software engineering where the
+Now, if we think of an environment such as software engineering where the
 production volume can count in hundreds of millions of users, and production of
 an additional copy, aka margin cost, is virtually zero, it's easy to understand
 that the gap between the cost of good quality and the cost of the poor quality
@@ -89,7 +91,7 @@ will be exceptionally large.
 Which means that in a well functioning software engineering company there is no
 really compromise to make or balance to find. The company should invest in as
 much quality as it can afford, because the cost of poor quality grossly
-outweights the cost of good quality.
+outweighs the cost of good quality.
 
 ## Another dimension
 
@@ -121,38 +123,63 @@ if the visual blings in an app stopped working for a day or two.
 
 So, lets quickly recap what we have gathered so far. There are two main ideas:
 
-1. In a software product company the cost of poor quality grossly outweights the
+1. In a software product company the cost of poor quality grossly outweighs the
    cost of good quality.
 2. The internal structure of product quality dictates that the baseline features
    must have great quality as a default expectation, and required features
    should follow close behind. Meaning that 95+% of any application's features
    are _expected_ to have great quality.
 
-Both of those ideas point in the same direction that investing in quality as
+Both of those ideas point in the same direction, that investing in quality as
 much as possible is the most sensible approach. Zero technical debt is the way
 to go.
 
 Now, I don't know about you, but I think this idea that you must invest in
 quality as much as possible won't sit great with most people. Who would want to
-spend all their profits on quality, right? And once again, it's just like the
-fish rotting from the head, the contradiction seems sensible, except it is not
-factually correct.
+spend all their profits on quality, right? And once again, it's just like with
+the fish rotting from the head, the contradiction seems sensible, except it is
+not factually correct.
 
 When we step down to the real world practicalities, we will realise that spare
 extreme cases, the quality is not capped by the amount of investment a company
 can pour into it, the quality is capped by the state the art of the mainstream
-technology that's being used.
+technology that's the company uses to create their products.
 
-For example the quality of cars or smartphones manufacturing is limited by the
+For example, the quality of cars or smartphones manufacturing is limited by the
 quality of the parts manufacturing process. Similarly the quality of a web
-application service is limited by the cloud infrastructure vendor SLA, and the
-security is limited by the security vendor quality.
+application service is limited by the cloud infrastructure vendor's SLA, and the
+security is limited by the security vendor's guarantees.
+
+## Funding the quality
 
 Spare some behemoth companies like Apple, Google, or Samsung that can invest in
 pushing technology beyond its limits and invest in getting even better quality
 of products, most companies rely on technology vendors and hence are limited by
-the best practices associated with the technology rather than money that they
-can spend on quality.
+the best practices associated with these technologies rather than money that
+they can spend on quality.
+
+Still, even best practice level product development costs money. And so, often
+times the conversation goes back to the idea that quality makes products more
+expensive, which in turn negatively impacts sales. So, I wanted to add a few
+points to that end as well.
+
+The most likely situation where this might be the case is really when a company
+is trying to operate in an oversaturated market and doesn't segment it's
+offerings well. Meaning the company competes on margins rather than product
+offerings. In a narrow band of highly optimised market production costs will be
+everything, and unless the company invests in cheaper manufacturing processes
+they won't be able to afford quality.
+
+That is not entirely the case in the SaaS products markets. The reason is that
+the margin costs are near zero, which means that creating a 1-to-1 carbon copy
+of another product will mostly produce basically an IP infringement law suit.
+
+Most half-decent product strategies in the SaaS market are inherently
+anticompetitive. Most successful software products operate in specific niches
+and hence the cost of great quality should be priced in. Because if the quality
+is not there, the company will instantly loose most of it's customers to a
+competitor that can make the same thing 10% better. Hence the products that
+ultimately succeed have the quality baked in as a default
 
 ## Wrapping up
 
@@ -169,6 +196,6 @@ outcomes.
 
 And conversely, operating on a level below best practice is basically throwing
 the money into the wind. The main reason why situations like that exist is
-because the company leadership never bothered to count the cost of poor quality
+because the company leadership never bothered to count the cost of poor quality,
 and the expenses that go into maintaining poor quality applications largely go
 unnoticed.
