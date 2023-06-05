@@ -1,6 +1,21 @@
 ---
 slug: i9Npg
-title: A bit on managing quality
+date: 5 June 2023
+title: Managing quality beyond technical debt
+description: A deep dive into quality management structure
+thumbnail: ./images/quality-management.png
+tags:
+  - leadership
+  - management
+  - strategy
+medium:
+  tags:
+    - Technical leadership
+    - Technical strategy
+    - Product management
+    - Leadership
+    - Strategy
+  id: 450df42008a4
 ---
 
 The quality of software engineering is a bit of a beaten up topic. But,
@@ -41,9 +56,9 @@ framework:
 bring quality higher. Just as intuition tells us, the higher the quality the
 higher the cost. But, it's not a linear relationship, it's an exponential one.
 As in the initial investments buy more quality, but eventually quality stops
-growing with additional investments.
+growing with additional spending when it starts reaching perfection.
 
-<!-- ![Cost of great quality](./images/cost-of-great-quality.png) -->
+![Cost of great quality](./images/cost-of-good-quality.png)
 
 **The cost of poor quality** - defines the amount of investments necessary to
 maintain poor quality products. This includes costs such as operational costs
@@ -52,20 +67,20 @@ cost, etc. Again a non-linear relationship, the initial small lapses in quality
 cost less than more major quality issues. Which in extreme situations can cost
 the company a business.
 
-<!-- ![Cost of poor quality](./images/cost-of-poor-quality.png) -->
+![Cost of poor quality](./images/cost-of-poor-quality.png)
 
 And so, if we put those two graphs together, we would expect to see an
 intersection of the lines, and that is what our intuition tells us is the sweet
 spot between cost and quality that will result in maximum profits.
 
-<!-- ![Cost vs. quality](./images/cost-vs-quality.png) -->
+![Cost vs. quality](./images/cost-vs-quality.png)
 
 And just as with the fish rotting from the head down, this seems intuitively
 like a sensible idea, except it is not factually correct.
 
 ## The problem
 
-The main fallacy here is that there no scale to the picture. We're sort of
+The main fallacy here is that there is no scale to the picture. We're sort of
 _expecting_ that the cost of good quality and the cost of poor quality will
 revolve around the same numbers and intersect somewhere in the middle; like the
 supply and demand graphs.
@@ -73,7 +88,7 @@ supply and demand graphs.
 That is just not the cast in most situations. Most likely when put on the same
 scale the combined graph would look like so:
 
-<!-- ![Cost vs. quality v2](./images/cost-vs-quality-2.png) -->
+![Cost vs. quality in reality](./images/cost-vs-quality-2.png)
 
 Generally speaking the gap between the cost of good quality and the cost of poor
 quality will depend on two things: production volume and margins. The higher the
@@ -90,7 +105,7 @@ will be exceptionally large.
 
 Which means that in a well functioning software engineering company there is no
 really compromise to make or balance to find. The company should invest in as
-much quality as it can afford, because the cost of poor quality grossly
+much quality as it can pull off, because the cost of poor quality grossly
 outweighs the cost of good quality.
 
 ## Another dimension
@@ -100,19 +115,20 @@ products in not an uniformly distributed entity and actually has a deeper
 structure. Virtually any set of features that a product has could be divided
 into three categories:
 
-1. `Baseline expectations` - people don't even think about those as features.
+1. **Baseline expectations** - people don't even think about those as features.
    For example, a car should have four fully inflated wheels and an engine.
-2. `Required features` - those are the features that people usually use to
+2. **Required features** - those are the features that people usually use to
    describe a product. For example, a car should be quiet on the inside, and it
    should have a good infotainment system, and it should be comfortable for a
    family of four.
-3. `Delighters` - those are the features that customers didn't ask or even
+3. **Delighters** - those are the features that customers didn't ask or even
    thought about, but they enhance the value of the product in the user's eyes.
    Things like ergonomics or visual presentation would fall into this category.
 
 This is related to quality because there are different quality expectations for
 each category of features. The baseline expectations should work every single
-time without a fail. For example a car must start, or a wet-site must open up.
+time without a fail. For example a car must start, or a website must open up.
+
 The required features should work most of the time as well, spared some
 exceptional circumstances: like for example some parts of your application could
 be unavailable due to a new deployment or a production bug. And delighters are
@@ -141,8 +157,8 @@ the fish rotting from the head, the contradiction seems sensible, except it is
 not factually correct.
 
 When we step down to the real world practicalities, we will realise that spare
-extreme cases, the quality is not capped by the amount of investment a company
-can pour into it, the quality is capped by the state the art of the mainstream
+extreme cases, the quality is not capped by the amount of money a company can
+pour into it, the quality is capped by the state the art of the mainstream
 technology that's the company uses to create their products.
 
 For example, the quality of cars or smartphones manufacturing is limited by the
@@ -172,14 +188,14 @@ they won't be able to afford quality.
 
 That is not entirely the case in the SaaS products markets. The reason is that
 the margin costs are near zero, which means that creating a 1-to-1 carbon copy
-of another product will mostly produce basically an IP infringement law suit.
+of another product will mostly produce nothing but an IP infringement law suit.
 
 Most half-decent product strategies in the SaaS market are inherently
 anticompetitive. Most successful software products operate in specific niches
-and hence the cost of great quality should be priced in. Because if the quality
-is not there, the company will instantly loose most of it's customers to a
+and hence the cost of great quality must be priced in. Because if the quality is
+not there, the company will instantly loose the bulk of it's customers to a
 competitor that can make the same thing 10% better. Hence the products that
-ultimately succeed have the quality baked in as a default
+ultimately succeed have the quality baked in as a default.
 
 ## Wrapping up
 
