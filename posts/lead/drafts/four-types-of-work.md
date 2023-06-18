@@ -5,25 +5,25 @@ draft: true
 ---
 
 I've seen I fair few new technology leaders and engineering managers at work,
-and the most common scenario where they struggle is to manage work priorities.
-They often take the delivery management rather literally, and when faced the
-business pressures, they cram the roadmap with features, and that plan
-inevitably fails.
+and, by far, the most common scenario where they struggle is to manage work
+priorities. New leaders often take delivery management rather literally, and
+when faced business pressures, they cram the roadmap with features. And, that
+plan inevitably fails.
 
 To be fair, experience comes with experience, and one needs to make mistakes to
 learn. Knowing the problem is half if a battle though. And so today, I'll try to
-put together a framework for how to think about work that is on the plate, how
-to prioritise it, and ultimately, well, manage better.
+put together a framework for thinking about work that is on the plate, how to
+prioritise it, and ultimately, well, manage better.
 
 ## The four types of work
 
 The concept of four types of work was popularised in the software engineering
-community by the book called "the phoenix project". Although, technically the
-idea was lifted--as most of the book ideas--from another book called "the goal"
-by Eliyahu Goldratt.
+community by the book called "the phoenix project". Although, technically, the
+idea was lifted--as most of the book--from another book called "The Goal" by
+Eliyahu Goldratt.
 
-The idea is quite simple. Generally speaking there are four types of work in any
-organisation:
+The point they're trying to make is quite simple. Generally speaking there are
+four types of work in any organisation:
 
 - Business projects
 - Internal projects
@@ -31,7 +31,7 @@ organisation:
 - Unplanned work
 
 Which is probably rather vague when applied to the software engineering context.
-So, allow me to frivolously translate that to the terms we all can relate to.
+So, allow me to frivolously translate that into the terms we all can relate to.
 
 - Product features development
 - Core technology development
@@ -40,25 +40,25 @@ So, allow me to frivolously translate that to the terms we all can relate to.
 
 The point of this model is that those four types of work are always present no
 matter the business or product. And if a roadmap only consists of features, the
-other types of work don't simply disappear. Instead the work goes undercover,
-and that inevitably pisses off everyone and derails the actual features
-development.
+other types of work don't simply disappear. Instead the work goes invisible, and
+that inevitably derails the actual features development.
 
 ## Another way to slice it
 
-There is a bit of a problem with this model, because when we try to implement it
-verbatim, here is how stakeholders see this list:
+There is a bit of a problem with this model when it's applied to software
+engineering teams. Because when we try to implement it verbatim, here is how
+stakeholders see this list:
 
 - Features development <- stuff you supposed to do!
 - Core technology <- gold plating
 - Optimisations <- unnecessary, supposed to magically happen by default
-- Firefighting <- basically engineering fuck ups and avoidable heroics
+- Firefighting <- basically engineering fuck-ups and avoidable heroics
 
-As you can see, unless your roadmap is not 90% filled with features, this list
-is not really conducive to happy planning and execution. And so people try
-another way of slicing the cake.
+As you can see, unless your roadmap is not 90% filled with features, this
+categorisation might not necessarily be conducive to happy planning and
+execution. And so people try another way to slice the cake.
 
-For example a common strategy is to slice work into categories based on two
+For example, a common strategy is to slice work into categories based on two
 dichotomies: Planned/Unplanned and Business/Maintenance work.
 
 ```
@@ -79,27 +79,27 @@ all just work on one field.
 
 ## The prioritisation game
 
-Whichever categorisation system we choose, the next step is basically to
+Whichever categorisation system we choose, the next step is normally to
 negotiate percentage allocations for each category. For example:
 
 - Planned business work (aka the roadmap) - 50%
 - Unplanned business (aka customer feedback) - 30%
 - Maintenance work (aka make engineers shut up) - 20%
 
-And this is where everyone gets lost in the sauce a bit. Each company claiming
-to find the perfect ratio. Google was famous for having 20% time allocated for
-"other stuff", and such.
+And this is where everyone gets lost in the sauce a bit. Each successful company
+claims to find the perfect ratio. Google was famous for having 20% time
+allocated for "other stuff", and such.
 
 If your company does something similar, this is a huge step forward from the
-status quo: the hidden work. But, unfortunately it doesn't quite work all that
-great. Basically, there are two problems to this system.
+status quo: the invisible work. But unfortunately, it doesn't quite work all
+that great because there are two problems to this system.
 
 Firstly, a lot of tasks don't fit neatly into those categories. Moreover, people
 have a tendency to _present_ the work they really want to do as the number one
 category, the roadmap, even though it's not really that.
 
-The second problem is that those percent allocations are really subjective. The
-proper percentage allocation will differ greatly on the operational context,
+The second problem is that those percent allocations are rather subjective. The
+optimal percentage allocation will differ greatly on the operational context,
 business pressures, state of technology, etc. Moreover, it will constantly shift
 with time as a project/product evolves.
 
@@ -122,7 +122,8 @@ profit = throughput - inventory - operational expenses
 ```
 
 And so the original meaning of the four types of work was to improve the
-throughput, reduce inventory, and reduce the operational expenses.
+throughput, reduce inventory, and reduce the operational expenses. Not to
+preallocate time for specific types of work.
 
 ## Lets try again
 
@@ -134,24 +135,25 @@ Lets bring the original classification back and see how it works:
 - Unplanned projects
 
 The idea is to maximise production volume _while driving the cost down_. The
-product itself was never the point, building a system that maximises the product
-output and drives costs down was. And that puts the whole system upside down.
+product itself was never the point in this framework. Building a system that
+maximises the product output and drives costs down was. And that puts the whole
+system upside down.
 
-Normally a company would put a product at the top of their priorities. While
-understandable, that might not actually be to the best interest of the business.
-To put it simply if product is put ahead of operational efficiency it won't
-necessarily result in profits.
+Normally a company would put the product work at the top of their priorities.
+While understandable, that might not actually be to the best interest of the
+business. To put it simply if product is put ahead of operational efficiency it
+won't necessarily result in profits.
 
 And so, in Golratt's theory it was all about finding the system's constraints
-that increase throughput and reduce costs, and then addressing them. And to that
-end the amount of work that goes into each category was supposed to be _tracked_
-not _preallocated_.
+that limit throughput and adds up the costs, and then addressing them. And to
+that end the amount of work that goes into each category was supposed to be
+_tracked_ not _preallocated_.
 
 The unplanned work needs to be driven down as much as possible--preferably to
 zero--through improving quality. Operational improvements should be the most
-prioritised work, as they directly improve the bottom line. And internal
-projects are aimed at reducing the inventory (aka the backlog of unfinished work
-in our case).
+prioritised work, as they directly improve the bottom line. Second to that would
+be internal projects that are aimed at reducing the inventory (aka the backlog
+of unfinished work in our case).
 
 ## The crescendo
 
@@ -170,7 +172,8 @@ and the two of them together improve costs and throughput".
 To put it in even simpler terms, there is no really product vs. everything else
 division. _All useful work_ is essentially product work. It's either about
 making the product or building a system to _make more product_. And the last one
-should always be a priority because it makes more impact on the bottom line.
+should always be a priority because it makes more impact on the bottom line than
+the product development itself.
 
 And that is as good of a work prioritisation guidance as you will get in a
 while:
