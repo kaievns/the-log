@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-c807e040.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-d8dc64c2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-cc45a16f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e7742015.js"><title>The four types of work ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="The four types of work ⁍ Kai Evans"><meta name="description" content="Looking into software engineering work categorisation and prioritisation"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="The four types of work ⁍ Kai Evans"><meta property="og:description" content="Looking into software engineering work categorisation and prioritisation"><meta property="og:url" content="http://kaievans.co/posts/LZcMc"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2023-06-18T14:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/LZcMc"><meta property="twitter:title" content="The four types of work ⁍ Kai Evans"><meta property="twitter:description" content="Looking into software engineering work categorisation and prioritisation"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">The four types of work</h1>
+<time datetime="2023-06-18T14:00:00.000Z" class="">19 June 2023</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag engineering management" href="/tags/engineering management">engineering management</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag management" href="/tags/management">management</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag leadership" href="/tags/leadership">leadership</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag strategy" href="/tags/strategy">strategy</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>I’ve seen I fair few new technology leaders and engineering managers at work,
+and, by far, the most common scenario where they struggle is to manage work
+priorities. New leaders often take delivery management rather literally, and
+when faced business pressures, they cram the roadmap with features. And, that
+plan inevitably fails.</p>
+<p>To be fair, experience comes with experience, and one needs to make mistakes to
+learn. Knowing the problem is half if a battle though. And so today, I’ll try to
+put together a framework for thinking about work that is on the plate, how to
+prioritise it, and ultimately, well, manage better.</p>
+<h2 id="the-four-types-of-work"><a aria-hidden="true" tabindex="-1" href="#the-four-types-of-work"><span class="icon icon-link"></span></a>The four types of work</h2>
+<p>The concept of four types of work was popularised in the software engineering
+community by the book called “the phoenix project”. Although, technically, the
+idea was lifted—as most of the book—from another book called “The Goal” by
+Eliyahu Goldratt.</p>
+<p>The point they’re trying to make is quite simple. Generally speaking there are
+four types of work in any organisation:</p>
+<ul><li>Business projects</li>
+<li>Internal projects</li>
+<li>Operational projects</li>
+<li>Unplanned work</li></ul>
+<p>Which is probably rather vague when applied to the software engineering context.
+So, allow me to frivolously translate that into the terms we all can relate to.</p>
+<ul><li>Product features development</li>
+<li>Core technology development</li>
+<li>Optimisations (cost, skills, reliability, performance, etc)</li>
+<li>Putting the fires down</li></ul>
+<p>The point of this model is that those four types of work are always present no
+matter the business or product. And if a roadmap only consists of features, the
+other types of work don’t simply disappear. Instead the work goes invisible, and
+that inevitably derails the actual features development.</p>
+<h2 id="another-way-to-slice-it"><a aria-hidden="true" tabindex="-1" href="#another-way-to-slice-it"><span class="icon icon-link"></span></a>Another way to slice it</h2>
+<p>There is a bit of a problem with this model when it’s applied to software
+engineering teams. Because when we try to implement it verbatim, here is how
+stakeholders see this list:</p>
+<ul><li>Features development ← stuff you supposed to do!</li>
+<li>Core technology ← gold plating</li>
+<li>Optimisations ← unnecessary, supposed to magically happen by default</li>
+<li>Firefighting ← basically engineering fuck-ups and avoidable heroics</li></ul>
+<p>As you can see, unless your roadmap is not 90% filled with features, this
+categorisation might not necessarily be conducive to happy planning and
+execution. And so people try another way to slice the cake.</p>
+<p>For example, a common strategy is to slice work into categories based on two
+dichotomies: Planned/Unplanned and Business/Maintenance work.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">                 |
+  Unplanned      |     Planned
+  Business       |     Business
+                 |
+-----------------+------------------
+                 |
+  Unplanned      |     Planned
+  Maintenance    |     Maintenance
+                 |</code><!-- HTML_TAG_END --></pre>
+<p>This puts most of the work on a sort of even footing, and although there is
+still the business/maintenance division, it is much easier to reason about. It’s
+all just work on one field.</p>
+<h2 id="the-prioritisation-game"><a aria-hidden="true" tabindex="-1" href="#the-prioritisation-game"><span class="icon icon-link"></span></a>The prioritisation game</h2>
+<p>Whichever categorisation system we choose, the next step is normally to
+negotiate percentage allocations for each category. For example:</p>
+<ul><li>Planned business work (aka the roadmap) - 50%</li>
+<li>Unplanned business (aka customer feedback) - 30%</li>
+<li>Maintenance work (aka make engineers shut up) - 20%</li></ul>
+<p>And this is where everyone gets lost in the sauce a bit. Each successful company
+claims to find the perfect ratio. Google was famous for having 20% time
+allocated for “other stuff”, and such.</p>
+<p>If your company does something similar, this is a huge step forward from the
+status quo: the invisible work. But unfortunately, it doesn’t quite work all
+that great because there are two problems to this system.</p>
+<p>Firstly, a lot of tasks don’t fit neatly into those categories. Moreover, people
+have a tendency to <em>present</em> the work they really want to do as the number one
+category, the roadmap, even though it’s not really that.</p>
+<p>The second problem is that those percent allocations are rather subjective. The
+optimal percentage allocation will differ greatly on the operational context,
+business pressures, state of technology, etc. Moreover, it will constantly shift
+with time as a project/product evolves.</p>
+<h2 id="lost-in-translation"><a aria-hidden="true" tabindex="-1" href="#lost-in-translation"><span class="icon icon-link"></span></a>Lost in translation</h2>
+<p>While engineering time is always in a limited supply, and it’s understandable
+why someone would like to have guarantees over budget allocation for their own
+priorities, these work categorisation frameworks were never meant to be used
+like a bargaining chip.</p>
+<p>Somehow the original intent of the four types of work was lost in translation.</p>
+<p>The original idea of this categorisation was part of the constraints theory that
+Eliyahu Goldratt was developing. He was an exceptional systems thinker and he
+meant this framework to serve as a guide for production optimisation. More
+specifically he saw this as a process of increasing business profits</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">profit = throughput - inventory - operational expenses</code><!-- HTML_TAG_END --></pre>
+<p>And so the original meaning of the four types of work was to improve the
+throughput, reduce inventory, and reduce the operational expenses. Not to
+preallocate time for specific types of work.</p>
+<h2 id="lets-try-again"><a aria-hidden="true" tabindex="-1" href="#lets-try-again"><span class="icon icon-link"></span></a>Lets try again</h2>
+<p>Lets bring the original classification back and see how it works:</p>
+<ul><li>Business projects</li>
+<li>Internal projects</li>
+<li>Operational improvements</li>
+<li>Unplanned projects</li></ul>
+<p>The idea is to maximise production volume <em>while driving the cost down</em>. The
+product itself was never the point in this framework. Building a system that
+maximises the product output and drives costs down was. And that puts the whole
+system upside down.</p>
+<p>Normally a company would put the product work at the top of their priorities.
+While understandable, that might not actually be to the best interest of the
+business. To put it simply if product is put ahead of operational efficiency it
+won’t necessarily result in profits.</p>
+<p>And so, in Golratt’s theory it was all about finding the system’s constraints
+that limit throughput and adds up the costs, and then addressing them. And to
+that end the amount of work that goes into each category was supposed to be
+<em>tracked</em> not <em>preallocated</em>.</p>
+<p>The unplanned work needs to be driven down as much as possible—preferably to
+zero—through improving quality. Operational improvements should be the most
+prioritised work, as they directly improve the bottom line. Second to that would
+be internal projects that are aimed at reducing the inventory (aka the backlog
+of unfinished work in our case).</p>
+<h2 id="the-crescendo"><a aria-hidden="true" tabindex="-1" href="#the-crescendo"><span class="icon icon-link"></span></a>The crescendo</h2>
+<p>Well, and there you have it. It blows most uninitiated people’s minds but the
+most important work in any product company is not the product. The most
+important work is the work that improves operational efficiency and reduces
+unfinished work and firefighting (aka distractions). Because this work allows
+the team to spend <em>more</em> time on the product work, aka improve throughput.</p>
+<p>If we walk into any modern manufacturing facility, this idea that operational
+efficiency is the key is accepted as universal truth. In software engineering
+though we’re still look at the “quality, speed, cost” triangle and believe that
+we have to pick two. That is not true, because better quality improves speed,
+and the two of them together improve costs and throughput”.</p>
+<p>To put it in even simpler terms, there is no really product vs. everything else
+division. <em>All useful work</em> is essentially product work. It’s either about
+making the product or building a system to <em>make more product</em>. And the last one
+should always be a priority because it makes more impact on the bottom line than
+the product development itself.</p>
+<p>And that is as good of a work prioritisation guidance as you will get in a
+while:</p>
+<ol><li>Reduce the unplanned work to virtually zero</li>
+<li>Prioritise work that makes the team spend more time on building the product</li>
+<li>Spend everything else on building the actual product</li>
+<li>Things that don’t add to either the product directly, or to making more
+product should not be on the backlog, end of story</li></ol></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2023 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="r7k02u">
+			import { start } from "../_app/immutable/start-c807e040.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="r7k02u"]').parentNode,
+				version: "1687130788561",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>
