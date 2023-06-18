@@ -1,11 +1,26 @@
 ---
 slug: LZcMc
+date: 19 June 2023
 title: The four types of work
-draft: true
+description: Looking into software engineering work categorisation and prioritisation
+thumbnail: ./images/four-types-of-work.png
+tags:
+  - engineering
+  - management
+  - leadership
+  - strategy
+medium:
+  tags:
+    - Engineering Management
+    - Technical Leadership
+    - Leadership
+    - Management
+    - Strategy
+  id: bf928e5e825b
 ---
 
-I've seen I fair few new technology leaders and engineering managers at work,
-and, by far, the most common scenario where they struggle is to manage work
+I've seen I fair few new technology leaders and engineering managers at work.
+And by far, the most common scenario where they struggle is to manage work
 priorities. New leaders often take delivery management rather literally, and
 when faced business pressures, they cram the roadmap with features. And, that
 plan inevitably fails.
@@ -22,8 +37,8 @@ community by the book called "the phoenix project". Although, technically, the
 idea was lifted--as most of the book--from another book called "The Goal" by
 Eliyahu Goldratt.
 
-The point they're trying to make is quite simple. Generally speaking there are
-four types of work in any organisation:
+The point they were trying to make is quite simple. Generally speaking, there
+are four types of work in any organisation:
 
 - Business projects
 - Internal projects
@@ -39,20 +54,20 @@ So, allow me to frivolously translate that into the terms we all can relate to.
 - Putting the fires down
 
 The point of this model is that those four types of work are always present no
-matter the business or product. And if a roadmap only consists of features, the
+matter the business or product. And if a roadmap consists of features only, the
 other types of work don't simply disappear. Instead the work goes invisible, and
 that inevitably derails the actual features development.
 
 ## Another way to slice it
 
 There is a bit of a problem with this model when it's applied to software
-engineering teams. Because when we try to implement it verbatim, here is how
-stakeholders see this list:
+engineering teams. Because when we try to implement it verbatim the stakeholders
+will see the list pretty much like so:
 
-- Features development <- stuff you supposed to do!
-- Core technology <- gold plating
-- Optimisations <- unnecessary, supposed to magically happen by default
-- Firefighting <- basically engineering fuck-ups and avoidable heroics
+- Features development ← stuff you supposed to do!
+- Core technology ← gold plating
+- Optimisations ← unnecessary, should happen by default
+- Firefighting ← basically engineering fuck-ups and avoidable heroics
 
 As you can see, unless your roadmap is not 90% filled with features, this
 categorisation might not necessarily be conducive to happy planning and
@@ -106,7 +121,7 @@ with time as a project/product evolves.
 ## Lost in translation
 
 While engineering time is always in a limited supply, and it's understandable
-why someone would like to have guarantees over budget allocation for their own
+why someone would like to have guarantees over budget allocations for their own
 priorities, these work categorisation frameworks were never meant to be used
 like a bargaining chip.
 
@@ -140,20 +155,20 @@ maximises the product output and drives costs down was. And that puts the whole
 system upside down.
 
 Normally a company would put the product work at the top of their priorities.
-While understandable, that might not actually be to the best interest of the
-business. To put it simply if product is put ahead of operational efficiency it
+While understandable, this might not actually be to the best interest of the
+business. To put it simply, if product is put ahead of operational efficiency it
 won't necessarily result in profits.
 
 And so, in Golratt's theory it was all about finding the system's constraints
-that limit throughput and adds up the costs, and then addressing them. And to
-that end the amount of work that goes into each category was supposed to be
+that limit throughput and add up the costs, and then addressing them. And to
+that end, the amount of work that goes into each category was supposed to be
 _tracked_ not _preallocated_.
 
 The unplanned work needs to be driven down as much as possible--preferably to
-zero--through improving quality. Operational improvements should be the most
-prioritised work, as they directly improve the bottom line. Second to that would
-be internal projects that are aimed at reducing the inventory (aka the backlog
-of unfinished work in our case).
+zero--through improving quality and processes. Operational improvements should
+be the most prioritised work, as they directly improve the bottom line. Second
+to that would be internal projects that are aimed at reducing the inventory (aka
+the backlog of unfinished work in our case) which improves the throughput.
 
 ## The crescendo
 
@@ -166,14 +181,14 @@ the team to spend _more_ time on the product work, aka improve throughput.
 If we walk into any modern manufacturing facility, this idea that operational
 efficiency is the key is accepted as universal truth. In software engineering
 though we're still look at the "quality, speed, cost" triangle and believe that
-we have to pick two. That is not true, because better quality improves speed,
-and the two of them together improve costs and throughput".
+we have to pick two. And that is simply not true, because better quality
+improves speed, and the two of them together improve costs and throughput".
 
 To put it in even simpler terms, there is no really product vs. everything else
 division. _All useful work_ is essentially product work. It's either about
-making the product or building a system to _make more product_. And the last one
-should always be a priority because it makes more impact on the bottom line than
-the product development itself.
+building the product itself, or it's about building a system to _make more
+product_. And the last one should always be a priority because it makes more
+impact on the bottom line than the product development itself.
 
 And that is as good of a work prioritisation guidance as you will get in a
 while:
