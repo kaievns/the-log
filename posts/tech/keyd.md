@@ -1,4 +1,5 @@
 ---
+slug: cO6vGW
 title: Did I tell you about keyd?
 description: A quick share about keyd as a keyboard config management tool
 date: 22 July 2024
