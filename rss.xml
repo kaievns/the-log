@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/n4iyQx</guid>
+<title>Rigid-Flex PCBs in KiCad</title>
+<link>https://kaievans.co/posts/n4iyQx</link>
+<description>A how to make rigid-flex PCB designs work in KiCad</description>
+<pubDate>Fri, 11 Oct 2024 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/cO6vGW</guid>
 <title>Did I tell you about keyd?</title>
 <link>https://kaievans.co/posts/cO6vGW</link>

@@ -24,6 +24,7 @@
 	</script>
 	
 		<link href="../_app/immutable/assets/0.1c60bff9.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/6.5c045b07.css" rel="stylesheet">
 		<link rel="modulepreload" href="../_app/immutable/entry/start.b9c9c4ce.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.7ee8938c.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.b027cd6c.js">
@@ -31,11 +32,10 @@
 		<link rel="modulepreload" href="../_app/immutable/entry/app.859dad72.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.8adeccd0.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/8.ca9a8b9d.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.20273b0e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.8f2ca6db.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/posts.83c1a3bb.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Preview.346f7ecc.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Date.c31591f9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date.c31591f9.js"><title>Rigid-Flex PCBs in KiCad ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Rigid-Flex PCBs in KiCad ⁍ Kai Evans"><meta name="description" content="A how to make rigid-flex PCB designs work in KiCad"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Rigid-Flex PCBs in KiCad ⁍ Kai Evans"><meta property="og:description" content="A how to make rigid-flex PCB designs work in KiCad"><meta property="og:url" content="http://kaievans.co/posts/n4iyQx"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face.138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2024-10-11T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/n4iyQx"><meta property="twitter:title" content="Rigid-Flex PCBs in KiCad ⁍ Kai Evans"><meta property="twitter:description" content="A how to make rigid-flex PCB designs work in KiCad"><meta property="twitter:image" content="/_app/immutable/assets/face.138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -52,45 +52,32 @@
     <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
     <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
 
-<main><article><h1 class="title mb-6 flex items-center"><a href="/tags/" class="text-accent sm:hover:underline">Tags</a>
-    <span class="ml-2 mr-3 inline-block">→</span>
-    <span class="text-xl">#strategy</span></h1>
-<section aria-label="Blog post list"><ul class="space-y-8 text-left"><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-06-18T14:00:00.000Z" class="min-w-[100px] text-gray-500">19 June 2023</time>
+<main><article>
+    
+    
+    
+    
 
-<a href="/posts/LZcMc" class="cactus-link inline-block line-clamp-1" rel="prefetch">The four types of work</a>
+    <h1 class="title">Rigid-Flex PCBs in KiCad</h1>
+<time datetime="2024-10-11T13:00:00.000Z" class="">12 October 2024</time>
 
-<q class="mt-2 block italic line-clamp-3">Looking into software engineering work categorisation and prioritisation</q>
-            </li><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-06-11T14:00:00.000Z" class="min-w-[100px] text-gray-500">12 June 2023</time>
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag pcb" href="/tags/pcb">pcb</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag keyboard" href="/tags/keyboard">keyboard</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag kicad" href="/tags/kicad">kicad</a></div>
 
-<a href="/posts/pnBD0" class="cactus-link inline-block line-clamp-1" rel="prefetch">What business value is made of</a>
-
-<q class="mt-2 block italic line-clamp-3">Dissecting the concept of business value</q>
-            </li><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-06-04T14:00:00.000Z" class="min-w-[100px] text-gray-500">5 June 2023</time>
-
-<a href="/posts/i9Npg" class="cactus-link inline-block line-clamp-1" rel="prefetch">Managing quality beyond technical debt</a>
-
-<q class="mt-2 block italic line-clamp-3">A deep dive into quality management structure</q>
-            </li><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-05-21T14:00:00.000Z" class="min-w-[100px] text-gray-500">22 May 2023</time>
-
-<a href="/posts/JuK3o" class="cactus-link inline-block line-clamp-1" rel="prefetch">Vision, strategy, plan</a>
-
-<q class="mt-2 block italic line-clamp-3">A deep dive into leadership structure and how it works</q>
-            </li><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-04-30T14:00:00.000Z" class="min-w-[100px] text-gray-500">1 May 2023</time>
-
-<a href="/posts/xMLqU" class="cactus-link inline-block line-clamp-1" rel="prefetch">Risk management fundamentals</a>
-
-<q class="mt-2 block italic line-clamp-3">Diving into the basics of risk management, tools and tactics</q>
-            </li><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-04-23T14:00:00.000Z" class="min-w-[100px] text-gray-500">24 April 2023</time>
-
-<a href="/posts/mDPrA" class="cactus-link inline-block line-clamp-1" rel="prefetch">The beach</a>
-
-<q class="mt-2 block italic line-clamp-3">A short essay about the role of technology in a software development organisation</q>
-            </li><li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full"><time datetime="2023-04-09T14:00:00.000Z" class="min-w-[100px] text-gray-500">10 April 2023</time>
-
-<a href="/posts/we0V4" class="cactus-link inline-block line-clamp-1" rel="prefetch">On culture and belongingness</a>
-
-<q class="mt-2 block italic line-clamp-3">Notes on developing high performance culture in a creative organisation</q>
-            </li></ul></section></article></main>
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>It took a while for me to find some information on the topic, and a bit of try and fail to figure out. So here is a bit of a write up for how it works and how to design rigid-flex PCBs in KiCad specifically.</p>
+<p>Also, a bit of a warning. I have learned this the hard way, but turned out that rigid-flex PCBs are crazy expensive to manufacture. As in ~100x times more expensive than regular PCBs. So maybe think twice before committing to this path.</p>
+<h2 id="what-is-rigid-flex"><a aria-hidden="true" tabindex="-1" href="#what-is-rigid-flex"><span class="icon icon-link"></span></a>What is rigid-flex</h2>
+<p>If you know what rigid-flex is skip this section, I just feel like some disambiguation could be useful here. Basically there are three types of PCBs most commonly used.</p>
+<ol><li>a <em>rigid</em> PCB - the most common every day PCB type made of sheer cancer</li>
+<li>a <em>flex</em> PCB - is made of ubiquitous orange polyimide film with copper tracks</li>
+<li>a <em>rigid-flex</em> PCB is basically a combination of the two some parts are flexible some rigid</li></ol>
+<p>The easiest way to think about it is this, first they make a <em>flex</em> PCB that covers the entirety of the combined PCB, and then they glue the rigid parts to it where needed, usually on both sides.</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/rigid-flex-diagram.bc9563d1.webp" alt="rigid-flex PCB"><figcaption>rigid-flex PCB</figcaption></figure>
+<p>In it’s basic form a <em>rigid-flex</em> PCB is sort of like a normal 4 layer PCB where the inner two layers are made of a <em>flex</em> PCB, and the outer two layers are basically one sided rigid PCBs glued to it where one needs the rigid parts</p>
+<h2 id="how-to-design-one-in-kicad"><a aria-hidden="true" tabindex="-1" href="#how-to-design-one-in-kicad"><span class="icon icon-link"></span></a>How to design one in KiCad</h2>
+<p>This has turned out to be the easiest part actually. All one has to do is to set up a 4 layer PCB in the PCB config, and then design it as a normal 4 layer PCB with one exception. The outer front and back layer tracks should only be on the rigid parts and never cross into the flexible part.</p>
+<p>Then one does a normal outline layer, and finally in the user notes, one has to mark out the flexible sections for the manufacturer. Basically free style it with any drawing tools available, just shade out the flexible parts. Also, it’s a good idea to leave some text in that layer with explanations for the manufacturer what your markings mean.</p>
+<p>When you submit your gerber file to a fab, a human will look into your design and they’ll know what to do.</p></div></article></main>
 
 <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2024 Kai Evans
     </div>
@@ -116,7 +103,7 @@
 						import("../_app/immutable/entry/app.859dad72.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 8],
+							node_ids: [0, 6],
 							data,
 							form: null,
 							error: null
