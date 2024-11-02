@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	
+		<link href="../_app/immutable/assets/0.1c60bff9.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/6.5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.8db30a6f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.7ee8938c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.50cb95ea.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.c2cf8273.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.52a43a81.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.8adeccd0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.2bfec478.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.8f2ca6db.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts.408e8d20.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date.c31591f9.js"><title>Choices for homelab kubernetes setup ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Choices for homelab kubernetes setup ⁍ Kai Evans"><meta name="description" content="Capturing my thought process around setting up a kubernetes deployment for my homelab"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Choices for homelab kubernetes setup ⁍ Kai Evans"><meta property="og:description" content="Capturing my thought process around setting up a kubernetes deployment for my homelab"><meta property="og:url" content="http://kaievans.co/posts/qBiRbJ"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face.138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2024-11-01T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/qBiRbJ"><meta property="twitter:title" content="Choices for homelab kubernetes setup ⁍ Kai Evans"><meta property="twitter:description" content="Capturing my thought process around setting up a kubernetes deployment for my homelab"><meta property="twitter:image" content="/_app/immutable/assets/face.138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face.8ef268e1.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">Choices for homelab kubernetes setup</h1>
+<time datetime="2024-11-01T13:00:00.000Z" class="">2 November 2024</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag homelab" href="/tags/homelab">homelab</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag kubernetes" href="/tags/kubernetes">kubernetes</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag linux" href="/tags/linux">linux</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag ubuntu" href="/tags/ubuntu">ubuntu</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>While I’m still in the moment, I thought I’d capture a bit of a “thought process” for the choices that went into setting up a kubernetes cluster in my homelab. And before you get any ideas, i want to come clean and say that this is my first homelab setup, so take it for what it’s worth.</p>
+<h2 id="why-do-i-need-a-homelab-and-kubes"><a aria-hidden="true" tabindex="-1" href="#why-do-i-need-a-homelab-and-kubes"><span class="icon icon-link"></span></a>Why do I need a homelab and kubes?</h2>
+<p>Long story short, I’m an engineer, I build stuff. And technically I don’t really have to. I could build all of this in the cloud. And truth be told, maybe that’s what I should have done. But, as I said, I like building stuff. And there is a lot of value in having my own hardware in house that I can mess with over and over and over again, try all sorts of different things and not be constrained or distracted by a cloud provider twiddling their cloud offerings in my face.</p>
+<p>Some stuff that I build can be long running, and might use the same Postgres/Redis setup over and over again. I do run that on a laptop, but really it’s a pain. Not to mention requires a beefy laptop to run. And honestly I just find the whole lag and account hustle around cloud systems distracting as fuck.</p>
+<p>And so I picked a couple of sub $500 mini PCs on a prime day sale, linked them with a $50 switch and that packs about 4 times more horse power than my M1 Pro. Not to mention it’s upgradeable with aftermarket parts.</p>
+<p>So, to me, setting up my own small server hardware are:</p>
+<ol><li>fun</li>
+<li>lets me self-host what i need in-house on a cheap</li>
+<li>lets me use an 8 years old thinkpad and still have tonnes of horse power</li>
+<li>did i mention fun?</li></ol>
+<h2 id="os-options"><a aria-hidden="true" tabindex="-1" href="#os-options"><span class="icon icon-link"></span></a>OS options</h2>
+<p>This part should really be a tweet and go something like this: choosing something that is not ubuntu server is a bit like going to a video game store and buying something that is not call of duty. But I’ll elaborate.</p>
+<p>I’m actually planning to run most of my stuff in kubes, and from that perspective the choice of the underlying os doesn’t matter all that much. I mean, sure some marketing material will persuade you with “bare metal” terminology, but honestly, unless you’re running a million dollar fleet, that’s horse shit. Most minimal server deployments are basically a linux kernel with a few nuts and bolts, as a homelab owner you wont really ever notice the difference.</p>
+<p>But here is what I have considered.</p>
+<ol><li>Arch linux. I actually run arch as my laptop os, and it’s by far my favourite linux distro. But, do i really want to have a snowflake playground setup on a server that I’ll likely blow up and rebuild a dozen of times? Do I really need all the AUR stuff on it? The answer is not really</li>
+<li>Talos linux. Promoted as the best kubes distro ever that simplifies kubes setup, API driven and everything. That actually sounds great, infra as code and all. And I’m sure it’s a great product. But really… Setting up a kubs cluster is not that complicated, it literally takes 10 minutes end to end. Do I need a yet another opinionated layer between me and my tools to do that? Not running a million dollar HA production cluster here, so no thank you.</li>
+<li>Ubuntu server. Well comes with everything you’ll ever need, including all the problems you ever run into solved. Ubuntu’s minimal server install is fantastic bare bone system that can ever run on IoT. Also has kernel livepatch baked in, gosh I hate rebooting the system on kernel patches. Such a barbaric practice.</li>
+<li>Sorry, not now OpenBSD</li></ol>
+<p>Do you see what I’m telling you here? You can choose anything here really, the question is how much time you want to invest into setting up and maintaining a system? My answer is as little as possible, so ubuntu server.</p>
+<h2 id="kubes-options"><a aria-hidden="true" tabindex="-1" href="#kubes-options"><span class="icon icon-link"></span></a>Kubes options</h2>
+<p>Long story short there are basically two options on the table at the moment. <a href="https://k3s.io/" rel="nofollow">k3s</a> and <a href="https://microk8s.io/" rel="nofollow">microk8s</a>. I mean you could technically install kubes as our lord and saviour Google had intended, but why would you?</p>
+<p>Full disclosure, I’m a huge fun of rancher and worked with k3s in the past, and so I thought it’s a lost cause for microk8s. But I ended up becoming a convert.</p>
+<p>Don’t get me wrong k3s is fantastic, and is that’s what you used to and/or you’re not running ubuntu that’s a perfectly legitimate choice. But, I found that microk8s can do everything k3s can do with just a flip of an option, it’s addons thing actually covers 100%+ of everything I’ll ever need, and in my tests it consumes a tiny bit less CPU and memory than k3s. Not like that will ever matter in my case.</p>
+<p>In the end what won me over was the fact that it comes integrated with ubuntu server itself, has very sensible defaults (including preinstalled helm), and it updates along with the server system itself.</p>
+<p>Really choosing ubuntu server + micrk8s simplifies the crap out of the equation. I can blow up my system 5 times a day and resurrect it in 15 minutes every time. And it will keep itself up to date patched and secure mostly automatically so that I could spend my brain cycles on something else.</p>
+<p>Well, at least that’s me. You don’t have to do the same. But I hope this helped.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2024 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+			
+			<script>
+				{
+					__sveltekit_7st0og = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.8db30a6f.js"),
+						import("../_app/immutable/entry/app.52a43a81.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>

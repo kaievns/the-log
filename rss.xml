@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/qBiRbJ</guid>
+<title>Choices for homelab kubernetes setup</title>
+<link>https://kaievans.co/posts/qBiRbJ</link>
+<description>Capturing my thought process around setting up a kubernetes deployment for my homelab</description>
+<pubDate>Fri, 01 Nov 2024 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/n4iyQx</guid>
 <title>Rigid-Flex PCBs in KiCad</title>
 <link>https://kaievans.co/posts/n4iyQx</link>
@@ -172,13 +179,6 @@
 <link>https://kaievans.co/posts/MzEzNDAK</link>
 <description>I'm going through all the engineering roles and common career paths</description>
 <pubDate>Fri, 03 Feb 2023 13:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/MzI5Mgo</guid>
-<title>How this site is made</title>
-<link>https://kaievans.co/posts/MzI5Mgo</link>
-<description>a bit of technical details about how this web site was created</description>
-<pubDate>Tue, 31 Jan 2023 13:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
