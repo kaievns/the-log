@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/czFmXY</guid>
+<title>Setting up a microk8s cluster in a homelab</title>
+<link>https://kaievans.co/posts/czFmXY</link>
+<description>A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s</description>
+<pubDate>Fri, 15 Nov 2024 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/mjbP47T</guid>
 <title>What and why homelab</title>
 <link>https://kaievans.co/posts/mjbP47T</link>
@@ -172,13 +179,6 @@
 <link>https://kaievans.co/posts/yZDIw</link>
 <description>A bit controversial take on self-managing one's career as a software engineer</description>
 <pubDate>Sun, 12 Feb 2023 13:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/MjU5MjkK</guid>
-<title>Svelte + Markdown blog images setup</title>
-<link>https://kaievans.co/posts/MjU5MjkK</link>
-<description>A short guide how to setup image assets processing and optimisation in a svelte+markdown blog</description>
-<pubDate>Tue, 07 Feb 2023 13:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

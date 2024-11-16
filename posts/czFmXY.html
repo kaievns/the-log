@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-0f5de7ea.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-1a355cb5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-b3e7412a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-a643fb78.js"><title>Setting up a microk8s cluster in a homelab ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta name="description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta property="og:description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta property="og:url" content="http://kaievans.co/posts/czFmXY"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2024-11-15T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/czFmXY"><meta property="twitter:title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta property="twitter:description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">Setting up a microk8s cluster in a homelab</h1>
+<time datetime="2024-11-15T13:00:00.000Z" class="">16 November 2024</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag kubernetes" href="/tags/kubernetes">kubernetes</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag linux" href="/tags/linux">linux</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag homelab" href="/tags/homelab">homelab</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>I run almost everything in my homelab in a kubernetes cluster. There is no other reason to that other than my personal preference tbh, so I’m not going to dive into the why kubes topic here. But, I think I’ll have to give the microk8s over k3s idea a bit of an explanation though.</p>
+<p>Traditionally k3s is the go to choice for anything small like a homelab; and it’s great! But, lately, I spent some quality time with microk8s and ended up liking it a lot. To the point where i have chosen it over k3s for my homelab. Mostly because how low touch it is to setup and maintain a baseline cluster, and how well it is integrated with ubuntu ecosystem.</p>
+<p>Unfortunately, microk8s being a bit of a niche choice, the documentation might be a bit sparse. So, I figured an extra tutorial won’t hurt, and hence the article. I’ll walk you through my choices as we go through them.</p>
+<h2 id="initial-server-setup"><a aria-hidden="true" tabindex="-1" href="#initial-server-setup"><span class="icon icon-link"></span></a>Initial server setup</h2>
+<p>I’m presuming here that we have a fresh ubuntu server 24.04 installed on two machines. It could be a full or a minimal setup, doesn’t particularly matter. One of them will me main server and another is a secondary worker. Again, you might have more than two units in your cluster, it doesn’t matter either; you’ll just have to repeat a few steps on those extra machines.</p>
+<p>I strongly recommend setting up SSH on each node though. I mean unless you <em>really</em> want to manually type all the commands below in terminals for some reason. All my infra lives behind firewalls so, to me an SSH connection is a nobrainer.</p>
+<p>Okay, with that out of the way, first off lets run the updates and add couple of standard tools</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> <span class="token function">apt</span> update  
+<span class="token function">sudo</span> <span class="token function">apt</span> upgrade
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">nano</span> btop</code><!-- HTML_TAG_END --></pre>
+<p>Second, you want to disable swap on all of your machines, and comment out the swap line of your <code>fstab</code> file, then reboot. Long story short for this is that kubes resources scheduler gets real confused when your pod ends up in swap</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> swapoff <span class="token parameter variable">-a</span>
+<span class="token function">sudo</span> <span class="token function">nano</span> /etc/fstab
+
+<span class="token function">sudo</span> <span class="token function">reboot</span></code><!-- HTML_TAG_END --></pre>
+<p>Than brings us to the base line setup.</p>
+<h2 id="kubes-install"><a aria-hidden="true" tabindex="-1" href="#kubes-install"><span class="icon icon-link"></span></a>Kubes install</h2>
+<p>Once your machines are back from the reboot run those two</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> snap <span class="token function">install</span> microk8s <span class="token parameter variable">--classic</span>
+<span class="token function">sudo</span> snap <span class="token function">install</span> canonical-livepatch</code><!-- HTML_TAG_END --></pre>
+<p>The first one installs microk8s and the second one installs kernel livepatch. Technically you don’t need the second one, but we also don’t need to be backward savages either.</p>
+<p>Once that’s done switch to the master node and run the following</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> microk8s status --wait-ready
+<span class="token function">sudo</span> microk8s disable ha-cluster <span class="token parameter variable">--force</span>
+
+<span class="token function">sudo</span> microk8s add-node</code><!-- HTML_TAG_END --></pre>
+<p>The first one waits for the kubes instance to boot. By default it will boot in high availability mode, running extra stuff on your nodes. For homelab purposes I don’t really need that and could easily suffer an occasional reboot if I have to. So the second command will disable all of that and switch the cluster to use <code>flaneld</code> and <code>etcd</code> similar to k3s default setup.</p>
+<p>The last command will spit out a command that looks something like this:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token function">join</span> <span class="token number">192.168</span>.62.61:<span class="token punctuation">[</span>LONG SECRET STRING<span class="token punctuation">]</span></code><!-- HTML_TAG_END --></pre>
+<p>copy that command, add <code>sudo </code> in front of it and run that on <em>every</em> worker node. this will connect all your nodes in a single kubernetes cluster.</p>
+<p>From this point on, everything you do runs from the <em>main</em> node <em>only</em>!</p>
+<h2 id="initial-tooling-setup"><a aria-hidden="true" tabindex="-1" href="#initial-tooling-setup"><span class="icon icon-link"></span></a>Initial tooling setup</h2>
+<p>Start by running the following, it will install aliases and such for you to move forward. Microk8s is actually pretty handy as it comes with all the tools, including helm preinstalled and namespaced:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> <span class="token function">usermod</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">-G</span> microk8s <span class="token environment constant">$USER</span>
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> ~/.kube
+<span class="token function">chmod</span> 0700 ~/.kube
+
+<span class="token builtin class-name">echo</span> <span class="token string">"alias kubectl='microk8s kubectl'"</span> <span class="token operator">>></span> ~/.bashrc
+<span class="token builtin class-name">echo</span> <span class="token string">"alias helm='microk8s helm'"</span> <span class="token operator">>></span> ~/.bashrc
+<span class="token builtin class-name">echo</span> <span class="token string">"export EDITOR=nano"</span> <span class="token operator">>></span> ~/.bashrc
+<span class="token builtin class-name">source</span> ~/.bashrc 
+
+<span class="token function">su</span> - <span class="token environment constant">$USER</span></code><!-- HTML_TAG_END --></pre>
+<p>After that you want to enable the following two addons:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token builtin class-name">enable</span> dns
+microk8s <span class="token builtin class-name">enable</span> ingress</code><!-- HTML_TAG_END --></pre>
+<p>The first one installs CoreDNS to resolve kubes <em>internal</em> DNS names, the second one will install nginx based reverse proxy to serve as an ingress controller for all your kubes services.</p>
+<p>Technically you might want to choose <code>traefik</code> over the <code>nginx</code> to follow the k3s standards, it is also available as an addon in microk8s, but it will basically do a bare bone helm install under the hood and you’ll be on your own after that. I’m a huge fan of traefik and its design, but i’m not a huge fun of chugging lots of custom yaml files around. In my experience the default nginx ingress server just as lightweight and better overall integrated with microk8s ecosystem. So I use that as the default option.</p>
+<h2 id="kubes-dashboard"><a aria-hidden="true" tabindex="-1" href="#kubes-dashboard"><span class="icon icon-link"></span></a>Kubes dashboard</h2>
+<p>Microk8s doesn’t come with Rancher for obvious reasons, but it has the standard kubernetes dashboard available as a plugin. Which serves me just fine.</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token builtin class-name">enable</span> dashboard
+
+kubectl apply <span class="token parameter variable">-f</span> - <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kubernetes-dashboard
+  namespace: kube-system
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    nginx.ingress.kubernetes.io/whitelist-source-range: 127.0.0.1/8,192.168.0.0/16
+spec:
+  ingressClassName: public
+  rules:
+  - host: [YOUR LOCAL DOMAIN NAME GOES HERE]
+    http:
+      paths:
+      - backend:
+          service:
+            name: kubernetes-dashboard
+            port:
+              number: 443
+        path: /
+        pathType: Prefix
+EOF</span></code><!-- HTML_TAG_END --></pre>
+<p>The first command will install everything except an ingress config. I honestly don’t know why not. But, that’s a consistent choice with all the plugins in microk8s. And chucking it in doesn’t take long.</p>
+<p>To access your dashboard you’ll need a token which you get with the following command.</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl describe secret <span class="token parameter variable">-n</span> kube-system microk8s-dashboard-token</code><!-- HTML_TAG_END --></pre>
+<p>By default there is no firewall enabled in ubuntu server. But, if you have a firewall running on your main node, you might want to run the following to open the ports:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> ufw allow http  
+<span class="token function">sudo</span> ufw allow https</code><!-- HTML_TAG_END --></pre>
+<h2 id="longhorn"><a aria-hidden="true" tabindex="-1" href="#longhorn"><span class="icon icon-link"></span></a>Longhorn</h2>
+<p>Microk8s comes with several options for storage. It’s not like I particularly dislike any of them, it’s just I really like longhorn. I always had a solid experience with the thing and it’s super simple to install.</p>
+<p>First add the helm repo</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">helm repo <span class="token function">add</span> longhorn https://charts.longhorn.io
+helm repo update</code><!-- HTML_TAG_END --></pre>
+<p>Then run the following to install it</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl create namespace longhorn
+helm <span class="token function">install</span> longhorn longhorn/longhorn <span class="token parameter variable">--namespace</span> longhorn <span class="token punctuation"></span>
+  <span class="token parameter variable">--set</span> <span class="token assign-left variable">defaultSettings.defaultDataPath</span><span class="token operator">=</span><span class="token string">"/longhorn"</span> <span class="token punctuation"></span>
+  <span class="token parameter variable">--set</span> <span class="token assign-left variable">csi.kubeletRootDir</span><span class="token operator">=</span><span class="token string">"/var/snap/microk8s/common/var/lib/kubelet"</span></code><!-- HTML_TAG_END --></pre>
+<p>Then watch the pods until you see them all spawn everything</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl <span class="token parameter variable">-n</span> longhorn get pods</code><!-- HTML_TAG_END --></pre>
+<p>After that the only thing you’ll need is to add an ingress controller.</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">cat</span> <span class="token operator">&lt;&lt;</span><span class="token string">EOF<span class="token bash punctuation"> <span class="token operator">|</span> microk8s kubectl apply <span class="token parameter variable">-f</span> -</span>
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: longhorn
+  namespace: longhorn
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 127.0.0.1/8,192.168.0.0/16
+spec:
+  rules:
+  - host: [LONGHORN LOCAL DNS NAME]
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: longhorn-frontend
+              port:
+                number: 80
+EOF</span></code><!-- HTML_TAG_END --></pre>
+<p>And that’s pretty much all to it. Just add the DNS names into your <code>/etc/hosts</code> and you should be good to go.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2024 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="mc2ug8">
+			import { start } from "../_app/immutable/start-0f5de7ea.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="mc2ug8"]').parentNode,
+				version: "1731746474756",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>
