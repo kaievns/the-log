@@ -25,7 +25,7 @@
 	<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-0f5de7ea.js">
+		<link rel="modulepreload" href="../_app/immutable/start-dd512098.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
@@ -35,10 +35,10 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
 		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-1a355cb5.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-97feb3a3.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/posts-b3e7412a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-a643fb78.js"><title>Setting up a microk8s cluster in a homelab ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta name="description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta property="og:description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta property="og:url" content="http://kaievans.co/posts/czFmXY"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2024-11-15T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/czFmXY"><meta property="twitter:title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta property="twitter:description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-4e18db69.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e80c3f3f.js"><title>Setting up a microk8s cluster in a homelab ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta name="description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta property="og:description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta property="og:url" content="http://kaievans.co/posts/czFmXY"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2024-11-15T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/czFmXY"><meta property="twitter:title" content="Setting up a microk8s cluster in a homelab ⁍ Kai Evans"><meta property="twitter:description" content="A quick guide how to setup a working kubernetes cluster for a homelab using ubuntu server and microk8s"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -76,29 +76,29 @@
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> <span class="token function">apt</span> update  
 <span class="token function">sudo</span> <span class="token function">apt</span> upgrade
 <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">nano</span> btop</code><!-- HTML_TAG_END --></pre>
-<p>Second, you want to disable swap on all of your machines, and comment out the swap line of your <code>fstab</code> file, then reboot. Long story short for this is that kubes resources scheduler gets real confused when your pod ends up in swap</p>
+<p>Second, you want to disable swap on all of your machines, and comment out the swap line of your <code>fstab</code> file, then reboot. Long story short for this is that kubes resources scheduler gets real confused when your pod ends up in swap. You don’t want that to happen.</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> swapoff <span class="token parameter variable">-a</span>
 <span class="token function">sudo</span> <span class="token function">nano</span> /etc/fstab
 
 <span class="token function">sudo</span> <span class="token function">reboot</span></code><!-- HTML_TAG_END --></pre>
 <p>Than brings us to the base line setup.</p>
 <h2 id="kubes-install"><a aria-hidden="true" tabindex="-1" href="#kubes-install"><span class="icon icon-link"></span></a>Kubes install</h2>
-<p>Once your machines are back from the reboot run those two</p>
+<p>Once your machines are back from the reboot run those two commands on each of them.</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> snap <span class="token function">install</span> microk8s <span class="token parameter variable">--classic</span>
 <span class="token function">sudo</span> snap <span class="token function">install</span> canonical-livepatch</code><!-- HTML_TAG_END --></pre>
-<p>The first one installs microk8s and the second one installs kernel livepatch. Technically you don’t need the second one, but we also don’t need to be backward savages either.</p>
-<p>Once that’s done switch to the master node and run the following</p>
+<p>The first one installs microk8s and the second one installs kernel livepatch. Technically you don’t need the second one, but we also don’t need to live like backward savages either, do we?</p>
+<p>Once that’s done switch to your <em>master</em> node and run the following</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> microk8s status --wait-ready
 <span class="token function">sudo</span> microk8s disable ha-cluster <span class="token parameter variable">--force</span>
 
 <span class="token function">sudo</span> microk8s add-node</code><!-- HTML_TAG_END --></pre>
-<p>The first one waits for the kubes instance to boot. By default it will boot in high availability mode, running extra stuff on your nodes. For homelab purposes I don’t really need that and could easily suffer an occasional reboot if I have to. So the second command will disable all of that and switch the cluster to use <code>flaneld</code> and <code>etcd</code> similar to k3s default setup.</p>
-<p>The last command will spit out a command that looks something like this:</p>
-<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token function">join</span> <span class="token number">192.168</span>.62.61:<span class="token punctuation">[</span>LONG SECRET STRING<span class="token punctuation">]</span></code><!-- HTML_TAG_END --></pre>
-<p>copy that command, add <code>sudo </code> in front of it and run that on <em>every</em> worker node. this will connect all your nodes in a single kubernetes cluster.</p>
+<p>The first one waits for the kubes instance to boot. By default it will boot in high availability mode, running extra stuff on your nodes. For homelab purposes I don’t really need that and could easily suffer an occasional reboot if I have to. So the second command will disable all of that and switch the cluster into a more lightweight mode and use <code>flaneld</code> and <code>etcd</code>, similar to a standard k3s default setup.</p>
+<p>The last command will spit out a new command that looks something like this:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token function">join</span> <span class="token punctuation">[</span>IP ADDRESS<span class="token punctuation">]</span>:<span class="token punctuation">[</span>LONG SECRET STRING<span class="token punctuation">]</span></code><!-- HTML_TAG_END --></pre>
+<p>copy that command, add <code>sudo </code> in front of it and run it on <em>every</em> worker node. This will connect all your nodes into a single kubernetes cluster.</p>
 <p>From this point on, everything you do runs from the <em>main</em> node <em>only</em>!</p>
 <h2 id="initial-tooling-setup"><a aria-hidden="true" tabindex="-1" href="#initial-tooling-setup"><span class="icon icon-link"></span></a>Initial tooling setup</h2>
-<p>Start by running the following, it will install aliases and such for you to move forward. Microk8s is actually pretty handy as it comes with all the tools, including helm preinstalled and namespaced:</p>
+<p>Start by running the following set of commands. It will install aliases and such for you to move forward. Microk8s is actually pretty handy as it comes with all the tools, including helm, preinstalled and namespaced:</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> <span class="token function">usermod</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">-G</span> microk8s <span class="token environment constant">$USER</span>
 <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> ~/.kube
 <span class="token function">chmod</span> 0700 ~/.kube
@@ -109,13 +109,13 @@
 <span class="token builtin class-name">source</span> ~/.bashrc 
 
 <span class="token function">su</span> - <span class="token environment constant">$USER</span></code><!-- HTML_TAG_END --></pre>
-<p>After that you want to enable the following two addons:</p>
+<p>After that you want to enable the following two microk8s addons:</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token builtin class-name">enable</span> dns
 microk8s <span class="token builtin class-name">enable</span> ingress</code><!-- HTML_TAG_END --></pre>
 <p>The first one installs CoreDNS to resolve kubes <em>internal</em> DNS names, the second one will install nginx based reverse proxy to serve as an ingress controller for all your kubes services.</p>
-<p>Technically you might want to choose <code>traefik</code> over the <code>nginx</code> to follow the k3s standards, it is also available as an addon in microk8s, but it will basically do a bare bone helm install under the hood and you’ll be on your own after that. I’m a huge fan of traefik and its design, but i’m not a huge fun of chugging lots of custom yaml files around. In my experience the default nginx ingress server just as lightweight and better overall integrated with microk8s ecosystem. So I use that as the default option.</p>
+<p>Technically you might want to choose <code>traefik</code> over the <code>nginx</code> here to follow the k3s standards. It is available as a community addon in microk8s. But, it will basically do a bare bone helm install under the hood and you’ll be on your own after that. I’m a huge fan of traefik and its middleware based design, but i’m not a huge fun of chugging lots of custom yaml files around. In my experience the default nginx ingress server just as lightweight and better overall integrated with microk8s ecosystem. So I use that as the default option.</p>
 <h2 id="kubes-dashboard"><a aria-hidden="true" tabindex="-1" href="#kubes-dashboard"><span class="icon icon-link"></span></a>Kubes dashboard</h2>
-<p>Microk8s doesn’t come with Rancher for obvious reasons, but it has the standard kubernetes dashboard available as a plugin. Which serves me just fine.</p>
+<p>Microk8s doesn’t come with Rancher dashboard for obvious reasons. But, it has the standard kubernetes dashboard available as an addon. Which serves me just fine.</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">microk8s <span class="token builtin class-name">enable</span> dashboard
 
 kubectl apply <span class="token parameter variable">-f</span> - <span class="token operator">&lt;&lt;</span><span class="token string">EOF
@@ -143,23 +143,19 @@ spec:
         path: /
         pathType: Prefix
 EOF</span></code><!-- HTML_TAG_END --></pre>
-<p>The first command will install everything except an ingress config. I honestly don’t know why not. But, that’s a consistent choice with all the plugins in microk8s. And chucking it in doesn’t take long.</p>
+<p>The first command will install everything except an ingress config. I honestly don’t know why not. But, that’s a consistent choice with all the plugins in microk8s. And chucking it in doesn’t take long. Just don’t forget to enter your own domain name. And then add that host name into your laptop’s <code>/etc/hosts</code> file.</p>
 <p>To access your dashboard you’ll need a token which you get with the following command.</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl describe secret <span class="token parameter variable">-n</span> kube-system microk8s-dashboard-token</code><!-- HTML_TAG_END --></pre>
-<p>By default there is no firewall enabled in ubuntu server. But, if you have a firewall running on your main node, you might want to run the following to open the ports:</p>
-<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">sudo</span> ufw allow http  
-<span class="token function">sudo</span> ufw allow https</code><!-- HTML_TAG_END --></pre>
 <h2 id="longhorn"><a aria-hidden="true" tabindex="-1" href="#longhorn"><span class="icon icon-link"></span></a>Longhorn</h2>
-<p>Microk8s comes with several options for storage. It’s not like I particularly dislike any of them, it’s just I really like longhorn. I always had a solid experience with the thing and it’s super simple to install.</p>
-<p>First add the helm repo</p>
+<p>Microk8s comes with several options for storage. It’s not like I particularly dislike any of them, it’s just I really like longhorn. I always had a solid experience with the thing and it’s super simple to install, because it comes with an official helm script.</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">helm repo <span class="token function">add</span> longhorn https://charts.longhorn.io
 helm repo update</code><!-- HTML_TAG_END --></pre>
-<p>Then run the following to install it</p>
+<p>Then run the following to install it in the <code>longhorn</code> namespace</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl create namespace longhorn
 helm <span class="token function">install</span> longhorn longhorn/longhorn <span class="token parameter variable">--namespace</span> longhorn <span class="token punctuation"></span>
   <span class="token parameter variable">--set</span> <span class="token assign-left variable">defaultSettings.defaultDataPath</span><span class="token operator">=</span><span class="token string">"/longhorn"</span> <span class="token punctuation"></span>
   <span class="token parameter variable">--set</span> <span class="token assign-left variable">csi.kubeletRootDir</span><span class="token operator">=</span><span class="token string">"/var/snap/microk8s/common/var/lib/kubelet"</span></code><!-- HTML_TAG_END --></pre>
-<p>Then watch the pods until you see them all spawn everything</p>
+<p>Then watch the pods until you see them all fully spawned and running</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl <span class="token parameter variable">-n</span> longhorn get pods</code><!-- HTML_TAG_END --></pre>
 <p>After that the only thing you’ll need is to add an ingress controller.</p>
 <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">cat</span> <span class="token operator">&lt;&lt;</span><span class="token string">EOF<span class="token bash punctuation"> <span class="token operator">|</span> microk8s kubectl apply <span class="token parameter variable">-f</span> -</span>
@@ -183,7 +179,11 @@ spec:
               port:
                 number: 80
 EOF</span></code><!-- HTML_TAG_END --></pre>
-<p>And that’s pretty much all to it. Just add the DNS names into your <code>/etc/hosts</code> and you should be good to go.</p></div></article></main>
+<p>And that’s pretty much all to it. Just add the DNS name into your <code>/etc/hosts</code> and you should be good to go.</p>
+<h2 id="bottom-line"><a aria-hidden="true" tabindex="-1" href="#bottom-line"><span class="icon icon-link"></span></a>Bottom line</h2>
+<p>Well, that’s your baseline kubes cluster up an running ready for apps and extensions. And if you did kubes installs in the past I hope you do appreciate the fact that one barely needs to wrestle with any YAML configs to get it up and running. The only thing I had to feed the kubes were really the ingress controller configs. Which, depending on how you look at it, might be a fair call actually. After all it’s up to the admin how they want their services to be exposed.</p>
+<p>There is actually more great and useful addons in microk8s ecosystem. The <code>observability</code> plugin for example adds promethius, graphana, and loki. Then there is <code>metallb</code> if you need some decent low overhead load balancer. There is <code>cert-manager</code> for let’s encrypt integration. The <code>registry</code> sets up local private docker image registry. There is <code>cloudnative-pg</code> for all your PostgreSQL needs. Etc etc.</p>
+<p>What I really like about the microk8s addons is that they are very sensibly chosen and you can get them up and running in literally one single command. Which makes a base line kubernetes setup and maintenance into a very nice and civilised process.</p></div></article></main>
 
 <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2024 Kai Evans
     </div>
@@ -192,14 +192,14 @@ EOF</span></code><!-- HTML_TAG_END --></pre>
         <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="mc2ug8">
-			import { start } from "../_app/immutable/start-0f5de7ea.js";
+		<script type="module" data-sveltekit-hydrate="20eudx">
+			import { start } from "../_app/immutable/start-dd512098.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="mc2ug8"]').parentNode,
-				version: "1731746474756",
+				target: document.querySelector('[data-sveltekit-hydrate="20eudx"]').parentNode,
+				version: "1731746596934",
 				hydrate: {
 					node_ids: [0, 6],
 					data: [null,null],
