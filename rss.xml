@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/c087r</guid>
+<title>MetalLB in a homelab explainer</title>
+<link>https://kaievans.co/posts/c087r</link>
+<description>A bit of an explanation of how MetalLB works and what it does in a bare metal homelab setup. And how to use that with microk8s more specifically</description>
+<pubDate>Tue, 19 Nov 2024 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/czFmXY</guid>
 <title>Setting up a microk8s cluster in a homelab</title>
 <link>https://kaievans.co/posts/czFmXY</link>
@@ -172,13 +179,6 @@
 <link>https://kaievans.co/posts/ekyxo</link>
 <description>We are going through some examples of a burndown charts analysis, and look at ways to debug a team's performance</description>
 <pubDate>Sun, 19 Feb 2023 13:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/yZDIw</guid>
-<title>Why self-manage your own career</title>
-<link>https://kaievans.co/posts/yZDIw</link>
-<description>A bit controversial take on self-managing one's career as a software engineer</description>
-<pubDate>Sun, 12 Feb 2023 13:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
