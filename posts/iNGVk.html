@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-22f5defe.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-3f235abe.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-c660ed7d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-af628630.js"><title>Run pi-hole in kubernetes cluster ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Run pi-hole in kubernetes cluster ⁍ Kai Evans"><meta name="description" content="A recipe how to install and pi-hole inside of a kubernetes deployment"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Run pi-hole in kubernetes cluster ⁍ Kai Evans"><meta property="og:description" content="A recipe how to install and pi-hole inside of a kubernetes deployment"><meta property="og:url" content="http://kaievans.co/posts/iNGVk"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2024-11-25T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/iNGVk"><meta property="twitter:title" content="Run pi-hole in kubernetes cluster ⁍ Kai Evans"><meta property="twitter:description" content="A recipe how to install and pi-hole inside of a kubernetes deployment"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">Run pi-hole in kubernetes cluster</h1>
+<time datetime="2024-11-25T13:00:00.000Z" class="">26 November 2024</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag kubernetes" href="/tags/kubernetes">kubernetes</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag homelab" href="/tags/homelab">homelab</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag linux" href="/tags/linux">linux</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag engineering" href="/tags/engineering">engineering</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>I’ve been using <a href="https://github.com/StevenBlack/hosts" rel="nofollow">Steven Black</a> <code>/etc/hosts</code> lists on my laptops for years, and it’s been great. But, I always wished it was a thing on my other devices like smartphones, tablets, and that I didn’t have to rely on dodgy browser extensions in closed systems. I wish my wife didn’t have to deal with the crazy world of ads and trackers and malware either.</p>
+<p>And then I’ve discovered for myself <a href="https://pi-hole.net/" rel="nofollow">pi-hole</a> which is basically a lightweight DNS proxy that runs on a raspberry pi. One can plug it into their home network and block the bulk of the internet garbage for everyone on all devices at the same time. It’s quite brilliant actually.</p>
+<p>The cool thing about the project is that one doesn’t actually have to run it on a raspberry pi device. Pihole can just as well deploy in any homelab environment, such as a docker image or a full on kubernetes deployment. It’s not entirely complicated, but it has a few pitfalls. So, here I just wanted to share how it works for me and how I run it in my kubes deployment.</p>
+<h2 id="helm-chart"><a aria-hidden="true" tabindex="-1" href="#helm-chart"><span class="icon icon-link"></span></a>Helm chart</h2>
+<p>Thankfully pi-hole has an official <a href="https://artifacthub.io/packages/helm/mojo2600/pihole" rel="nofollow">helm chart</a> that simplifies the deployment dramatically. All we really have to do is to setup a namespace, an admin password secret, and create a configuration file for the helm chart. The first two could be done with the following commands</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl create namespace pihole
+kubectl <span class="token parameter variable">-n</span> pihole create secret generic pihole-admin <span class="token punctuation"></span>
+		--from-literal<span class="token operator">=</span><span class="token string">'password=[THE SUPER SECRET PASSWORD]'</span></code><!-- HTML_TAG_END --></pre>
+<p>And for the second one you’ll have to create a yaml file that you’ll feed to helm during the installation process. There can be a few variations, so I’ll start with the most simplest version here. Lets assume you’re running on a single node, there is no load balancer and you are accessing your services via  NodePorts. Here the config</p>
+<pre class="language-yaml"><!-- HTML_TAG_START --><code class="language-yaml"><span class="token comment"># DNS servers that pi-hole will use</span>
+<span class="token key atrule">DNS1</span><span class="token punctuation">:</span> 9.9.9.9
+<span class="token key atrule">DNS2</span><span class="token punctuation">:</span> 1.1.1.1
+
+<span class="token key atrule">persistentVolumeClaim</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token key atrule">admin</span><span class="token punctuation">:</span>
+  <span class="token comment"># use the secret we just created </span>
+  <span class="token key atrule">existingSecret</span><span class="token punctuation">:</span> <span class="token string">"pihole-admin"</span>
+
+<span class="token key atrule">serviceDns</span><span class="token punctuation">:</span>
+  <span class="token comment"># combine the TCP and UDP services</span>
+  <span class="token key atrule">mixedService</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># we won't need that</span>
+<span class="token key atrule">serviceDhcp</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token key atrule">podDnsConfig</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">policy</span><span class="token punctuation">:</span> <span class="token string">"None"</span>
+  <span class="token key atrule">nameservers</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> 127.0.0.1
+  <span class="token punctuation">-</span> 9.9.9.9</code><!-- HTML_TAG_END --></pre>
+<p>It’s mostly self explanatory. The last bit with podDns part you might or might not need depending on your setup. The problem here is that in some circumstances pi-hole will set itself up as the primary DNS during the deployment process. And in case things get borked with pi-hole DNS it’s better for the pod to rely on something that actually works.</p>
+<p>Now to the helm part. It’s basically a two step operation: register the pi-hole helm chart and then use that to deploy everything.</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">helm repo <span class="token function">add</span> mojo2600 https://mojo2600.github.io/pihole-kubernetes/
+helm repo update
+
+<span class="token comment"># and now install</span>
+helm <span class="token function">install</span> pihole mojo2600/pihole <span class="token parameter variable">-f</span> pihole.yaml <span class="token parameter variable">-n</span> pihole</code><!-- HTML_TAG_END --></pre>
+<p>Wait until the pihole pod is up and running. Check the <code>pihole</code> service too, it should connect to NodePort on port <code>53</code>. If everything is okay, you should be able to run the following from outside of the node, like on your laptop for example:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token comment"># put your node IP address here</span>
+<span class="token function">dig</span> @192.168.NN.NN google.com</code><!-- HTML_TAG_END --></pre>
+<p>If everything works fine, this command should resolve the <code>google.com</code> domain name for you using pi-hole. Congratulations your pi-hole is up and running.</p>
+<p>And if my congratulations are premature, use the following command to blow it all away and try again</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">helm uninstall pihole <span class="token parameter variable">-n</span> pihole</code><!-- HTML_TAG_END --></pre>
+<h2 id="a-load-balancer-option"><a aria-hidden="true" tabindex="-1" href="#a-load-balancer-option"><span class="icon icon-link"></span></a>A load balancer option</h2>
+<p>If you’re running multiple nodes and using metallb as your load balancer, you don’t have to limit yourself to the host IP, and can dedicate an IP from your load balancer range. Read my <a href="/posts/c087r">recent article</a> about metallb if you’re unsure how that works.</p>
+<p>In this case, you might want to modify your config file <code>serviceDns</code> to the following</p>
+<pre class="language-yaml"><!-- HTML_TAG_START --><code class="language-yaml"><span class="token key atrule">serviceDns</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mixedService</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># tell it which IP do you want pre-allocated for this service</span>
+  <span class="token key atrule">loadBalancerIP</span><span class="token punctuation">:</span> 192.168.68.253
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> LoadBalancer</code><!-- HTML_TAG_END --></pre>
+<p>You can also set a load balancer for the web-face service too here, and even collocate both services on the same IP address. If you need any of those options, I recommend consulting with the official chart docs. Or just edit your services yourself manually if you know your way around kubes.</p>
+<h2 id="web-interface"><a aria-hidden="true" tabindex="-1" href="#web-interface"><span class="icon icon-link"></span></a>Web Interface</h2>
+<p>Pi-hole comes with a very neat web-server that you can use to further configure the thing. Depending on your setup, we could have set the web service along with everything else in the helm config. But, I personally run a separate <code>ngnix</code> ingress controller in my deployment, and I like managing my ingress through that. And to that end, I usually feed it a config that looks like this.</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">kubectl apply <span class="token parameter variable">-f</span> - <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pihole-web
+  namespace: pihole
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 127.0.0.1/8,192.168.0.0/16
+spec:
+  ingressClassName: public
+  rules:
+  - host: YOUR.LOCAL.DNS.NAME
+    http:
+      paths:
+      - backend:
+          service:
+            name: pihole-web
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+EOF</span></code><!-- HTML_TAG_END --></pre>
+<p>To access the interface, you’ll have to add that local domain name with your ingress controller service IP address into you laptop’s <code>/etc/hosts</code>; or <code>/private/etc/hosts</code> if you’re on macos.</p>
+<p>Then go to <code>http://your.domain.name/admin</code> address (don’t forget the <code>/admin</code> part at the end), type the super secret password you created at the very beginning of the process, and that should lead you to the pi-hole dashboard.</p>
+<h2 id="how-to-use-it"><a aria-hidden="true" tabindex="-1" href="#how-to-use-it"><span class="icon icon-link"></span></a>How to use it</h2>
+<p>Well this is the easy part actually, and here you have a few options.</p>
+<ol><li>Set it as your DNS server locally on your devices in their network settings</li>
+<li>Set it globally as a default DNS server in your wifi router and that will automatically work for <em>all</em> devices on the network</li></ol>
+<p>There are couple of things you might want to keep in mind though. Because pi-hole will run it’s DNS service on a <em>local network</em> IP address, two things might happen.</p>
+<ol><li>Your router might want to ask you to put the address in the DHCP server settings rather than main DNS settings in the router. That’s normal. Do that, it works</li>
+<li>MacOS will warn you that you might be being hacked. That’s normal too, it’s a good thing they warn you about those things. I mean, you never know.</li></ol>
+<p>You also might want to watch out for things getting broken after you’ve plugged it in. For example google ads in the search results won’t be clickable anymore. That annoyed some of my family members and I added it to the whitelist in the admin panel. After all, google has to eat too, right?</p>
+<h2 id="extra-lists"><a aria-hidden="true" tabindex="-1" href="#extra-lists"><span class="icon icon-link"></span></a>Extra lists</h2>
+<p>And the last bit I wanted to touch on here is this. By default pi-hole comes with basically the baseline steven-black list preinstalled. It’s actually a pretty great list that will block probably close to 90% of garbage. But you can add more lists to fortify your system even further.</p>
+<p>The <a href="https://firebog.net/" rel="nofollow">https://firebog.net/</a> service is a great place to start. All the green links are generally considered safe to use. Just go to your admin panel,  click on <code>Adlists</code> and plug them all there.</p>
+<p>Once you’re done, you’ll need to do one more thing. Go to <code>Tools &gt; Update Gravity</code> and press the <code>Update</code> button. It will download and recompile all the block lists into a binary search thing that pi-hole can use for fast DNS name search.</p>
+<hr>
+<p>And that’s pretty much it. Feel free to ping me on mastodon if you need help.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2024 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="3mmk7x">
+			import { start } from "../_app/immutable/start-22f5defe.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="3mmk7x"]').parentNode,
+				version: "1732677767159",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>
