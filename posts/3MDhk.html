@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-84920bad.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-9b3537f3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-df4c0c26.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-c0c46b79.js"><title>Cilium vs the world ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="Cilium vs the world ⁍ Kai Evans"><meta name="description" content="A write up about my recent experience with cilium and why it's cool as"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="Cilium vs the world ⁍ Kai Evans"><meta property="og:description" content="A write up about my recent experience with cilium and why it's cool as"><meta property="og:url" content="http://kaievans.co/posts/3MDhk"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2025-02-13T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/3MDhk"><meta property="twitter:title" content="Cilium vs the world ⁍ Kai Evans"><meta property="twitter:description" content="A write up about my recent experience with cilium and why it's cool as"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">Cilium vs the world</h1>
+<time datetime="2025-02-13T13:00:00.000Z" class="">14 February 2025</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag engineering" href="/tags/engineering">engineering</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag homelab" href="/tags/homelab">homelab</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag networks" href="/tags/networks">networks</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag kubernetes" href="/tags/kubernetes">kubernetes</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag technology" href="/tags/technology">technology</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><h1 id="cilium-vs-the-world"><a aria-hidden="true" tabindex="-1" href="#cilium-vs-the-world"><span class="icon icon-link"></span></a>Cilium vs. the world</h1>
+<p>I recently learned about the <a href="https://github.com/cilium/cilium" rel="nofollow">cilium project</a>. I’ve spent a few weeks working with it and somehow ended up using it as a default in my homelab setup. This article is basically capturing that experience before i forgot everything.</p>
+<h2 id="what-kubernetes-network-layer-is-made-of"><a aria-hidden="true" tabindex="-1" href="#what-kubernetes-network-layer-is-made-of"><span class="icon icon-link"></span></a>What kubernetes network layer is made of?</h2>
+<p>For an average kubernetes user the network layer is probably the least interesting part of the setup. People are mostly preoccupy with the manifests and deploying apps. But, it is actually the networking layer that makes most of the magic work. And from the systems administration perspective it’s actually a pretty complex and cool topic.</p>
+<p>Generally speaking there are the following elements at play in a kubernetes cluster. Well, the ones I know off anyways.</p>
+<ul><li><code>kube-proxy</code> - handles network traffic between pods</li>
+<li><code>kube-router</code> - knows where everything is connected and routes traffic</li>
+<li><code>ingress controller</code> - directs external traffic on HTTP/S ports to services</li>
+<li><code>gateway controller</code> - it’s like ingress controller but also can handle TCP traffic</li>
+<li><code>service load balancer</code>  - to load balance internal traffic to pods under a service</li>
+<li><code>external ip address pools</code> - tracks external IP addresses allocations from IPs pools</li>
+<li><code>l2 announcer</code> - manages L2 ARP net external IPs advertisement</li>
+<li><code>BGP support</code> - manages cluster level load balancing between nodes</li>
+<li><code>network policies manager</code> - for L3-L6 network policies</li></ul>
+<p>On top of that you have the host/kernel elements</p>
+<ul><li><code>netsat</code> - kernel stuff</li>
+<li><code>iptables</code> - kernel/firewall stuff</li>
+<li>probably more OS level firewall stuff</li></ul>
+<p>Oh and if that’s not enough, there is also cross cluster VPC mesh magic stuff. And there is probably even more stuff, I mean I’m not a real sys admin after all and you’ll have to forgive me the somewhat watered down description of the system.</p>
+<p>My point is that there is a lot that goes into making a kubes cluster magically work, and in a normal setup, there are several independent sub-systems that work together to make it work.</p>
+<h2 id="so-what-about-cilium"><a aria-hidden="true" tabindex="-1" href="#so-what-about-cilium"><span class="icon icon-link"></span></a>So what about Cilium?</h2>
+<p>Cilium as a relatively new project. Long story short it basically throws away everything that I have listed above and replaces it with, well, itself. It is specifically developed for modern kubernetes cluster deployments and aims to replace the jumble of all the parts and manage network by itself in one place.</p>
+<p>A particularly cool thing about Cilium is that it runs directly in the kernel. Well, in a kernel level VM to be more specifically as a eBPF module. On one side it talks to the kernel network interfaces, on the other it talks directly to pods in kubernetes.</p>
+<figure class="rehype-figure"><img src="/_app/immutable/assets/cilium-ec719e20.webp"></figure>
+<p>This approach has quite a few advantages. There is definitely performance improvements, due to better traffic routing and less handover overheads, which probably don’t really apply to us mortals but still an improvement. There is also enhanced security as all the traffic goes through a single chock point. But, you also have more everyday life improvements too, like for example a pod can now see the original caller IPs, there are options to spawn either shared or isolated loadbalancers and ingress controllers at low cost, and just being able to manage all the traffic rules in one place.</p>
+<h2 id="what-does-it-look-like-in-practical-terms"><a aria-hidden="true" tabindex="-1" href="#what-does-it-look-like-in-practical-terms"><span class="icon icon-link"></span></a>What does it look like in practical terms?</h2>
+<p>The whole thing is written in Go and distributed as a regular Helm actually. You just add a few lines into a config and install it as any other kubernetes extension. It’s actually very straight forward in this regard.</p>
+<p>The more annoying part is actually the fact that you’ll need to disable a bunch of things in kubernetes itself. Most of the actually cool Cilium’s features won’t even work unless it takes over from kube-proxy. And that’s where things get kinda messy.</p>
+<p>If you’re dealing with a regular k8s/k0s deployment where all components are split apart, disabling them is not all that complicated. But, when you start looking at more opinionatedly packaged kubernetes variants like k3s and microk8s it gets dicey.</p>
+<p>In k3s one can disable kube-proxy, well it’s actually runs flanneld and traefik as opinionated defaults to handle cluster network. You can disable those too, but the problem is that a lot of k3s standard configs would use vendor specific features, where cilium aims more at kubernetes native standards and translation might not always be easy or obvious.</p>
+<p>In microk8s everything is baked into a single binary, and as far as I could find there is no way to run a kube-proxy replacement because it’s baked into the binary. I have managed to make some of the Cilium features operational, but in the end couldn’t produce a fully working solution. It is definitely a me problem, I’m just saying that things get complicated in more opinionated setups.</p>
+<h2 id="so-how-do-i-feel-about-it"><a aria-hidden="true" tabindex="-1" href="#so-how-do-i-feel-about-it"><span class="icon icon-link"></span></a>So, how do I feel about it?</h2>
+<p>To tell you the truth, I’m a bit of a sucker for neat solutions like that. And I’m running it on my setup as I’m writing those words. It has all telemetry and prometheus integrations throughout the stack, which is great. And it even has a neat little UI where I can see a network diagram, how everything is wired together, what talks to what, and see the call logs.</p>
+<p>And yet it leaves this weird uneasy feeling about it. I’ve spent my entire career with iptables and netstat and ngnix proxy and metal-lb and traefik. And now this thing basically replaces <em>everything</em>!</p>
+<p>There is definitely a bit of learning curve, but thanks god Cilium authors approach it as basically a drop-in replacement, so all the familiar concepts are still in place, and they heavily lean on kubernetes existing standards and ways to define stacks. So everything makes sense and has a certain familiarity to it.</p>
+<p>And it actually works too. It just boots and does it’s thing when setup properly. I’ve re-installed it different ways a few dozens of times within the last three weeks, and it just keeps ticking. Although I think I’ll definitely need to observe it on a longer scale to really trust it. It’s too much of a change in one go for my taste.</p>
+<p>On one hand it’s a very interesting leap, and I even like it’s all-in-one design. On the other hand it doesn’t really provide anything for an average homelaber that the standard bag of tools wouldn’t do. </p>
+<p>So, I don’t know how I feel about it yet. But, I’ll definitely keep running it for a bit. It’s interesting, that much I’ll give it.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2025 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="l76rb8">
+			import { start } from "../_app/immutable/start-84920bad.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="l76rb8"]').parentNode,
+				version: "1739611611869",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>

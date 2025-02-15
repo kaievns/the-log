@@ -3,8 +3,8 @@ title: My article
 thumbnail: ./local-image.jpg
 ...
 ---</code>`,Mn,V,fa,Tn,D,Js=`<code class="language-md"><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> My article
-<span class="token punctuation">...</span></span>
+<span class="token front-matter yaml language-yaml">title: My article
+...</span>
 <span class="token punctuation">---</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
