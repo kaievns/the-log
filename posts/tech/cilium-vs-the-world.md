@@ -10,8 +10,6 @@ tags:
   - kubernetes
   - technology
 ---
-# Cilium vs. the world
-
 I recently learned about the [cilium project](https://github.com/cilium/cilium). I've spent a few weeks working with it and somehow ended up using it as a default in my homelab setup. This article is basically capturing that experience before i forgot everything.
 
 ## What kubernetes network layer is made of?
@@ -46,7 +44,7 @@ Cilium as a relatively new project. Long story short it basically throws away ev
 
 A particularly cool thing about Cilium is that it runs directly in the kernel. Well, in a kernel level VM to be more specifically as a eBPF module. On one side it talks to the kernel network interfaces, on the other it talks directly to pods in kubernetes.
 
-![](./images/cilium.png)
+![Curtesy of cilium official docs](./images/cilium.png)
 
 This approach has quite a few advantages. There is definitely performance improvements, due to better traffic routing and less handover overheads, which probably don't really apply to us mortals but still an improvement. There is also enhanced security as all the traffic goes through a single chock point. But, you also have more everyday life improvements too, like for example a pod can now see the original caller IPs, there are options to spawn either shared or isolated loadbalancers and ingress controllers at low cost, and just being able to manage all the traffic rules in one place.
 
