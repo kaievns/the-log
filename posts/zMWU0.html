@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kai Evans in writing</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		const storedTheme =
+			typeof localStorage !== "undefined"
+				? localStorage.getItem("theme")
+				: null;
+
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+
+		if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+			document.documentElement.classList.add("dark");
+		}
+	</script>
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-b02a4349.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-45a685b0.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-d5eccbfa.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-bda7ed56.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-12526a6c.js"><title>k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta name="description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta property="og:description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta property="og:url" content="http://kaievans.co/posts/zMWU0"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2025-02-15T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/zMWU0"><meta property="twitter:title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta property="twitter:description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents;">
+
+
+<header class="group relative mb-12 flex items-center sm:pl-[4.5rem]"><div class="flex sm:flex-col"><a href="/" class="inline-flex items-center sm:relative sm:inline-block" aria-current="page"><img src="/_app/immutable/assets/face-6c9b604a.webp" class="w-14 h-14 rounded mr-3 sm:absolute sm:left-[-4.5rem] sm:mr-0" alt="Kai Evans face">
+            <span class="text-xl font-bold sm:text-2xl">Kai Evans</span></a>
+
+        <nav class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[color:var(--theme-menu-bg)] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:-ml-4 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dotted sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" aria-label="Main menu"><a href="/" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="page" rel="prefetch">Home</a>
+            <a href="/about" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">About</a>
+            <a href="/posts" class="py-4 px-4 sm:py-0 sm:hover:underline" aria-current="false" rel="prefetch">Log</a></nav></div>
+    <button type="button" class="group relative ml-auto h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700" aria-label="Toggle Dark Mode"><svg id="sun-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg id="moon-svg" class="absolute top-1/2 left-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100" aria-hidden="true" focusable="false" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle><path d="M7.63262 3.06689C8.98567 3.35733 9.99999 4.56025 9.99999 6.00007C9.99999 7.65693 8.65685 9.00007 6.99999 9.00007C5.4512 9.00007 4.17653 7.82641 4.01685 6.31997" stroke="currentColor" stroke-width="1.5"></path><path d="M22 13.0505C21.3647 12.4022 20.4793 12 19.5 12C17.567 12 16 13.567 16 15.5C16 17.2632 17.3039 18.7219 19 18.9646" stroke="currentColor" stroke-width="1.5"></path><path d="M14.5 8.51L14.51 8.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 17C11.1046 17 12 16.1046 12 15C12 13.8954 11.1046 13 10 13C8.89543 13 8 13.8954 8 15C8 16.1046 8.89543 17 10 17Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header>
+
+<main><article>
+    
+    
+    
+    
+
+    <h1 class="title">k8s vs k3s vs microk8s vs k0s</h1>
+<time datetime="2025-02-15T13:00:00.000Z" class="">16 February 2025</time>
+
+<div class="inline before:content-['|']"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 ml-1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path><path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path><path d="M6 9h-.01"></path></svg>
+        <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag homelab" href="/tags/homelab">homelab</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag kubernetes" href="/tags/kubernetes">kubernetes</a>, <a class="cactus-link inline-block before:content-['#']" aria-label="View more blogs with the tag technology" href="/tags/technology">technology</a></div>
+
+    <div class="mt-8 prose prose-sm prose-cactus prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"><p>I started using kubernetes about 10 years ago when it first came out. It was a vanilla k8s deployment provided by GKE as a service. And after a while when k3s was released I started using that as a development environment. Primarily because I could just boot it as a process on my laptop and I didn’t have to deal with all the wiring of a normal k8s setup.</p>
+<p>Later, when I got into homelabing, I started using microk8s for the reasons I’ll discuss in a minute. And then recently I made a transition to k0s, because, again, reasons. Now I just want to capture what I’ve learned on my journey.</p>
+<h2 id="whats-in-the-box"><a aria-hidden="true" tabindex="-1" href="#whats-in-the-box"><span class="icon icon-link"></span></a>What’s in the box?</h2>
+<p>All kubernetes variants will have roughly the same baseline functionality. I think in many ways it is almost easier to think of kubernetes as a standard of how do describe and run applications in the cloud rather than what powers it under the hood. Because the implementation can vary quite a bit. And in some ways that variation will define the purpose of each of the distributions.</p>
+<p>The canonical k8s implementation that is beamed down on us from our lord and saviour Google is arguably the heaviest of them. It is designed to run the actual production deployments with hundreds of thousands of pods under the hood. I’ve heard Google uses it as basically a blunt tool to run a whole lot of its own infrastructure. </p>
+<p>In the early days if you’d try to run it on your local laptop environment it would likely just explode in your face. And it’s not really a reflection on the quality of the original k8s variant, it’s just designed for a very different use case. It will want to own several machines in their entirety as a cluster, completely separate the control and workers planes, integrate with the big cloud infrastructure in the process and run a high availability system.</p>
+<p>So, if you pop k8s bonnet and look under the hood, chances are you’ll see too much.</p>
+<p>That is where k3s comes in. As far as I know it is one the first simplified kubernetes deployments, and it owes its initial success to the fact that one can run it basically as a single process. What engineers at SuSE did, they threw out everything that is not entirely necessary and then replaced most of what <em>is</em> necessary with simpler, more lightweight alternatives, like flanneld and sqlite. And then they packaged everything in a single binary that runs as a single process.</p>
+<p>As the result, k3s comes with a fully setup system with built in opinionated defaults and low system requirements. This made k3s hugely popular among enthusiasts, developers, IoT, homelabbers, etc. And there are plenty of examples of even small to medium production deployments as well, and you can easily turn it into a HA system if you have to.</p>
+<p>Microk8s is Ubuntu’s variation on the same idea. A small opinionated monolithic deployment that doesn’t want to eat your entire host, but it totally will if you let it. Unlike k3s, by default microk8s comes in a HA variant with Calico CNI and such. But you can disable that in a one line command and revert it to more or less k3s stock deployment equivalent.</p>
+<p>In many ways and choices k3s and Microk8s are very similar. But, where they are different is that microk8s, unlike k3s, comes with an ecosystem of plugins to deal with most of the everyday cluster setups, like ingress, storage, observability, etc. SuSE tries to fill that gap with its excellent Rancher UI, but not really to the same extent as microk8s.</p>
+<p>And then there is k0s. Which I guess Google’s answer to the k3s/microk8s value proposition. It is distributed as a single binary that you can start/stop as a normal process on a linux box. And it has a very simple setup with low system requirements. But, in many ways k0s is quite different from both k3s and microk8s.</p>
+<p>For one, k0s will run all of its internal components as separate processes. Moreover, it will readily let you replace any of its default components with whatever suits your use-case better. Also, it leans heavily on GitOps style infrastructure as code configuration rather than manual or semi-manual setups like k3s and microk8s do. K0s even has a tool to manage an entire kubernetes cluster in the same manner. </p>
+<p>In many ways k0s is much more geared towards real production systems than k3s while maintaining a small system footprint. Well, a smallest system footprint off all of them. That’s the really cool thing about k0s actually. It’s just a single binary you download off the internet and just run as an executable. There is literally nothing else involved.</p>
+<h2 id="who-are-those-distros-for"><a aria-hidden="true" tabindex="-1" href="#who-are-those-distros-for"><span class="icon icon-link"></span></a>Who are those distros for?</h2>
+<p>I think a better way to think of the difference between those variants is to think who are the intended users. And here I must tread carefully. I’ll speak in general terms here. Just keep in mind that any of these could be pushed quite a lot to achieve things they may or may not have been indent for. What I’m trying to say here is that if my description is not fitting because you had a better use for those systems than what I am saying here. All the power to you.</p>
+<p>And so the vanilla k8s is a bit like an industrial chainsaw. Powerful, robust, with great enterprise grade support. But, it will also chop off your leg in two seconds if you not careful with the thing. I hope you get the meaning. A whole lot of real-world production infrastructure runs on k8s and for a good reason.</p>
+<p>Don’t get me wrong here, one can roll out vanilla k8s installation with Calico CNI on an ubuntu VM in the matter of minutes if one is really determined to do so. But, I believe that is not what it is was designed for, and the value will be questionable.</p>
+<p>Quite in contrast to k8s, k3s is a lightweight, fully featured deployment that one can install and run with just one command. K3s is intended for developers and enthusiasts because it’s a ready to use system that anyone can launch and use quickly. It is also very popular among IoT/edge deployments and homelabbers because of the low resource requirements. </p>
+<p>That is not to say that one cannot run a production deployment with k3s, there are certainly plenty of precedents of exactly that. But, it won’t scale to the same massive level or provide same performance and reliability at scale as k8s.</p>
+<p>Microk8s has a very similar intended use as k3s; it is a lightweight fully featured kubernetes deployment. They are actually mostly exactly the same when it comes to getting a bare bone kubernetes cluster up and running. Where they differ majorly is what happens after that. Because to have a kubernetes setup actually useful one will need to install additional components, such as distributed disk management, ingress controllers, telemetry, logging, etc etc.</p>
+<p>K3s relies heavily on helms and basically manual installation by the system administrator/developer. They have the fantastic Rancher UI where one can install many of the standard components as “apps”, but in reality one will need to spend a fair bit of time in a terminal with <code>kubectl</code> loading manifests to make k3s actually useable.</p>
+<p>Microk8s takes a slightly different approach to that problem and provides an ecosystem of addons that can enable all the necessary additional functionality by using the <code>microk8s</code> CLI as basically a set of one liners. It is very handy in terms of getting a standard system up and running, but it also will obscure what actually happens to the system away. Also freshness and stability of those addons varies quite a bit, and when they don’t work that quickly becomes more of a problem than a solution.</p>
+<p>Now, k0s is marketed very similarly to k3s and microk8s as a lightweight kubernetes variant, but the intended niche and users are quite different to the other two. k0s is developed in partnership with Google by Mirantis, the company behind OpenStack and Lense. It is actually intended for production use in smaller installations where k8s might be an overkill, such as small to mid-size businesses  and projects.</p>
+<p>Just like k3s and microk8s, k0s aims to reduce the deployment friction for kubernetes installations, but instead of leaning on an opinionated flavour it provides an open box design and GitOps style configuration and integration so that a system administrator could create a repeatable deployment system rather than rely on had build snowflakes like k3s and microk8s.</p>
+<p>Again, it’s not like one can’t use infrastructure as code approach with k3s or microk8s, there are definitely solutions for those. But, in case k0s it’s integrated into the project and that’s the whole selling point of their system. I guess not unsimilar to Talos, but unlike Talos it is a much more flexible setup that leans on existing standards rather than creates a 3rd party configuration DSL. If that makes sense.</p>
+<h2 id="speaking-of-resources"><a aria-hidden="true" tabindex="-1" href="#speaking-of-resources"><span class="icon icon-link"></span></a>Speaking of resources</h2>
+<p>All three variations, k3s, microk8s, and k0s are advertised as systems with low resources requirements. And that is definitely true when compared to the original k8s deployments.</p>
+<p>Having run all three of them on several sets of hardware I actually think there are some differences between them. They are not huge, and mileage might differ, but from my personal experience I would grade them as such:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">k3s &gt; Microk8s &gt; k0s</code><!-- HTML_TAG_END --></pre>
+<p>As in k3s being the heaviest of the three. Which is the complete opposite of what I have expected given how long k3s has been around and how heavily it advertises this exact aspect.</p>
+<p>This probably doesn’t matter much if your workloads are chugging through CPUs. But, if your systems spend a lot of time idling—like a lot of homelabs do—maybe this is something worth pondering about.</p>
+<p>And so, in my experience k3s consumed noticeably more CPUs than microk8s when idle. And, it also had creeping memory consumption that expanded up to 1GB on occasion, where microk8s stayed in the ~400-600MB range consistently.</p>
+<p>I suspect that k0s resource consumption will depend a lot on which components exactly you decide to run, but in my particular setup, which mirrors basically k3s/microk8s HA deployments, my k0s deployments consistently consumed less CPU and had stable low memory consumption within the 400-600MB range.</p>
+<p>Again those are not dramatic differences by any stretch of imagination and I wouldn’t pay too much attention to them unless your system idles a lot and you’re using low powered devices to run your cluster.</p>
+<h2 id="homelab-bottom-line"><a aria-hidden="true" tabindex="-1" href="#homelab-bottom-line"><span class="icon icon-link"></span></a>Homelab bottom line</h2>
+<p>I think a lot of this will depend on personal preferences and skill proficiency. But it will also depend on what you want to learn from using either of the flavours. And so, here is how I think about them in the context of a homelab.</p>
+<p>If your intention is to actually learn kubernetes, tinker a lot, and maybe try wacky unusual setups. Especially if you’re at that stage where you feel like spending a lot of time in terminal running commands manually is fun and teaches you a lot. In this case, I would definitely recommend k3s. It’s open, lightweight, has great community around it, and tooling is fantastic too.</p>
+<p>If all you want is a run off the mill standard kubes setup and you don’t really want to look too much under the hood. Especially if you’re an ubuntu fan. Try microk8s, its addons system will insulate you from many pain points and give you a stable work horse of a setup.</p>
+<p>If you are over feeding kubes manifests by hands, and you want something more serious, flexible, and repeatable. Maybe it’s time for k0s. I did my last setup with it and i like it a lot for that exact reason. I’m a big fan of infra as code, and bringing that same mentality to the kubernetes cluster setup as a whole sits very well with me.</p>
+<p>Or,  look at Talos… I know it’s not really on the list here. But, I find there are a lot of parallels between talos and k0s. The difference is that talos takes a notch further my taking over the entire OS. Which is a great idea, but it comes at a cost of extra configuration DSL that you need to learn and manage. And that’s why didn’t really include it on the list. </p>
+<p>Because all four flavours will run on basically any linux distribution of your choice, and Talos doesn’t particularly fit into that equation. Still it’s a great option if you want to take it even further.</p>
+<p>And that’s all I have for you today, folks.</p>
+<p>Please like and subscribe.</p>
+<p>Just kidding.</p></div></article></main>
+
+<footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"><div class="mr-0 sm:mr-4">Copyright © 2025 Kai Evans
+    </div>
+    <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a href="/" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">About</a>
+        <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="1mpgcfu">
+			import { start } from "../_app/immutable/start-b02a4349.js";
+
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="1mpgcfu"]').parentNode,
+				version: "1739782262527",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null,
+					error: null
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>

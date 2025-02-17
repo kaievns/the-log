@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/zMWU0</guid>
+<title>k8s vs k3s vs microk8s vs k0s</title>
+<link>https://kaievans.co/posts/zMWU0</link>
+<description>Writing down my experiences with various kubernetes distributions in the context of running a homelab</description>
+<pubDate>Sat, 15 Feb 2025 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/3MDhk</guid>
 <title>Cilium vs the world</title>
 <link>https://kaievans.co/posts/3MDhk</link>
@@ -172,13 +179,6 @@
 <link>https://kaievans.co/posts/i8lyo</link>
 <description>Part two of the estimations rant</description>
 <pubDate>Sun, 05 Mar 2023 13:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/nIAeA</guid>
-<title>How to make a svelte preprocessor</title>
-<link>https://kaievans.co/posts/nIAeA</link>
-<description>A bit of a deep dive into Svelte plugins system</description>
-<pubDate>Tue, 28 Feb 2023 13:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
