@@ -25,7 +25,7 @@
 	<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout-26efa887.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/_page-5c045b07.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-b02a4349.js">
+		<link rel="modulepreload" href="../_app/immutable/start-086347fe.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-920be987.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59e463da.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
@@ -35,10 +35,10 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
 		<link rel="modulepreload" href="../_app/immutable/components/pages/posts/_...slug_/_page.svelte-df4f18c3.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/Date-75465d9b.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-d5eccbfa.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/posts/_...slug_/_page.ts-d53eb100.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-4d8f42c1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/posts-bda7ed56.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-12526a6c.js"><title>k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta name="description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta property="og:description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta property="og:url" content="http://kaievans.co/posts/zMWU0"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2025-02-15T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/zMWU0"><meta property="twitter:title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta property="twitter:description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts-ee0ce683.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-57501a1c.js"><title>k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans</title><!-- HEAD_svelte-1ijfm1m_START --><meta name="title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta name="description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta name="author" content="Kai Evans"><meta property="og:type" content="article"><meta property="og:title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta property="og:description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta property="og:url" content="http://kaievans.co/posts/zMWU0"><meta property="og:site_name" content="Kai Evans in writing"><meta property="og:image" content="/_app/immutable/assets/face-138fa419.jpeg"><meta property="og:image:width" content="800"><meta property="og:image:height" content="600"><meta property="article:author" content="Kai Evans"><meta property="article:published_time" content="2025-02-15T13:00:00.000Z"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://kaievans.co/posts/zMWU0"><meta property="twitter:title" content="k8s vs k3s vs microk8s vs k0s ⁍ Kai Evans"><meta property="twitter:description" content="Writing down my experiences with various kubernetes distributions in the context of running a homelab"><meta property="twitter:image" content="/_app/immutable/assets/face-138fa419.jpeg"><!-- HEAD_svelte-1ijfm1m_END -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -106,8 +106,7 @@
 <p>If your intention is to actually learn kubernetes, tinker a lot, and maybe try wacky unusual setups. Especially if you’re at that stage where you feel like spending a lot of time in terminal running commands manually is fun and teaches you a lot. In this case, I would definitely recommend k3s. It’s open, lightweight, has great community around it, and tooling is fantastic too.</p>
 <p>If all you want is a run off the mill standard kubes setup and you don’t really want to look too much under the hood. Especially if you’re an ubuntu fan. Try microk8s, its addons system will insulate you from many pain points and give you a stable work horse of a setup.</p>
 <p>If you are over feeding kubes manifests by hands, and you want something more serious, flexible, and repeatable. Maybe it’s time for k0s. I did my last setup with it and i like it a lot for that exact reason. I’m a big fan of infra as code, and bringing that same mentality to the kubernetes cluster setup as a whole sits very well with me.</p>
-<p>Or,  look at Talos… I know it’s not really on the list here. But, I find there are a lot of parallels between talos and k0s. The difference is that talos takes a notch further my taking over the entire OS. Which is a great idea, but it comes at a cost of extra configuration DSL that you need to learn and manage. And that’s why didn’t really include it on the list. </p>
-<p>Because all four flavours will run on basically any linux distribution of your choice, and Talos doesn’t particularly fit into that equation. Still it’s a great option if you want to take it even further.</p>
+<p>Or,  look at Talos… I know it’s not really on the list here. But, I find there are a lot of parallels between talos and k0s. The difference is that talos takes it a notch further by taking over the entire OS. Which is a great idea, but it comes at a cost of extra configuration DSL that you need to learn and manage. And also you won’t be able to do anything else with your hosts either. And that’s why didn’t really include it on the list.  Because all four flavours will run on basically any linux distribution of your choice, and Talos doesn’t particularly fit into that equation. Still it’s a great option if you want to take it even further.</p>
 <p>And that’s all I have for you today, folks.</p>
 <p>Please like and subscribe.</p>
 <p>Just kidding.</p></div></article></main>
@@ -119,14 +118,14 @@
         <a href="/posts" class="px-4 py-2 sm:py-0 sm:px-2 sm:hover:text-textColor sm:hover:underline no-underline">Log</a></nav></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="1mpgcfu">
-			import { start } from "../_app/immutable/start-b02a4349.js";
+		<script type="module" data-sveltekit-hydrate="1ijij2m">
+			import { start } from "../_app/immutable/start-086347fe.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="1mpgcfu"]').parentNode,
-				version: "1739782262527",
+				target: document.querySelector('[data-sveltekit-hydrate="1ijij2m"]').parentNode,
+				version: "1739783344946",
 				hydrate: {
 					node_ids: [0, 6],
 					data: [null,null],
