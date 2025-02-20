@@ -1,1 +1,0 @@
-import{e}from"./index-4d8f42c1.js";import{f as r}from"./posts-29925161.js";const a=async({params:t})=>{const o=(await r()).find(s=>s.slug===t.slug);if(!o)throw e(404);return{post:o}},c=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{c as _,a as l};
