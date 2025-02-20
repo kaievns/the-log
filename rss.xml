@@ -6,6 +6,13 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/kZDNl</guid>
+<title>The scary PSU cable story</title>
+<link>https://kaievans.co/posts/kZDNl</link>
+<description>The story of a scary molex cable that I made to power three motherboards off one PSU</description>
+<pubDate>Wed, 19 Feb 2025 13:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/zMWU0</guid>
 <title>k8s vs k3s vs microk8s vs k0s</title>
 <link>https://kaievans.co/posts/zMWU0</link>
@@ -172,13 +179,6 @@
 <link>https://kaievans.co/posts/0zsDU</link>
 <description>A few advices on people management mindset that I would give a freshly minted engineering manager</description>
 <pubDate>Sat, 11 Mar 2023 13:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/i8lyo</guid>
-<title>Life without estimations</title>
-<link>https://kaievans.co/posts/i8lyo</link>
-<description>Part two of the estimations rant</description>
-<pubDate>Sun, 05 Mar 2023 13:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
