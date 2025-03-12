@@ -90,9 +90,7 @@ If all you want is a run off the mill standard kubes setup and you don't really 
 
 If you are over feeding kubes manifests by hands, and you want something more serious, flexible, and repeatable. Maybe it's time for k0s. I did my last setup with it and i like it a lot for that exact reason. I'm a big fan of infra as code, and bringing that same mentality to the kubernetes cluster setup as a whole sits very well with me.
 
-Or,  look at Talos... I know it's not really on the list here. But, I find there are a lot of parallels between talos and k0s. The difference is that talos takes a notch further my taking over the entire OS. Which is a great idea, but it comes at a cost of extra configuration DSL that you need to learn and manage. And that's why didn't really include it on the list. 
-
-Because all four flavours will run on basically any linux distribution of your choice, and Talos doesn't particularly fit into that equation. Still it's a great option if you want to take it even further.
+Or,  look at Talos... I know it's not really on the list here. But, I find there are a lot of parallels between talos and k0s. The difference is that talos takes it a notch further by taking over the entire OS. Which is a great idea, but it comes at a cost of extra configuration DSL that you need to learn and manage. And also you won't be able to do anything else with your hosts either. And that's why didn't really include it on the list.  Because all four flavours will run on basically any linux distribution of your choice, and Talos doesn't particularly fit into that equation. Still it's a great option if you want to take it even further.
 
 And that's all I have for you today, folks.
 
