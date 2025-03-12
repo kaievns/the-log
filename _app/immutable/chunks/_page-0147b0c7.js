@@ -1,0 +1,1 @@
+import{f as r}from"./posts-8ff0cbf2.js";const c=async()=>{const e=await r(),s=[...new Set(e.flatMap(t=>t.tags))].sort(),n=s.map(t=>[t,e.reduce((o,a)=>a.tags&&a.tags.includes(t)?o+1:o,0)]);return{tags:s,counts:n}},p=Object.freeze(Object.defineProperty({__proto__:null,load:c},Symbol.toStringTag,{value:"Module"}));export{p as _,c as l};
