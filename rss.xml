@@ -6,6 +6,20 @@
 <link>https://kaievans.co</link>
 <atom:link href="https://kaievans.co/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://kaievans.co/posts/life/the-mind-river</guid>
+<title>undefined</title>
+<link>https://kaievans.co/posts/life/the-mind-river</link>
+<description>undefined</description>
+<pubDate>Tue, 06 May 2025 11:06:43 GMT</pubDate>
+</item>
+<item>
+<guid isPermaLink="true">https://kaievans.co/posts/0MmM4</guid>
+<title>The end is near</title>
+<link>https://kaievans.co/posts/0MmM4</link>
+<description>Unpopular opinion piece about AI tooling in software engineering these days</description>
+<pubDate>Mon, 05 May 2025 14:00:00 GMT</pubDate>
+</item>
+<item>
 <guid isPermaLink="true">https://kaievans.co/posts/tech/cilium-there-and-back</guid>
 <title>The journey to Cilium and back</title>
 <link>https://kaievans.co/posts/tech/cilium-there-and-back</link>
@@ -165,20 +179,6 @@
 <link>https://kaievans.co/posts/KN7Yc</link>
 <description>I have cobbled together some stories about the history of the software engineering management and how we got where we are at the moment.</description>
 <pubDate>Sun, 02 Apr 2023 14:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/CJvXw</guid>
-<title>Managers, leaders, and executives</title>
-<link>https://kaievans.co/posts/CJvXw</link>
-<description>Digging into the corporate leadership anatomy</description>
-<pubDate>Sun, 26 Mar 2023 13:00:00 GMT</pubDate>
-</item>
-<item>
-<guid isPermaLink="true">https://kaievans.co/posts/eoNUM</guid>
-<title>When to stop coding</title>
-<link>https://kaievans.co/posts/eoNUM</link>
-<description>Some thoughts on when an engineering manager should let go of the tools</description>
-<pubDate>Sun, 19 Mar 2023 13:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
